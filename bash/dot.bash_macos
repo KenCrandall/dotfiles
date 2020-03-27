@@ -9,6 +9,13 @@ alias say='say -r 175'
 alias vnc='/Applications/VNC\ Viewer.app/Contents/MacOS/vncviewer'
 alias ovftool='/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool/ovftool'
 
+# cancel ZSH vs BASH warning
+BASH_SILENCE_DEPRECATION_WARNING=1
+export BASH_SILENCE_DEPRECATION_WARNING
+
+# iTerm Shell integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
 # rack client
 if [ -f $HOME/.rack/bash_autocomplete ]; then
 	source $HOME/.rack/bash_autocomplete
