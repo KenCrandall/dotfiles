@@ -1,0 +1,23 @@
+##
+## My personal .nanorc definitions
+##
+
+## Smooth scrolling (single line)
+set smooth
+
+## Mouse support
+set mouse
+
+## Autoindent
+set autoindent
+
+## Spaces, not tabs
+set tabsize 4
+set tabstospaces
+
+## Show cursor location
+set constantshow
+
+## Don't wrap
+set nowrap
+
