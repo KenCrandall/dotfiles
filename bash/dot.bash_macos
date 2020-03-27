@@ -1,0 +1,33 @@
+#
+# .bashrc goodies for macos
+#
+
+# MacOS aliases
+alias rm='trash'
+alias ls='ls -F -G'
+alias say='say -r 175'
+alias vnc='/Applications/VNC\ Viewer.app/Contents/MacOS/vncviewer'
+alias ovftool='/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool/ovftool'
+
+# rack client
+if [ -f $HOME/.rack/bash_autocomplete ]; then
+	source $HOME/.rack/bash_autocomplete
+fi
+
+# Java
+# rack client
+if [ -f $HOME/.bash_java ]; then
+        source $HOME/.bash_java
+fi
+
+# rbenv
+eval "$(rbenv init -)"
+
+# go
+GOPATH=$HOME/go
+PATH=$GOPATH/bin:$PATH
+export GOPATH PATH
+
+# Ruby Gems
+PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
+export PATH

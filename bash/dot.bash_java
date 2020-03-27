@@ -1,0 +1,11 @@
+#
+# .bash_java
+#
+
+# GraalVM
+
+JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java8-19.3.0/Contents/Home
+export JAVA_HOME
+
+PATH=/Library/Java/JavaVirtualMachines/graalvm-ce-java8-19.3.0/Contents/Home/bin:$PATH
+export PATH
