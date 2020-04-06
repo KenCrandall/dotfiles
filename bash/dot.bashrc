@@ -1,12 +1,7 @@
 # .bashrc
 
-# Source Bash completion
-#if [ -f /usr/share/bash-completion/bash_completion ]; then
-#	. /usr/share/bash-completion/bash_completion
-#fi
-
-if [ -f /usr/local/etc/bash_completion ]; then
-	. /usr/local/etc/bash_completion
+if [ -f ~/.bash_completion ]; then
+	. ~/.bash_completion
 fi
 
 # Source global definitions
