@@ -46,6 +46,7 @@ hwloc
 icu4c
 ilmbase
 imagemagick
+iperf3
 isl
 joplin
 jpeg

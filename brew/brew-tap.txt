@@ -1,5 +1,6 @@
 Brew Tap
 --------
+colindean/fonts-nonfree
 docmunch/pdftk
 graalvm/tap
 homebrew/cask
