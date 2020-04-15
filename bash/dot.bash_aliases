@@ -23,4 +23,4 @@ alias rax='openstack --os-cloud rackspace'
 # Ansible
 #
 alias a='ansible'
-alais ap='ansible-playbook'
+alias ap='ansible-playbook'
