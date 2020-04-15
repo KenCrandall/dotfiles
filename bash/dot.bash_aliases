@@ -11,9 +11,16 @@ alias ll='ls -l'
 alias mv='mv -i'
 #alias rm='rm -i'
 #alias nano='nano -w'
+
 #
 # OpenStack
 #
 alias os='openstack'
 alias osa='openstack-ansible'
 alias rax='openstack --os-cloud rackspace'
+
+#
+# Ansible
+#
+alias a='ansible'
+alais ap='ansible-playbook'
