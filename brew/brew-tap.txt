@@ -1,5 +1,6 @@
 Brew Tap
 --------
+cjbassi/ytop
 colindean/fonts-nonfree
 docmunch/pdftk
 graalvm/tap
@@ -7,3 +8,4 @@ homebrew/cask
 homebrew/cask-drivers
 homebrew/cask-fonts
 homebrew/core
+romkatv/powerlevel10k

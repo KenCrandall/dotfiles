@@ -1,5 +1,6 @@
 Brew Cask List
 --------------
+1password-cli
 balenaetcher
 bartender
 betterzip
@@ -48,12 +49,14 @@ font-source-code-pro
 font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
-fontbase
 fork
+fsnotes
+github
 google-chrome
 gpg-suite-no-mail
 gpg-sync
 graalvm-ce-java8
+graalvm-ce-lts-java8
 growlnotify
 hazel
 install-disk-creator
@@ -63,11 +66,14 @@ joplin
 kaleidoscope
 logitech-options
 logitech-unifying
+lyx
+mactex
 manopen
 markdown-service-tools
 mountain-duck
 nextcloud
 notable
+openinterminal
 plex
 plex-media-player
 proxyman
@@ -86,10 +92,12 @@ ssh-tunnel-manager
 steam
 tower
 typora
+unetbootin
 visual-studio-code
 vivaldi
 vmware-fusion
 vnc-viewer
+webex-meetings
 whichspace
 wireshark
 xquartz
