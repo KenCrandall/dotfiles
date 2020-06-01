@@ -1,17 +1,9 @@
-# Build
-#PGDIR=$HOME/go/bin
-#PGDIR=$HOME/bin
-
-# Fedora
-#PGDIR=/usr/bin
-
-# Homebrew
-PGDIR=/usr/local/bin
-
 function _update_ps1() {
-    PS1="$($PGDIR/powerline-go -error $?)"
+    PS1="$($GOPATH/bin/powerline-go -error $?)"
+    TITLE=$(pwd)
+    echo -ne "\033]0;"$TITLE"\007"
 }
 
-#if [ "$TERM" != "linux" ] && [ -f "$PGDIR/powerline-go" ]; then
+if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-#fi
+fi

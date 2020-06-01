@@ -1,5 +1,9 @@
+#!/bin/bash
+#
 # .bashrc
+#
 
+# Source bash completion
 if [ -f ~/.bash_completion ]; then
 	. ~/.bash_completion
 fi
