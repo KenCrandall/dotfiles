@@ -1,0 +1,43 @@
+########################################
+# Prompt
+########################################
+
+RESTORE=$(echo -en '\001\033[0m\002')
+
+BLACK=$(echo -en '\001\033[00;30m\002')
+RED=$(echo -en '\001\033[00;31m\002')
+GREEN=$(echo -en '\001\033[00;32m\002')
+YELLOW=$(echo -en '\001\033[00;33m\002')
+BLUE=$(echo -en '\001\033[00;34m\002')
+MAGENTA=$(echo -en '\001\033[00;35m\002')
+PURPLE=$(echo -en '\001\033[00;35m\002')
+CYAN=$(echo -en '\001\033[00;36m\002')
+LGRAY=$(echo -en '\001\033[00;37m\002')
+
+GRAY=$(echo -en '\001\033[00;90m\002')
+DGRAY=$(echo -en '\001\033[00;90m\002')
+LRED=$(echo -en '\001\033[00;91m\002')
+LGREEN=$(echo -en '\001\033[00;92m\002')
+LYELLOW=$(echo -en '\001\033[00;93m\002')
+LBLUE=$(echo -en '\001\033[00;94m\002')
+LMAGENTA=$(echo -en '\001\033[00;95m\002')
+LPURPLE=$(echo -en '\001\033[00;95m\002')
+LCYAN=$(echo -en '\001\033[00;96m\002')
+WHITE=$(echo -en '\001\033[00;97m\002')
+
+if [ "$EUID" -ne 0 ]
+then 
+  #echo "Please run as root"
+  UCOLOR=${BLUE}
+else
+  #echo "I am root"
+  UCOLOR=${LRED}
+fi
+
+# BASH : Configure things differently if current terminal has >= 8 colors.
+if [ "$PS1" ] && [ $(tput colors 2>/dev/null) -ge 8 ]; then
+    PS1='[ ${CYAN}\D{%l:%M%P} ${RESTORE}| ${UCOLOR}\u${LGRAY}@${UCOLOR}\h ${RESTORE}\W ]\$ '
+else
+    PS1='[ \D{%l:%M%P} | \u@\h \W ]\$ '
+fi
+
