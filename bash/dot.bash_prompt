@@ -1,9 +1,18 @@
+PLG_PATH=/usr/local
+#PLG_PATH=$HOME
+
+#PLG_FLAGS="-max-width 30 -cwd-max-depth 3"
+PLG_FLAGS="-cwd-max-depth 3"
+
 function _update_ps1() {
-    PS1="$($GOPATH/bin/powerline-go -error $?)"
-    TITLE=$(pwd)
-    echo -ne "\033]0;"$TITLE"\007"
+    TITLE=$(pwd);
+    echo -ne "\033]0;"$TITLE"\007";
+    PS1="$($PLG_PATH/bin/powerline-go $PLG_FLAGS -error $?)"
 }
 
-if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+#function _update_ps1() {
+#    PS1="$($PLG_PATH/bin/powerline-go -error $?)"
+#}
+
+PROMPT_COMMAND="_update_ps1"
+
