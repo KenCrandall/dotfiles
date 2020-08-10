@@ -14,13 +14,11 @@ brew "openssl@1.1"
 brew "ansible"
 brew "ant"
 brew "autoconf"
-brew "automake"
 brew "bash"
 brew "bash-completion"
 brew "bat"
 brew "brew-cask-completion"
 brew "gettext"
-brew "cmatrix"
 brew "darkhttpd"
 brew "docbook-xsl"
 brew "docbook2x"
@@ -39,7 +37,6 @@ brew "gnu-tar"
 brew "go"
 brew "growly"
 brew "htop"
-brew "httrack"
 brew "iperf3"
 brew "node"
 brew "joplin", link: false
@@ -48,20 +45,17 @@ brew "launchctl-completion"
 brew "libav"
 brew "libvirt", restart_service: true
 brew "lxc"
-brew "mackup"
 brew "mas"
-brew "mcrypt"
 brew "mdcat"
 brew "nano"
 brew "neofetch"
 brew "netlify-cli"
 brew "nmap"
-brew "packer-completion"
 brew "pbzip2"
 brew "pip-completion"
 brew "pixz"
+brew "powerline-go"
 brew "pstree"
-brew "pwgen"
 brew "pyenv"
 brew "pyenv-ccache"
 brew "pyenv-virtualenv"
@@ -80,22 +74,20 @@ brew "stoken"
 brew "telnet"
 brew "terminal-notifier"
 brew "tmux"
-brew "tmuxinator-completion"
 brew "trash"
 brew "tree"
 brew "vagrant-completion"
 brew "watch"
 brew "wget"
 brew "whois"
-brew "wifi-password"
 brew "youtube-dl"
 cask "1password-cli"
 cask "balenaetcher"
 cask "bartender"
 cask "betterzip"
 cask "bitbar"
-cask "blue-jeans"
 cask "brave-browser"
+cask "cakebrew"
 cask "calibre"
 cask "carbon-copy-cloner"
 cask "choosy"
@@ -108,6 +100,10 @@ cask "epubquicklook"
 cask "firefox"
 cask "fluid"
 cask "font-cantarell"
+cask "font-cascadia"
+cask "font-cascadia-mono"
+cask "font-cascadia-mono-pl"
+cask "font-cascadia-pl"
 cask "font-courier-prime-code"
 cask "font-envy-code-r"
 cask "font-fira-code"
@@ -140,7 +136,6 @@ cask "font-source-code-pro-for-powerline"
 cask "font-source-sans-pro"
 cask "font-source-serif-pro"
 cask "fork"
-cask "gdisk"
 cask "github"
 cask "google-chrome"
 cask "gpg-suite-no-mail"
@@ -176,7 +171,6 @@ cask "quicklookase"
 cask "rocket"
 cask "royal-tsx"
 cask "scriptql"
-cask "soundcloud-downloader"
 cask "soundsource"
 cask "ssh-tunnel-manager"
 cask "steam"
@@ -191,7 +185,6 @@ cask "vivaldi"
 cask "vlc"
 cask "vmware-fusion"
 cask "vnc-viewer"
-cask "webex-meetings"
 cask "whichspace"
 cask "wireshark"
 cask "zoomus"
@@ -203,17 +196,15 @@ mas "AirRadar", id: 414758651
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "Cardhop", id: 1290358394
-mas "Color Note", id: 1099028591
 mas "ColorWell", id: 460176867
 mas "DaisyDisk", id: 411643860
 mas "Day One", id: 1055511498
 mas "Deliveries", id: 924726344
 mas "Drafts", id: 1435957248
-mas "EasyRes", id: 688211836
 mas "Fantastical", id: 975937182
 mas "ForkLift", id: 412448059
 mas "Friendly Streaming", id: 553245401
-mas "Front and Center", id: 1493996622
+mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
 mas "Growl", id: 467939042
 mas "Image2icon", id: 992115977
@@ -236,6 +227,8 @@ mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PCalc", id: 403504866
+mas "PDF Reader", id: 1185380569
+mas "PDFelement 7", id: 1470732135
 mas "Pixelmator Pro", id: 1289583905
 mas "Pocket", id: 568494494
 mas "PopClip", id: 445189367
@@ -260,6 +253,7 @@ mas "ToothFairy", id: 1191449274
 mas "Tot", id: 1491071483
 mas "Trello", id: 1278508951
 mas "Tweetbot", id: 1384080005
+mas "Twitterrific", id: 1289378661
 mas "uBlock", id: 1385985095
 mas "Ultra Character Map", id: 520265986
 mas "Xcode", id: 497799835

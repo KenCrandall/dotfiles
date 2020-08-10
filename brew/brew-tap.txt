@@ -1,11 +1,13 @@
 Brew Tap
 --------
-cjbassi/ytop
 colindean/fonts-nonfree
 docmunch/pdftk
 graalvm/tap
+homebrew/bundle
 homebrew/cask
 homebrew/cask-drivers
 homebrew/cask-fonts
 homebrew/core
+homebrew/services
 romkatv/powerlevel10k
+teamookla/speedtest
