@@ -1,3 +1,5 @@
+# Colors Codes
+
 RESTORE=$(echo -en '\001\033[0m\002')
 
 BLACK=$(echo -en '\001\033[00;30m\002')
@@ -11,12 +13,20 @@ CYAN=$(echo -en '\001\033[00;36m\002')
 LGRAY=$(echo -en '\001\033[00;37m\002')
 
 GRAY=$(echo -en '\001\033[00;90m\002')
-DGRAY=$(echo -en '\001\033[00;90m\002')
 LRED=$(echo -en '\001\033[00;91m\002')
 LGREEN=$(echo -en '\001\033[00;92m\002')
 LYELLOW=$(echo -en '\001\033[00;93m\002')
 LBLUE=$(echo -en '\001\033[00;94m\002')
-LMAGENTA=$(echo -en '\001\033[00;95m\002')
+LMAGENTA=$(echo -en '\001\033[00;39m\002')
 LPURPLE=$(echo -en '\001\033[00;95m\002')
 LCYAN=$(echo -en '\001\033[00;96m\002')
 WHITE=$(echo -en '\001\033[00;97m\002')
+
+# System Role Colors
+HYP=$YELLOW
+CONT=$CYAN
+COMPUTE=$HYP
+CONTROL=$CONT
+SERVER=$BLUE
+DNS=$LGREEN
+PIHOLE=$DNS
