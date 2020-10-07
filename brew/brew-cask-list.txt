@@ -15,12 +15,13 @@ docker
 dockstation
 dosbox-x
 drawio
+epichrome
 epubquicklook
 firefox
 fluid
 font-cantarell
 font-cascadia
-font-cascadia-mono
+font-cascadia-code-pl
 font-cascadia-mono-pl
 font-cascadia-pl
 font-courier-prime-code
@@ -55,6 +56,7 @@ font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
 fork
+gdisk
 github
 google-chrome
 gpg-suite-no-mail
@@ -73,8 +75,10 @@ logitech-unifying
 mactex
 manopen
 markdown-service-tools
+microsoft-auto-update
 microsoft-edge
 mountain-duck
+musicbrainz-picard
 nextcloud
 notable
 openinterminal
@@ -90,9 +94,11 @@ quicklookase
 rocket
 royal-tsx
 scriptql
+sdformatter
 soundsource
 ssh-tunnel-manager
 steam
+tigervnc-viewer
 tower
 typora
 unetbootin

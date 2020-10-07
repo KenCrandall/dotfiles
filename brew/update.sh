@@ -11,7 +11,7 @@ brew list >> $DIR/brew-list.txt
 echo "Checking homebrew casks..."
 echo "Brew Cask List" > $DIR/brew-cask-list.txt
 echo "--------------" >> $DIR/brew-cask-list.txt
-brew cask list >> $DIR/brew-cask-list.txt
+brew list --cask >> $DIR/brew-cask-list.txt
 
 echo "Checking homebrew taps..."
 echo "Brew Tap" > $DIR/brew-tap.txt
