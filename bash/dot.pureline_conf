@@ -38,12 +38,28 @@ function gitstash_module() {
     fi
 }
 
-function gitaheadbehind_module() {
+function gitahead_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_untracked="$(git ls-files --other --exclude-standard 2>/dev/null | wc -l | tr -d [:space:])"
-    if [ ! "$number_untracked" -eq "0" ]; then
-        local content="${number_untracked}+" # Set the content to be displayed
+    local number_behind_ahead=$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)
+    local number_ahead="${number_behind_ahead#*	}"
+    local ahead_symbol="⬆"
+    if [ ! "$number_ahead" -eq 0 ]; then
+        local content="${number_ahead}${ahead_symbol}"
+        PS1+=$(section_end $fg_ahead_color $bg_color)
+        PS1+=$(section_content $fg_ahead_color $bg_color " $content ")
+        __last_color="$bg_color"
+    fi
+}
+
+function gitbehind_module() {
+    local bg_color="$1" # Set the background color
+    local fg_color="$2" # Set the foreground color
+    local number_behind_ahead="$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)"
+    local number_behind="${number_behind_ahead%	*}"
+    local behind_symbol="⬇︎"
+    if [ ! "$number_behind" -eq 0 ]; then
+        local content="${number_behind}${behind_symbol}"
         PS1+=$(section_end $fg_color $bg_color)
         PS1+=$(section_content $fg_color $bg_color " $content ")
         __last_color="$bg_color"
@@ -114,6 +130,8 @@ declare -a PL_MODULES=(
     'background_jobs_module MyPurple    White'
     'git_module             MyLime      Black'
     #    'gitcommit_module        Green        White'
+    'gitahead_module        MyDarkGrey  MyVLGrey'
+    'gitbehind_module       MyDarkGrey  MyVLGrey'
     'gittrack_module        MyVDRed     MyWhite'
     'gitstash_module        MyVDBlue    MyWhite'
     'return_code_module     MyDarkRed   White'
@@ -129,7 +147,7 @@ PL_SSH_SHOW_HOST=true
 PL_SSH_USE_IP=true
 PL_GIT_DIRTY_FG=MyWhite
 PL_GIT_DIRTY_BG=MyMagenta
-PL_GIT_AHEAD=true
+PL_GIT_AHEAD=false
 PL_GIT_MODIFIED=true
 PL_GIT_STAGED=true
 PL_GIT_CONFLICTS=true
