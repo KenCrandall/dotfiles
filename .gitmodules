@@ -4,3 +4,6 @@
 [submodule "prompt/powerline"]
 	path = prompt/powerline
 	url = https://github.com/justjanne/powerline-go
+[submodule "prompt/pureline"]
+	path = prompt/pureline
+	url = https://github.com/flammie/pureline.git
