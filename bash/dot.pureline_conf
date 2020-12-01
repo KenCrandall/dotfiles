@@ -6,7 +6,7 @@ function log() {
     local MESSAGE="$1"
     local DATE=$(date "+%d%m%y")
     local LOGFILE=$HOME/.test.log
-    echo "${DATE} : ${MESSAGE}" >> $LOGFILE
+    echo "${DATE} : ${MESSAGE}" >>$LOGFILE
 }
 
 # Modules
@@ -142,13 +142,13 @@ declare -a PL_MODULES=(
     'read_only_module       MyRed       White'
     'background_jobs_module MyPurple    White'
     'git_module             MyLime      Black'
-#    'gitcommit_module       Green        White'
-#    'gitahead_module        MyDarkGrey  MyVLGrey'
-#    'gitbehind_module       MyDarkGrey  MyVLGrey'
-#    'gittrack_module        MyVDRed     MyWhite'
-#    'gitstash_module        MyVDBlue    MyWhite'
+    #    'gitcommit_module       Green        White'
+    #    'gitahead_module        MyDarkGrey  MyVLGrey'
+    #    'gitbehind_module       MyDarkGrey  MyVLGrey'
+    #    'gittrack_module        MyVDRed     MyWhite'
+    #    'gitstash_module        MyVDBlue    MyWhite'
     'return_code_module     MyDarkRed   White'
-     'prompt_module          Black       White'
+    'prompt_module          MyDarkGrey  White'
 )
 
 # Module Options
@@ -179,8 +179,8 @@ PL_SYMBOLS[git_untracked]="+"
 PL_SYMBOLS[git_stash]="§"
 PL_SYMBOLS[git_ahead]="↑"
 PL_SYMBOLS[git_behind]="↓"
-PL_SYMBOLS[git_modified]="✚ "
-PL_SYMBOLS[git_staged]="✔ "
+PL_SYMBOLS[git_modified]="✎"
+PL_SYMBOLS[git_staged]="✔"
 PL_SYMBOLS[git_conflicts]="✘ "
 
 PL_SYMBOLS[ssh]=""
