@@ -148,6 +148,7 @@ declare -a PL_MODULES=(
 #    'gittrack_module        MyVDRed     MyWhite'
 #    'gitstash_module        MyVDBlue    MyWhite'
     'return_code_module     MyDarkRed   White'
+     'prompt_module          Black       White'
 )
 
 # Module Options
