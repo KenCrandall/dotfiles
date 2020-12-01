@@ -31,7 +31,7 @@ function gitstash_module() {
     local stash_symbol="⚑" # Symbol for stashed files
     local number_stashed=$(git stash list 2>/dev/null | wc -l | tr -d [:space:])
     if [ ! $number_stashed -eq 0 ]; then
-        local content="${number_stashed}${stash_symbol}" # Set the content to be displayed
+        content="${number_stashed}${stash_symbol}" # Set the content to be displayed
         PS1+=$(section_end $fg_color $bg_color)
         PS1+=$(section_content $fg_color $bg_color " $content ")
         __last_color="$bg_color"
@@ -43,9 +43,9 @@ function gitahead_module() {
     local fg_color="$2" # Set the foreground color
     local number_behind_ahead=$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)
     local number_ahead="${number_behind_ahead#*	}"
-    local ahead_symbol="⬆"
+    local ahead_symbol="↑"
     if [ ! "$number_ahead" -eq 0 ]; then
-        local content="${number_ahead}${ahead_symbol}"
+        content="${number_ahead}${ahead_symbol}"
         PS1+=$(section_end $fg_ahead_color $bg_color)
         PS1+=$(section_content $fg_ahead_color $bg_color " $content ")
         __last_color="$bg_color"
@@ -55,11 +55,11 @@ function gitahead_module() {
 function gitbehind_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_behind_ahead="$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)"
+    local number_behind_ahead=$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)
     local number_behind="${number_behind_ahead%	*}"
     local behind_symbol="⬇︎"
     if [ ! "$number_behind" -eq 0 ]; then
-        local content="${number_behind}${behind_symbol}"
+        content="${number_behind}${behind_symbol}"
         PS1+=$(section_end $fg_color $bg_color)
         PS1+=$(section_content $fg_color $bg_color " $content ")
         __last_color="$bg_color"
