@@ -75,9 +75,17 @@ function gitbehind_module() {
     fi
 }
 
-function gitcommit_module() {
+function gitstaged_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
+    local number_staged="$(git diff --staged --name-only --diff-filter=AM 2>/dev/null | wc -l | tr -d [:space:])"
+    local staged_symbol="✔"
+    if [ ! "$number_staged" -eq "0" ]; then
+        local content="${number_staged}${staged_symbol}"
+        PS1+=$(section_end $fg_color $bg_color)
+        PS1+=$(section_content $fg_color $bg_color " $content ")
+        __last_color="$bg_color"
+    fi
 }
 
 function gitmodified_module() {
@@ -164,6 +172,7 @@ declare -a PL_MODULES=(
     'gitbehind_module       MyDarkGrey  MyVLGrey'
     'gittrack_module        MyVDRed     MyWhite'
     'gitstash_module        MyVDBlue    MyWhite'
+    'gitstaged_module       Green       White'
     'gitmodified_module     MyOrange    MyWhite'
     'return_code_module     MyDarkRed   White'
     'prompt_module          MyBGColor  White'
