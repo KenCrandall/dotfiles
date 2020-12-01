@@ -2,7 +2,6 @@
 # Custom 256 color Pureline config
 
 # Modules
-
 function host_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
