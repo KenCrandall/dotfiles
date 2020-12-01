@@ -1,14 +1,6 @@
 #!/usr/local/bin/bash
 # Custom 256 color Pureline config
 
-# Helper functions
-function log() {
-    local MESSAGE="$1"
-    local DATE=$(date "+%d%m%y")
-    local LOGFILE=$HOME/.test.log
-    echo "${DATE} : ${MESSAGE}" >>$LOGFILE
-}
-
 # Modules
 
 function host_module() {
@@ -59,7 +51,6 @@ function gitahead_module() {
     local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     if [ -n "$git_branch" ]; then
         local number_ahead=$(git cherry -v ${upstream} | wc -l | tr -d [:space:])
-        log "number ahead: ${number_ahead}"
         if [ ! $number_ahead -eq 0 ]; then
             content="${number_ahead}${ahead_symbol}"
             PS1+=$(section_end $fg_color $bg_color)
