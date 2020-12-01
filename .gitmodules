@@ -7,3 +7,6 @@
 [submodule "powerline"]
 	path = powerline
 	url = https://github.com/justjanne/powerline-go.git
+[submodule "prompt/powerline"]
+	path = prompt/powerline
+	url = https://github.com/justjanne/powerline-go.git
