@@ -60,9 +60,10 @@ gdisk
 github
 google-chrome
 gpg-suite-no-mail
-graalvm-ce-java8
+graalvm-ce-lts-java11
 graalvm-ce-lts-java8
 growlnotify
+gzdoom
 hazel
 install-disk-creator
 ios-saver
@@ -84,6 +85,7 @@ notable
 openinterminal
 plex
 plex-media-player
+powershell
 proxyman
 qlcolorcode
 qlcommonmark
@@ -95,6 +97,8 @@ rocket
 royal-tsx
 scriptql
 sdformatter
+shimo
+sigil
 soundsource
 ssh-tunnel-manager
 steam

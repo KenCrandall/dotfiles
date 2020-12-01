@@ -5,11 +5,12 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "orf/brew"
 tap "romkatv/powerlevel10k"
 tap "teamookla/speedtest"
-cask "xquartz"
 brew "openssl@1.1"
 brew "ansible"
 brew "ant"
@@ -26,6 +27,7 @@ brew "docker", link: false
 brew "docker-compose", link: false
 brew "docker-machine"
 brew "docker-machine-driver-vmware"
+brew "dog"
 brew "elinks"
 brew "ffmpeg"
 brew "figlet"
@@ -35,15 +37,17 @@ brew "git-delta"
 brew "glances"
 brew "gnu-tar"
 brew "go"
+brew "gradle"
 brew "growly"
 brew "htop"
 brew "iperf3"
+brew "jo"
 brew "node"
 brew "joplin", link: false
 brew "jq"
 brew "launchctl-completion"
 brew "libaacs"
-brew "libav"
+brew "libav", link: false
 brew "libbdplus"
 brew "libvirt", restart_service: true
 brew "lxc"
@@ -79,10 +83,14 @@ brew "terminal-notifier"
 brew "tmux"
 brew "trash"
 brew "tree"
+brew "unar"
 brew "vagrant-completion"
+brew "wakeonlan"
 brew "watch"
 brew "wget"
 brew "youtube-dl"
+brew "zbar"
+brew "orf/brew/gping"
 cask "1password-cli"
 cask "balenaetcher"
 cask "bartender"
@@ -143,9 +151,10 @@ cask "gdisk"
 cask "github"
 cask "google-chrome"
 cask "gpg-suite-no-mail"
-cask "graalvm-ce-java8"
+cask "graalvm-ce-lts-java11"
 cask "graalvm-ce-lts-java8"
 cask "growlnotify"
+cask "gzdoom"
 cask "hazel"
 cask "install-disk-creator"
 cask "ios-saver"
@@ -167,6 +176,7 @@ cask "notable"
 cask "openinterminal"
 cask "plex"
 cask "plex-media-player"
+cask "powershell"
 cask "proxyman"
 cask "qlcolorcode"
 cask "qlcommonmark"
@@ -178,6 +188,8 @@ cask "rocket"
 cask "royal-tsx"
 cask "scriptql"
 cask "sdformatter"
+cask "shimo"
+cask "sigil"
 cask "soundsource"
 cask "ssh-tunnel-manager"
 cask "steam"
@@ -195,7 +207,9 @@ cask "vmware-fusion"
 cask "vnc-viewer"
 cask "whichspace"
 cask "wireshark"
+cask "xquartz"
 cask "zoomus"
+mas "1Blocker", id: 1107421413
 mas "1Password 7", id: 1333542190
 mas "Acorn", id: 1233861775
 mas "Agenda", id: 1287445660
@@ -210,6 +224,7 @@ mas "Day One", id: 1055511498
 mas "Deliveries", id: 924726344
 mas "Diagrams", id: 1276248849
 mas "Drafts", id: 1435957248
+mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
 mas "ForkLift", id: 412448059
 mas "Friendly Streaming", id: 553245401
@@ -220,6 +235,7 @@ mas "Image2icon", id: 992115977
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LanScan", id: 472226235
+mas "MetaDoctor Pro", id: 992000603
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
@@ -236,7 +252,6 @@ mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PCalc", id: 403504866
-mas "PDF Reader", id: 1185380569
 mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
 mas "Remote Desktop", id: 409907375
@@ -264,3 +279,4 @@ mas "uBlock", id: 1385985095
 mas "Ultra Character Map", id: 520265986
 mas "VMware Remote Console", id: 1230249825
 mas "Xcode", id: 497799835
+mas "Xee³", id: 639764244
