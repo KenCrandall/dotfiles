@@ -24,12 +24,15 @@ function host_module() {
 function gittrack_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_untracked="$(git ls-files --other --exclude-standard 2>/dev/null | wc -l | tr -d [:space:])"
-    if [ ! "$number_untracked" -eq "0" ]; then
-        local content="${number_untracked}+" # Set the content to be displayed
-        PS1+=$(section_end $fg_color $bg_color)
-        PS1+=$(section_content $fg_color $bg_color " $content ")
-        __last_color="$bg_color"
+    local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$git_branch" ]; then
+        local number_untracked="$(git ls-files --other --exclude-standard 2>/dev/null | wc -l | tr -d [:space:])"
+        if [ ! "$number_untracked" -eq "0" ]; then
+            local content="${number_untracked}+" # Set the content to be displayed
+            PS1+=$(section_end $fg_color $bg_color)
+            PS1+=$(section_content $fg_color $bg_color " $content ")
+            __last_color="$bg_color"
+        fi
     fi
 }
 
@@ -37,67 +40,82 @@ function gitstash_module() {
     local bg_color="$1"    # Set the background color
     local fg_color="$2"    # Set the foreground color
     local stash_symbol="⚑" # Symbol for stashed files
-    local number_stashed=$(git stash list 2>/dev/null | wc -l | tr -d [:space:])
-    if [ ! $number_stashed -eq 0 ]; then
-        content="${number_stashed}${stash_symbol}" # Set the content to be displayed
-        PS1+=$(section_end $fg_color $bg_color)
-        PS1+=$(section_content $fg_color $bg_color " $content ")
-        __last_color="$bg_color"
+    local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$git_branch" ]; then
+        local number_stashed=$(git stash list 2>/dev/null | wc -l | tr -d [:space:])
+        if [ ! $number_stashed -eq 0 ]; then
+            content="${number_stashed}${stash_symbol}" # Set the content to be displayed
+            PS1+=$(section_end $fg_color $bg_color)
+            PS1+=$(section_content $fg_color $bg_color " $content ")
+            __last_color="$bg_color"
+        fi
     fi
 }
 
 function gitahead_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_ahead=$(git cherry -v ${upstream} | wc -l | tr -d [:space:])
     local ahead_symbol="↑"
-    log "number ahead: ${number_ahead}"
-    if [ ! $number_ahead -eq 0 ]; then
-        content="${number_ahead}${ahead_symbol}"
-        PS1+=$(section_end $fg_color $bg_color)
-        PS1+=$(section_content $fg_color $bg_color " $content ")
-        __last_color="$bg_color"
+    local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$git_branch" ]; then
+        local number_ahead=$(git cherry -v ${upstream} | wc -l | tr -d [:space:])
+        log "number ahead: ${number_ahead}"
+        if [ ! $number_ahead -eq 0 ]; then
+            content="${number_ahead}${ahead_symbol}"
+            PS1+=$(section_end $fg_color $bg_color)
+            PS1+=$(section_content $fg_color $bg_color " $content ")
+            __last_color="$bg_color"
+        fi
     fi
 }
 
 function gitbehind_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_behind_ahead=$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)
-    local number_behind="${number_behind_ahead%	*}"
     local behind_symbol="↓"
-    if [ ! "$number_behind" -eq 0 ]; then
-        #content="${number_behind}${behind_symbol}"
-        local content="^"
-        PS1+=$(section_end $fg_color $bg_color)
-        PS1+=$(section_content $fg_color $bg_color " $content ")
-        __last_color="$bg_color"
+    local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$git_branch" ]; then
+        local number_behind_ahead=$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)
+        local number_behind="${number_behind_ahead%	*}"
+        if [ ! "$number_behind" -eq 0 ]; then
+            #content="${number_behind}${behind_symbol}"
+            local content="^"
+            PS1+=$(section_end $fg_color $bg_color)
+            PS1+=$(section_content $fg_color $bg_color " $content ")
+            __last_color="$bg_color"
+        fi
     fi
 }
 
 function gitstaged_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_staged="$(git diff --staged --name-only --diff-filter=AM 2>/dev/null | wc -l | tr -d [:space:])"
     local staged_symbol="✔"
-    if [ ! "$number_staged" -eq "0" ]; then
-        local content="${number_staged}${staged_symbol}"
-        PS1+=$(section_end $fg_color $bg_color)
-        PS1+=$(section_content $fg_color $bg_color " $content ")
-        __last_color="$bg_color"
+    local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$git_branch" ]; then
+        local number_staged="$(git diff --staged --name-only --diff-filter=AM 2>/dev/null | wc -l | tr -d [:space:])"
+        if [ ! "$number_staged" -eq "0" ]; then
+            local content="${number_staged}${staged_symbol}"
+            PS1+=$(section_end $fg_color $bg_color)
+            PS1+=$(section_content $fg_color $bg_color " $content ")
+            __last_color="$bg_color"
+        fi
     fi
 }
 
 function gitmodified_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_modified="$(git diff --name-only --diff-filter=M 2>/dev/null | wc -l | tr -d [:space:])"
     local modified_symbol="✎"
-    if [ ! "$number_modified" -eq "0" ]; then
-        local content="${number_modified}${modified_symbol}"
-        PS1+=$(section_end $fg_color $bg_color)
-        PS1+=$(section_content $fg_color $bg_color " $content ")
-        __last_color="$bg_color"
+    local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$git_branch" ]; then
+        local number_modified="$(git diff --name-only --diff-filter=M 2>/dev/null | wc -l | tr -d [:space:])"
+        if [ ! "$number_modified" -eq "0" ]; then
+            local content="${number_modified}${modified_symbol}"
+            PS1+=$(section_end $fg_color $bg_color)
+            PS1+=$(section_content $fg_color $bg_color " $content ")
+            __last_color="$bg_color"
+        fi
     fi
 }
 
@@ -166,13 +184,22 @@ declare -a PL_MODULES=(
     'virtual_env_module     MyBlue      Black'
     'read_only_module       MyRed       White'
     'background_jobs_module MyPurple    White'
-    'git_module             MyLime      Black'
-    'gitahead_module        MyDarkGrey  MyVLGrey'
-    'gitbehind_module       MyDarkGrey  MyVLGrey'
-    'gittrack_module        MyVDRed     MyWhite'
-    'gitstash_module        MyVDBlue    MyWhite'
-    'gitstaged_module       Green       White'
-    'gitmodified_module     MyOrange    MyWhite'
+)
+
+git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+if [ -n "$git_branch" ]; then
+    declare PL_MODULES+=(
+        'git_module             MyLime      Black'
+        'gitahead_module        MyDarkGrey  MyVLGrey'
+        'gitbehind_module       MyDarkGrey  MyVLGrey'
+        'gittrack_module        MyVDRed     MyWhite'
+        'gitstash_module        MyVDBlue    MyWhite'
+        'gitstaged_module       Green       White'
+        'gitmodified_module     MyOrange    MyWhite'
+    )
+fi
+
+declare PL_MODULES+=(
     'return_code_module     MyDarkRed   White'
     'prompt_module          MyBGColor  White'
 )
