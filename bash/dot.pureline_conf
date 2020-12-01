@@ -184,22 +184,13 @@ declare -a PL_MODULES=(
     'virtual_env_module     MyBlue      Black'
     'read_only_module       MyRed       White'
     'background_jobs_module MyPurple    White'
-)
-
-git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-if [ -n "$git_branch" ]; then
-    declare PL_MODULES+=(
-        'git_module             MyLime      Black'
-        'gitahead_module        MyDarkGrey  MyVLGrey'
-        'gitbehind_module       MyDarkGrey  MyVLGrey'
-        'gittrack_module        MyVDRed     MyWhite'
-        'gitstash_module        MyVDBlue    MyWhite'
-        'gitstaged_module       Green       White'
-        'gitmodified_module     MyOrange    MyWhite'
-    )
-fi
-
-declare PL_MODULES+=(
+    'git_module             MyLime      Black'
+    'gitahead_module        MyDarkGrey  MyVLGrey'
+    'gitbehind_module       MyDarkGrey  MyVLGrey'
+    'gittrack_module        MyVDRed     MyWhite'
+    'gitstash_module        MyVDBlue    MyWhite'
+    'gitstaged_module       Green       White'
+    'gitmodified_module     MyOrange    MyWhite'
     'return_code_module     MyDarkRed   White'
     'prompt_module          MyBGColor  White'
 )
@@ -215,7 +206,7 @@ PL_GIT_DIRTY_FG=MyWhite
 PL_GIT_DIRTY_BG=MyMagenta
 PL_GIT_AHEAD=false
 PL_GIT_MODIFIED=false
-PL_GIT_STAGED=true
+PL_GIT_STAGED=false
 PL_GIT_CONFLICTS=true
 PL_GIT_UNTRACKED=false
 PL_GIT_STASH=false
