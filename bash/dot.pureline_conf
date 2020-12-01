@@ -1,5 +1,13 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 # Custom 256 color Pureline config
+
+# Helper functions
+function log() {
+    local MESSAGE="$1"
+    local DATE=$(date "+%d%m%y")
+    local LOGFILE=$HOME/.test.log
+    echo "${DATE} : ${MESSAGE}" >> $LOGFILE
+}
 
 # Modules
 
@@ -41,10 +49,10 @@ function gitstash_module() {
 function gitahead_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local number_behind_ahead=$(git rev-list --count --left-right '@{upstream}...HEAD' 2>/dev/null)
-    local number_ahead="${number_behind_ahead#*}"
+    local number_ahead=$(git cherry -v ${upstream} | wc -l)
     local ahead_symbol="↑"
-    if [ ! "$number_ahead" -eq 0 ]; then
+    log "number ahead: ${number_ahead}"
+    if [ ! $number_ahead -eq 0 ]; then
         content="${number_ahead}${ahead_symbol}"
         PS1+=$(section_end $fg_ahead_color $bg_color)
         PS1+=$(section_content $fg_ahead_color $bg_color " $content ")
@@ -64,6 +72,11 @@ function gitbehind_module() {
         PS1+=$(section_content $fg_color $bg_color " $content ")
         __last_color="$bg_color"
     fi
+}
+
+function gitcommit_module() {
+    local bg_color="$1" # Set the background color
+    local fg_color="$2" # Set the foreground color
 }
 
 # Colors must be defined in pairs of FG & BG
@@ -129,7 +142,7 @@ declare -a PL_MODULES=(
     'read_only_module       MyRed       White'
     'background_jobs_module MyPurple    White'
     'git_module             MyLime      Black'
-    #    'gitcommit_module        Green        White'
+    'gitcommit_module       Green        White'
     'gitahead_module        MyDarkGrey  MyVLGrey'
     'gitbehind_module       MyDarkGrey  MyVLGrey'
     'gittrack_module        MyVDRed     MyWhite'
