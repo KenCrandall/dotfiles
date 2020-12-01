@@ -167,7 +167,6 @@ declare -a PL_MODULES=(
     'read_only_module       MyRed       White'
     'background_jobs_module MyPurple    White'
     'git_module             MyLime      Black'
-    'gitcommit_module       Green       White'
     'gitahead_module        MyDarkGrey  MyVLGrey'
     'gitbehind_module       MyDarkGrey  MyVLGrey'
     'gittrack_module        MyVDRed     MyWhite'
