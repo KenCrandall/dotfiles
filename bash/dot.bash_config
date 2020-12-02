@@ -1,0 +1,39 @@
+#!/usr/local/bin/bash
+#
+# .bash_profile
+#
+
+LOGFILE=$HOME/.bash.log
+DATE=$(date)
+echo $DATE >> $LOGFILE
+echo "" >> $LOGFILE
+echo ".bashrc" > $LOGFILE
+
+# Source bash completion
+if [[ -f $HOME/.bash_completion ]] 
+then
+    . $HOME/.bash_completion
+    echo ".bash_completion" >> $LOGFILE
+fi
+
+# Source local vars
+if [[ -f $HOME/.bash_vars ]] 
+then
+    . $HOME/.bash_vars
+    echo ".bash_vars" >> $LOGFILE
+fi
+
+# Source local aliases
+if [[ -f $HOME/.bash_aliases ]] 
+then
+    . $HOME/.bash_aliases
+    echo ".bash_aliases" >> $LOGFILE
+fi
+
+# Source os secret sauce
+if [[ -f $HOME/.bash_os ]] 
+then
+    . $HOME/.bash_os
+    echo ".bash_os" >> $LOGFILE
+fi
+
