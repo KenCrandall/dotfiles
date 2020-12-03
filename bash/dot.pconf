@@ -84,9 +84,9 @@ function mypath_module() {
     local bd_fg_color="MyWhite"
     local bd_bg_color="MyTeal"
     local path_separator="  "
+    local myhpwd="/"
     local basedir="/"
     local mypwd=$(pwd)
-    local myhpwd=""
 
     case $mypwd in
     $HOME)
@@ -118,12 +118,19 @@ function mypath_module() {
         ;;
     /*/*)
         local myopwd="${mypwd#"${mypwd%/*/*}/"}"
-        HPWD=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
+        myhpwd=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
         MATCH="two-deep"
         ;;
     *)
         local myopwd="$mypwd"
-        myhpwd=$(echo ${myopwd} | awk '{print $2}' | sed "s/\//${path_separator}/g")
+        #myhpwd=$(echo ${myopwd} | awk '{print $2}' | sed "s/\//${path_separator}/g")
+        if [ "$myopwd" = $"basedir" ]; then
+            myhpwd="${basedir}"
+        elif [ "$mypwd" = "/" ]; then
+            myhpwd="/"
+        else
+            myhpwd="$(echo ${myopwd} | tr -d '/')"
+        fi
         MATCH="default"
         ;;
     esac
@@ -134,10 +141,11 @@ function mypath_module() {
         __last_color="$bd_bg_color"
     fi
 
-    PS1+=$(section_end $fg_color $bg_color)
-    PS1+=$(section_content $fg_color $bg_color " $myhpwd ")
-    __last_color="$bg_color"
-
+    if [ -n "$myhpwd" ]; then
+        PS1+=$(section_end $fg_color $bg_color)
+        PS1+=$(section_content $fg_color $bg_color " $myhpwd ")
+        __last_color="$bg_color"
+    fi
 }
 
 function gittrack_module() {
@@ -259,7 +267,7 @@ declare -a PL_MODULES=(
     'user_module            MyDarkGrey  MyVLGrey'
     'host_module            MyVDGrey    MyLightGrey'
     'myssh_module           MyOrange    MyWhite'
-    'mypath_module          MyPBColor   MyVLGrey'
+    'mypath_module          MyPBColor   White'
     'virtual_env_module     MyBlue      Black'
     'read_only_module       MyRed       MyWhite'
     'background_jobs_module MyPurple    MyWhite'
