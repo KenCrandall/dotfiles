@@ -13,6 +13,7 @@ c-ares
 cairo
 ccache
 cfitsio
+ctop
 cunit
 darkhttpd
 dav1d
