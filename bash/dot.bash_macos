@@ -39,3 +39,6 @@ export GOPATH PATH
 # Ruby Gems
 PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
 export PATH
+
+# Quarentine Fix
+alias fix='sudo xattr -rd com.apple.quarantine'
