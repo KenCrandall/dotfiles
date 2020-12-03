@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DIR=$HOME/Files/IPMIView
+JAVA_HOME=$DIR/jre/Contents/home
+export JAVA_HOME
+
+cd $DIR
+$JAVA_HOME/bin/java \
+  -Dapple.laf.useScreenMenuBar=true \
+  -Dcom.apple.mrj.application.apple.menu.about.name="IPMIView" \
+  -Dcom.sun.java.swing.plaf.mac.MacLookAndFeel \
+  -Dcom.apple.mrj.application.growbox.intrudes=false \
+  -Dcom.apple.macos.smallTabs=true \
+  -Xdock:name="IPMIView" \
+  -Xdock:icon="$DIR/ipmiview.png" \
+  -jar $HOME/Files/IPMIView/IPMIView20.jar
