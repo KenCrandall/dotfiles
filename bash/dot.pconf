@@ -11,8 +11,8 @@
 PL_COLORS[MyOrange]='\[\e[38;5;130m\]'
 PL_COLORS[On_MyOrange]='\[\e[48;5;130m\]'
 
-PL_COLORS[MyLime]='\[\e[38;5;190m\]'
-PL_COLORS[On_MyLime]='\[\e[48;5;190m\]'
+PL_COLORS[MyLime]='\[\e[38;5;148m\]'
+PL_COLORS[On_MyLime]='\[\e[48;5;148m\]'
 
 PL_COLORS[MyYellow]='\[\e[38;5;227m\]'
 PL_COLORS[On_MyYellow]='\[\e[48;5;227m\]'
