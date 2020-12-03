@@ -4,6 +4,68 @@
 #
 
 #
+# COLORS
+#
+
+# Colors must be defined in pairs of FG & BG
+PL_COLORS[MyOrange]='\[\e[38;5;130m\]'
+PL_COLORS[On_MyOrange]='\[\e[48;5;130m\]'
+
+PL_COLORS[MyLime]='\[\e[38;5;190m\]'
+PL_COLORS[On_MyLime]='\[\e[48;5;190m\]'
+
+PL_COLORS[MyYellow]='\[\e[38;5;227m\]'
+PL_COLORS[On_MyYellow]='\[\e[48;5;227m\]'
+
+PL_COLORS[MyLightGrey]='\[\e[38;5;250m\]'
+PL_COLORS[On_MyLightGrey]='\[\e[48;5;250m\]'
+
+PL_COLORS[MyBlue]='\[\e[38;5;69m\]'
+PL_COLORS[On_MyBlue]='\[\e[48;5;69m\]'
+
+PL_COLORS[MyRed]='\[\e[38;5;196m\]'
+PL_COLORS[On_MyRed]='\[\e[48;5;196m\]'
+
+PL_COLORS[MyDarkGrey]='\[\e[38;5;240m\]'
+PL_COLORS[On_MyDarkGrey]='\[\e[48;5;240m\]'
+
+PL_COLORS[MyPurple]='\[\e[38;5;89m\]'
+PL_COLORS[On_MyPurple]='\[\e[48;5;89m\]'
+
+PL_COLORS[MyGreen]='\[\e[38;5;83m\]'
+PL_COLORS[On_MyGreen]='\[\e[48;5;83m\]'
+
+PL_COLORS[MyDarkRed]='\[\e[38;5;1m\]'
+PL_COLORS[On_MyDarkRed]='\[\e[48;5;1m\]'
+
+PL_COLORS[MyTeal]='\[\e[38;5;31m\]'
+PL_COLORS[On_MyTeal]='\[\e[48;5;31m\]'
+
+PL_COLORS[MyVLGrey]='\[\e[38;5;250m\]'
+PL_COLORS[On_MyVLGrey]='\[\e[48;5;250m\]'
+
+PL_COLORS[MyMagenta]='\[\e[38;5;161m\]'
+PL_COLORS[On_MyMagenta]='\[\e[48;5;161m\]'
+
+PL_COLORS[MyWhite]='\[\e[38;5;255m\]'
+PL_COLORS[On_MyWhite]='\[\e[48;5;255m\]'
+
+PL_COLORS[MyVDGrey]='\[\e[38;5;238m\]'
+PL_COLORS[On_MyVDGrey]='\[\e[48;5;238m\]'
+
+PL_COLORS[MyVDRed]='\[\e[38;5;52m\]'
+PL_COLORS[On_MyVDRed]='\[\e[48;5;52m\]'
+
+PL_COLORS[MyVDBlue]='\[\e[38;5;20m\]'
+PL_COLORS[On_MyVDBlue]='\[\e[48;5;20m\]'
+
+PL_COLORS[MyBGColor]='\[\e[38;5;236m\]'
+PL_COLORS[On_MyBGColor]='\[\e[48;5;236m\]'
+
+PL_COLORS[MyPBColor]='\[\e[38;5;237m\]'
+PL_COLORS[On_MyPBColor]='\[\e[48;5;237m\]'
+
+#
 # Modules
 #
 function host_module() {
@@ -14,6 +76,68 @@ function host_module() {
     PS1+=$(section_end $fg_color $bg_color)
     PS1+=$(section_content $fg_color $bg_color " $content ")
     __last_color="$bg_color"
+}
+
+function mypath_module() {
+    local bg_color="$1" # Set the background color
+    local fg_color="$2" # Set the foreground color
+    local bd_fg_color="MyWhite"
+    local bd_bg_color="MyTeal"
+    local path_separator="  "
+    local basedir="/"
+    local mypwd=$(pwd)
+    local myhpwd=""
+
+    case $mypwd in
+    $HOME)
+        myhpwd=""
+        basedir="~"
+        MATCH="home"
+        ;;
+    $HOME/*/*/*)
+        local myopwd=".../${mypwd#"${mypwd%/*/*}/"}"
+        myhpwd=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
+        basedir="~"
+        MATCH="home + *"
+        ;;
+    $HOME/*/*)
+        local myopwd="${mypwd#"${mypwd%/*/*}/"}"
+        myhpwd=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
+        basedir="~"
+        MATCH="home + 2"
+        ;;
+    $HOME/*)
+        myhpwd="${mypwd##*/}"
+        basedir="~"
+        MATCH="home + 1"
+        ;;
+    /*/*/*)
+        local myopwd=".../${mypwd#"${mypwd%/*/*}/"}"
+        myhpwd=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
+        MATCH="three-deep"
+        ;;
+    /*/*)
+        local myopwd="${mypwd#"${mypwd%/*/*}/"}"
+        HPWD=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
+        MATCH="two-deep"
+        ;;
+    *)
+        local myopwd="$mypwd"
+        myhpwd=$(echo ${myopwd} | awk '{print $2}' | sed "s/\//${path_separator}/g")
+        MATCH="default"
+        ;;
+    esac
+
+    if [ "$basedir" = "~" ]; then
+        PS1+=$(section_end $bd_fg_color $bd_bg_color)
+        PS1+=$(section_content $bd_fg_color $bd_bg_color " $basedir ")
+        __last_color="$bd_bg_color"
+    fi
+
+    PS1+=$(section_end $fg_color $bg_color)
+    PS1+=$(section_content $fg_color $bg_color " $myhpwd ")
+    __last_color="$bg_color"
+
 }
 
 function gittrack_module() {
@@ -38,7 +162,7 @@ function gitstash_module() {
     local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     if [ -n "$git_branch" ]; then
         local number_stashed=$(git stash list 2>/dev/null | wc -l | tr -d [:space:])
-        if [ ! $number_stashed -eq 0 ]; then
+        if [ ! "$number_stashed" -eq "0" ]; then
             content="${number_stashed}${stash_symbol}" # Set the content to be displayed
             PS1+=$(section_end $fg_color $bg_color)
             PS1+=$(section_content $fg_color $bg_color " $content ")
@@ -60,10 +184,10 @@ function gitaheadbehind_module() {
             local number_ahead="${number_behind_ahead#*	}"
             local number_behind="${number_behind_ahead%	*}"
             local content=""
-            if [ ! "$number_ahead" -eq 0 ]; then
+            if [ ! "$number_ahead" -eq "0" ]; then
                 content+="${number_ahead}${ahead_symbol}"
             fi
-            if [ ! "$number_behind" -eq 0 ]; then
+            if [ ! "$number_behind" -eq "0" ]; then
                 content+="${number_behind}${behind_symbol}"
             fi
             if [ -n "$content" ]; then
@@ -128,71 +252,14 @@ function myssh_module() {
 }
 
 #
-# COLORS
+# Enabled modules Uncomment/comment to enable/disable a module
 #
-
-# Colors must be defined in pairs of FG & BG
-PL_COLORS[MyOrange]='\[\e[38;5;130m\]'
-PL_COLORS[On_MyOrange]='\[\e[48;5;130m\]'
-
-PL_COLORS[MyLime]='\[\e[38;5;190m\]'
-PL_COLORS[On_MyLime]='\[\e[48;5;190m\]'
-
-PL_COLORS[MyYellow]='\[\e[38;5;227m\]'
-PL_COLORS[On_MyYellow]='\[\e[48;5;227m\]'
-
-PL_COLORS[MyLightGrey]='\[\e[38;5;250m\]'
-PL_COLORS[On_MyLightGrey]='\[\e[48;5;250m\]'
-
-PL_COLORS[MyBlue]='\[\e[38;5;69m\]'
-PL_COLORS[On_MyBlue]='\[\e[48;5;69m\]'
-
-PL_COLORS[MyRed]='\[\e[38;5;196m\]'
-PL_COLORS[On_MyRed]='\[\e[48;5;196m\]'
-
-PL_COLORS[MyDarkGrey]='\[\e[38;5;240m\]'
-PL_COLORS[On_MyDarkGrey]='\[\e[48;5;240m\]'
-
-PL_COLORS[MyPurple]='\[\e[38;5;89m\]'
-PL_COLORS[On_MyPurple]='\[\e[48;5;89m\]'
-
-PL_COLORS[MyGreen]='\[\e[38;5;83m\]'
-PL_COLORS[On_MyGreen]='\[\e[48;5;83m\]'
-
-PL_COLORS[MyDarkRed]='\[\e[38;5;1m\]'
-PL_COLORS[On_MyDarkRed]='\[\e[48;5;1m\]'
-
-PL_COLORS[MyTeal]='\[\e[38;5;31m\]'
-PL_COLORS[On_MyTeal]='\[\e[48;5;31m\]'
-
-PL_COLORS[MyVLGrey]='\[\e[38;5;250m\]'
-PL_COLORS[On_MyVLGrey]='\[\e[48;5;250m\]'
-
-PL_COLORS[MyMagenta]='\[\e[38;5;161m\]'
-PL_COLORS[On_MyMagenta]='\[\e[48;5;161m\]'
-
-PL_COLORS[MyWhite]='\[\e[38;5;255m\]'
-PL_COLORS[On_MyWhite]='\[\e[48;5;255m\]'
-
-PL_COLORS[MyVDGrey]='\[\e[38;5;238m\]'
-PL_COLORS[On_MyVDGrey]='\[\e[48;5;238m\]'
-
-PL_COLORS[MyVDRed]='\[\e[38;5;52m\]'
-PL_COLORS[On_MyVDRed]='\[\e[48;5;52m\]'
-
-PL_COLORS[MyVDBlue]='\[\e[38;5;20m\]'
-PL_COLORS[On_MyVDBlue]='\[\e[48;5;20m\]'
-
-PL_COLORS[MyBGColor]='\[\e[38;5;235m\]'
-PL_COLORS[On_MyBGColor]='\[\e[48;5;235m\]'
-
-# All modules are enabled. Uncomment/comment to enable/disable a module
 declare -a PL_MODULES=(
     # Module                Background  Foreground
     'user_module            MyDarkGrey  MyVLGrey'
     'host_module            MyVDGrey    MyLightGrey'
     'myssh_module           MyOrange    MyWhite'
-    'path_module            MyTeal      MyWhite'
+    'mypath_module          MyPBColor   MyVLGrey'
     'virtual_env_module     MyBlue      Black'
     'read_only_module       MyRed       MyWhite'
     'background_jobs_module MyPurple    MyWhite'
