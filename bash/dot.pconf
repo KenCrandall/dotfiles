@@ -171,8 +171,8 @@ PL_COLORS[On_MyVLGrey]='\[\e[48;5;250m\]'
 PL_COLORS[MyMagenta]='\[\e[38;5;161m\]'
 PL_COLORS[On_MyMagenta]='\[\e[48;5;161m\]'
 
-PL_COLORS[MyWhite]='\[\e[38;5;250m\]'
-PL_COLORS[On_MyWhite]='\[\e[48;5;250m\]'
+PL_COLORS[MyWhite]='\[\e[38;5;255m\]'
+PL_COLORS[On_MyWhite]='\[\e[48;5;255m\]'
 
 PL_COLORS[MyVDGrey]='\[\e[38;5;238m\]'
 PL_COLORS[On_MyVDGrey]='\[\e[48;5;238m\]'
@@ -191,19 +191,19 @@ declare -a PL_MODULES=(
     # Module                Background  Foreground
     'user_module            MyDarkGrey  MyVLGrey'
     'host_module            MyVDGrey    MyLightGrey'
-    'myssh_module           MyOrange    White'
-    'path_module            MyTeal      White'
+    'myssh_module           MyOrange    MyWhite'
+    'path_module            MyTeal      MyWhite'
     'virtual_env_module     MyBlue      Black'
-    'read_only_module       MyRed       White'
-    'background_jobs_module MyPurple    White'
+    'read_only_module       MyRed       MyWhite'
+    'background_jobs_module MyPurple    MyWhite'
     'git_module             MyLime      Black'
     'gitaheadbehind_module  MyDarkGrey  MyVLGrey'
-    'gittrack_module        MyVDRed     MyWhite'
     'gitstash_module        MyVDBlue    MyWhite'
-    'gitstaged_module       Green       White'
+    'gitstaged_module       Green       MyWhite'
     'gitmodified_module     MyOrange    MyWhite'
-    'return_code_module     MyDarkRed   White'
-    'prompt_module          MyBGColor  White'
+    'gittrack_module        MyVDRed     MyWhite'
+    'return_code_module     MyDarkRed   MyWhite'
+    'prompt_module          MyBGColor   MyWhite'
 )
 
 # Module Options
@@ -239,10 +239,16 @@ PL_SYMBOLS[git_staged]="✔"
 PL_SYMBOLS[git_conflicts]="✘ "
 
 PL_SYMBOLS[ssh]=""
-PL_SYMBOLS[read_only]=""
+PL_SYMBOLS[read_only]="⊘"
 PL_SYMBOLS[return_code]="⚑"
 PL_SYMBOLS[background_jobs]="⏎"
 PL_SYMBOLS[python]="π"
 
 PL_SYMBOLS[battery_charging]="⚡"
 PL_SYMBOLS[battery_discharging]="▮"
+
+#
+# Other stuff
+#
+PS2=" ↪ "
+export PS2
