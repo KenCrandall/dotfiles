@@ -1,0 +1,3 @@
+#!/bin/bash
+rm -frv /Library/Google/GoogleSoftwareUpdate
+sudo rm -frv /Library/Google/GoogleSoftwareUpdate

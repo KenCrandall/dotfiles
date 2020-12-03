@@ -1,0 +1,4 @@
+#!/bin/bash
+
+glances -1 --diskio-iops --fs-free-space --process-short-name \
+  --fahrenheit -w -p 8080
