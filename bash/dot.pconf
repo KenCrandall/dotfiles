@@ -269,7 +269,7 @@ declare -a PL_MODULES=(
     'myssh_module           MyOrange    MyWhite'
     'mypath_module          MyPBColor   White'
     'virtual_env_module     MyBlue      Black'
-    'read_only_module       MyRed       MyWhite'
+    'read_only_module       MyDarkRed   MyWhite'
     'background_jobs_module MyPurple    MyWhite'
     'git_module             MyLime      Black'
     'gitaheadbehind_module  MyDarkGrey  MyVLGrey'
