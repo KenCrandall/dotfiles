@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#ssh -q -Y root@cloud /usr/StorMan/StorMan.sh 2>&1
-ssh -Y root@cloud /usr/StorMan/StorMan.sh 2>&1

@@ -13,3 +13,5 @@
 #sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; growlnotify -m "DNS Cache Flushed" -n "macOS"; say DNS Cache Flushed -r 175 
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; growlnotify -m "DNS Cache Flushed" -n "macOS"
 
+# Flush the pihole
+ssh -q root@pihole pihole restartdns reload

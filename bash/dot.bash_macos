@@ -40,5 +40,9 @@ export GOPATH PATH
 PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
 export PATH
 
-# Quarentine Fix
-alias fix='sudo xattr -rd com.apple.quarantine'
+# Remove quarantine
+alias fix='sudo xattr -r -d com.apple.quarantine'
+
+# Path
+PATH=$PATH:$HOME/bin
+export PATH

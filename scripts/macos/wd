@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+SEP="  "
+BASEDIR="/"
+
+PWD=$(pwd)
+echo "PWD=${PWD}"
+
+case $PWD in
+$HOME)
+    #HPWD="~"
+    HPWD="/"
+    BASEDIR="~"
+    MATCH="home"
+    ;;
+$HOME/*/*/*)
+    #MOD="~/.../${PWD#"${PWD%/*/*}/"}"
+    MOD=".../${PWD#"${PWD%/*/*}/"}"
+    HPWD=$(echo ${MOD} | sed "s/\//${SEP}/g")
+    BASEDIR="~"
+    MATCH="home + *"
+    ;;
+$HOME/*/*)
+    #MOD="~/${PWD#"${PWD%/*/*}/"}"
+    MOD="${PWD#"${PWD%/*/*}/"}"
+    HPWD=$(echo ${MOD} | sed "s/\//${SEP}/g")
+    BASEDIR="~"
+    MATCH="home + 2"
+    ;;
+$HOME/*)
+    #HPWD="~${SEP}${PWD##*/}"
+    HPWD="${PWD##*/}"
+    BASEDIR="~"
+    MATCH="home + 1"
+    ;;
+/*/*/*)
+    MOD=".../${PWD#"${PWD%/*/*}/"}"
+    HPWD=$(echo ${MOD} | sed "s/\//${SEP}/g")
+    MATCH="three-deep"
+    ;;
+/*/*)
+    MOD="${PWD#"${PWD%/*/*}/"}"
+    HPWD=$(echo ${MOD} | sed "s/\//${SEP}/g")
+    MATCH="two-deep"
+    ;;
+*)
+    MOD="$PWD"
+    HPWD=$(echo ${MOD} | awk '{print $2}' | sed "s/\//${SEP}/g")
+    MATCH="Default"
+    ;;
+esac
+
+#echo "SEP=${SEP}"
+echo "BASEDIR=${BASEDIR}"
+echo "HPWD=${HPWD}"
+echo "MATCH=${MATCH}"
+powerline-go -shell bare
+echo ""

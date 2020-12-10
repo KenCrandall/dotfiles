@@ -1,14 +1,11 @@
-#!/bin/sh
-#
-# Display ANSI colours.
-#
-export esc="\033["
-echo "\t  40\t   41\t   42\t    43\t      44       45\t46\t 47"
-for fore in 30 31 32 33 34 35 36 37; do
-  line1="$fore  " line2="    "
-  for back in 40 41 42 43 44 45 46 47; do
-    line1="${line1}${esc}${back};${fore}m Normal  ${esc}0m"
-    line2="${line2}${esc}${back};${fore};1m Bold    ${esc}0m"
-  done
-  echo "$line1\n$line2"
-done
+#!/usr/bin/env bash
+
+echo -e "\033[0mNC (No color)"
+echo -e "\033[1;37mWHITE\t\033[0;30mBLACK"
+echo -e "\033[0;34mBLUE\t\033[1;34mLIGHT_BLUE"
+echo -e "\033[0;32mGREEN\t\033[1;32mLIGHT_GREEN"
+echo -e "\033[0;36mCYAN\t\033[1;36mLIGHT_CYAN"
+echo -e "\033[0;31mRED\t\033[1;31mLIGHT_RED"
+echo -e "\033[0;35mPURPLE\t\033[1;35mLIGHT_PURPLE"
+echo -e "\033[0;33mYELLOW\t\033[1;33mLIGHT_YELLOW"
+echo -e "\033[1;30mGRAY\t\033[0;37mLIGHT_GRAY"

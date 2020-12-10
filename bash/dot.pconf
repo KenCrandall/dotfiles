@@ -182,8 +182,8 @@ function gitstash_module() {
 function gitaheadbehind_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
-    local ahead_symbol="⬆"
-    local behind_symbol="⬇"
+    local ahead_symbol="⬆ "
+    local behind_symbol="⬇ "
     local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     if [ -n "$git_branch" ]; then
         local git_remote="$(git remote)"
@@ -269,7 +269,7 @@ declare -a PL_MODULES=(
     'myssh_module           MyOrange    MyWhite'
     'mypath_module          MyPBColor   White'
     'virtual_env_module     MyBlue      Black'
-    'read_only_module       MyRed       MyWhite'
+    'read_only_module       MyDarkRed   MyWhite'
     'background_jobs_module MyPurple    MyWhite'
     'git_module             MyLime      Black'
     'gitaheadbehind_module  MyDarkGrey  MyVLGrey'
@@ -311,7 +311,7 @@ PL_SYMBOLS[git_ahead]="↑"
 PL_SYMBOLS[git_behind]="↓"
 PL_SYMBOLS[git_modified]="✎"
 PL_SYMBOLS[git_staged]="✔"
-PL_SYMBOLS[git_conflicts]="✘ "
+PL_SYMBOLS[git_conflicts]="✼"
 
 PL_SYMBOLS[ssh]=""
 PL_SYMBOLS[read_only]="⊘"
