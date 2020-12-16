@@ -13,3 +13,7 @@ if type brew &>/dev/null; then
     done
   fi
 fi
+
+if [ -f $HOME/.bash_completion_openstack ]; then
+    source $HOME/.bash_completion_openstack
+fi
