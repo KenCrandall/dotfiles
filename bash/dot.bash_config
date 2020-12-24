@@ -5,8 +5,8 @@
 
 LOGFILE=$HOME/.bash.log
 DATE=$(date)
-echo $DATE >> $LOGFILE
 echo "" >> $LOGFILE
+echo $DATE >> $LOGFILE
 echo ".bashrc" >> $LOGFILE
 
 # Basic bash config
