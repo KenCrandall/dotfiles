@@ -7,7 +7,7 @@ LOGFILE=$HOME/.bash.log
 DATE=$(date)
 echo $DATE >> $LOGFILE
 echo "" >> $LOGFILE
-echo ".bashrc" > $LOGFILE
+echo ".bashrc" >> $LOGFILE
 
 # Basic bash config
 
@@ -35,28 +35,28 @@ shopt -s checkwinsize
 # Source bash completion
 if [[ -f $HOME/.bash_completion ]] 
 then
-    . $HOME/.bash_completion
     echo ".bash_completion" >> $LOGFILE
+    . $HOME/.bash_completion
 fi
 
 # Source local vars
 if [[ -f $HOME/.bash_vars ]] 
 then
-    . $HOME/.bash_vars
     echo ".bash_vars" >> $LOGFILE
+    . $HOME/.bash_vars
 fi
 
 # Source local aliases
 if [[ -f $HOME/.bash_aliases ]] 
 then
-    . $HOME/.bash_aliases
     echo ".bash_aliases" >> $LOGFILE
+    . $HOME/.bash_aliases
 fi
 
 # Source os secret sauce
 if [[ -f $HOME/.bash_os ]] 
 then
-    . $HOME/.bash_os
     echo ".bash_os" >> $LOGFILE
+    . $HOME/.bash_os
 fi
 
