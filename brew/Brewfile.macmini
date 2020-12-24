@@ -1,0 +1,294 @@
+tap "colindean/fonts-nonfree"
+tap "docmunch/pdftk"
+tap "graalvm/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "orf/brew"
+tap "romkatv/powerlevel10k"
+tap "teamookla/speedtest"
+brew "openssl@1.1"
+brew "ansible"
+brew "ant"
+brew "autoconf"
+brew "bash"
+brew "bash-completion"
+brew "bat"
+brew "brew-cask-completion"
+brew "gettext"
+brew "ctop"
+brew "darkhttpd"
+brew "docbook-xsl"
+brew "docbook2x"
+brew "docker", link: false
+brew "docker-compose", link: false
+brew "docker-machine"
+brew "docker-machine-driver-vmware"
+brew "dog"
+brew "elinks"
+brew "ffmpeg"
+brew "figlet"
+brew "fonttools"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "glances"
+brew "gnu-tar"
+brew "go"
+brew "gradle"
+brew "growly"
+brew "htop"
+brew "iperf3"
+brew "ipmitool"
+brew "ipmiutil"
+brew "jo"
+brew "node"
+brew "joplin", link: false
+brew "jq"
+brew "launchctl-completion"
+brew "libaacs"
+brew "libav", link: false
+brew "libbdplus"
+brew "libvirt", restart_service: true
+brew "lxc"
+brew "mas"
+brew "mdcat"
+brew "nano"
+brew "neofetch"
+brew "netlify-cli"
+brew "nmap"
+brew "pbzip2"
+brew "pinfo"
+brew "pip-completion"
+brew "pixz"
+brew "powerline-go"
+brew "pstree"
+brew "pyenv"
+brew "pyenv-ccache"
+brew "pyenv-virtualenv"
+brew "qemu"
+brew "rack"
+brew "rbenv"
+brew "rbenv-binstubs"
+brew "rclone"
+brew "reattach-to-user-namespace"
+brew "rename"
+brew "rlwrap"
+brew "rsync"
+brew "rxvt-unicode"
+brew "speedtest-cli"
+brew "stoken"
+brew "telnet"
+brew "terminal-notifier"
+brew "tmux"
+brew "trash"
+brew "tree"
+brew "unar"
+brew "vagrant-completion"
+brew "wakeonlan"
+brew "watch"
+brew "wget"
+brew "youtube-dl"
+brew "zbar"
+brew "orf/brew/gping"
+cask "1password-cli"
+cask "balenaetcher"
+cask "bartender"
+cask "betterzip"
+cask "bitbar"
+cask "brave-browser"
+cask "cakebrew"
+cask "calibre"
+cask "carbon-copy-cloner"
+cask "choosy"
+cask "discord"
+cask "docker"
+cask "dockstation"
+cask "dosbox-x"
+cask "drawio"
+cask "epichrome"
+cask "epubquicklook"
+cask "firefox"
+cask "fluid"
+cask "font-cantarell"
+cask "font-cascadia"
+cask "font-cascadia-code-pl"
+cask "font-cascadia-mono-pl"
+cask "font-cascadia-pl"
+cask "font-courier-prime-code"
+cask "font-droid-sans-mono-for-powerline"
+cask "font-envy-code-r"
+cask "font-fira-code"
+cask "font-fira-mono"
+cask "font-fira-mono-for-powerline"
+cask "font-fira-sans"
+cask "font-input"
+cask "font-lato"
+cask "font-liberation-mono-for-powerline"
+cask "font-merriweather"
+cask "font-merriweather-sans"
+cask "font-noto-color-emoji"
+cask "font-noto-emoji"
+cask "font-noto-mono-for-powerline"
+cask "font-noto-sans"
+cask "font-noto-serif"
+cask "font-office-code-pro"
+cask "font-open-sans"
+cask "font-open-sans-condensed"
+cask "font-oswald"
+cask "font-overpass"
+cask "font-oxygen"
+cask "font-oxygen-mono"
+cask "font-playfair-display"
+cask "font-pt-mono"
+cask "font-pt-sans"
+cask "font-pt-serif"
+cask "font-roboto"
+cask "font-roboto-mono"
+cask "font-roboto-mono-for-powerline"
+cask "font-roboto-slab"
+cask "font-source-code-pro"
+cask "font-source-code-pro-for-powerline"
+cask "font-source-sans-pro"
+cask "font-source-serif-pro"
+cask "fork"
+cask "gdisk"
+cask "github"
+cask "google-chrome"
+cask "gpg-suite-no-mail"
+cask "graalvm-ce-lts-java11"
+cask "graalvm-ce-lts-java8"
+cask "growlnotify"
+cask "gzdoom"
+cask "hazel"
+cask "install-disk-creator"
+cask "ios-saver"
+cask "iterm2"
+cask "joplin"
+cask "kaleidoscope"
+cask "liteicon"
+cask "logitech-options"
+cask "logitech-unifying"
+cask "mactex"
+cask "manopen"
+cask "markdown-service-tools"
+cask "microsoft-auto-update"
+cask "microsoft-edge"
+cask "mountain-duck"
+cask "musicbrainz-picard"
+cask "nextcloud"
+cask "notable"
+cask "openinterminal"
+cask "plex"
+cask "plex-media-player"
+cask "powershell"
+cask "proxyman"
+cask "qlcolorcode"
+cask "qlcommonmark"
+cask "quicken"
+cask "quicklook-csv"
+cask "quicklook-json"
+cask "quicklookase"
+cask "rocket"
+cask "royal-tsx"
+cask "scriptql"
+cask "sdformatter"
+cask "shimo"
+cask "sigil"
+cask "soundsource"
+cask "ssh-tunnel-manager"
+cask "steam"
+cask "tcl"
+cask "tigervnc-viewer"
+cask "tower"
+cask "typora"
+cask "unetbootin"
+cask "vagrant"
+cask "vagrant-manager"
+cask "vagrant-vmware-utility"
+cask "visual-studio-code"
+cask "vivaldi"
+cask "vlc"
+cask "vmware-fusion"
+cask "vnc-viewer"
+cask "whichspace"
+cask "wireshark"
+cask "xquartz"
+cask "zoom"
+mas "1Blocker", id: 1107421413
+mas "1Password 7", id: 1333542190
+mas "Acorn", id: 1233861775
+mas "Agenda", id: 1287445660
+mas "Airmail", id: 918858936
+mas "AirRadar", id: 414758651
+mas "Amphetamine", id: 937984704
+mas "BetterSnapTool", id: 417375580
+mas "Cardhop", id: 1290358394
+mas "ColorWell", id: 460176867
+mas "DaisyDisk", id: 411643860
+mas "Day One", id: 1055511498
+mas "Deliveries", id: 290986013
+mas "Diagrams", id: 1276248849
+mas "Drafts", id: 1435957248
+mas "Expressions", id: 913158085
+mas "Fantastical", id: 975937182
+mas "ForkLift", id: 412448059
+mas "Friendly Streaming", id: 553245401
+mas "GoodLinks", id: 1474335294
+mas "Graphic", id: 404705039
+mas "Growl", id: 467939042
+mas "Image2icon", id: 992115977
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "LanScan", id: 472226235
+mas "MetaDoctor Pro", id: 992000603
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Microsoft To Do", id: 1274495053
+mas "Microsoft Word", id: 462054704
+mas "Monosnap", id: 540348655
+mas "Network Radar", id: 507659816
+mas "Notability", id: 736189492
+mas "Numbers", id: 409203825
+mas "OmniGraffle", id: 1456314039
+mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
+mas "Paprika Recipe Manager 3", id: 1303222628
+mas "Parcel", id: 639968404
+mas "PCalc", id: 403504866
+mas "Pixelmator Pro", id: 1289583905
+mas "PopClip", id: 445189367
+mas "Remote Desktop", id: 409907375
+mas "Remotix", id: 466261145
+mas "Screens", id: 1224268771
+mas "Serial", id: 877615577
+mas "Server", id: 883878097
+mas "Shapes", id: 930093508
+mas "Simplefax", id: 1165017252
+mas "Slack", id: 803453959
+mas "Soulver", id: 413965349
+mas "Speedtest", id: 1153157709
+mas "StopTheMadness", id: 1376402589
+mas "SubnetCalc", id: 412946682
+mas "Tabs Saver for Safari", id: 1440006971
+mas "Tag Editor Free", id: 984278082
+mas "Textastic", id: 572491815
+mas "The Clock", id: 488764545
+mas "The Unarchiver", id: 425424353
+mas "ToothFairy", id: 1191449274
+mas "Tot", id: 1491071483
+mas "Trello", id: 1278508951
+mas "Tweetbot", id: 1384080005
+mas "Twitterrific", id: 1289378661
+mas "uBlock", id: 1385985095
+mas "Ultra Character Map", id: 520265986
+mas "VMware Remote Console", id: 1230249825
+mas "Xcode", id: 497799835
+mas "Xee³", id: 639764244

@@ -42,6 +42,7 @@ gcc
 gdbm
 gdk-pixbuf
 gettext
+gh
 ghostscript
 giflib
 git
@@ -69,6 +70,8 @@ icu4c
 ilmbase
 imagemagick
 iperf3
+ipmitool
+ipmiutil
 isl
 jansson
 jasper

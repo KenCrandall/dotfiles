@@ -25,6 +25,7 @@ font-cascadia-code-pl
 font-cascadia-mono-pl
 font-cascadia-pl
 font-courier-prime-code
+font-droid-sans-mono-for-powerline
 font-envy-code-r
 font-fira-code
 font-fira-mono
@@ -51,6 +52,10 @@ font-playfair-display
 font-pt-mono
 font-pt-sans
 font-pt-serif
+font-roboto
+font-roboto-mono
+font-roboto-mono-for-powerline
+font-roboto-slab
 font-source-code-pro
 font-source-code-pro-for-powerline
 font-source-sans-pro
@@ -102,6 +107,7 @@ sigil
 soundsource
 ssh-tunnel-manager
 steam
+tcl
 tigervnc-viewer
 tower
 typora
@@ -117,4 +123,4 @@ vnc-viewer
 whichspace
 wireshark
 xquartz
-zoomus
+zoom
