@@ -1,5 +1,26 @@
 #!/bin/bash
 
+MYOS=$(uname -s)
+OS=$(echo "$MYOS" | tr '[:upper:]' '[:lower:]')
+BREW=$(which brew)
+
+case $OS in
+  darwin | linux)
+    # macos or linux
+    if [[ -x $BREW ]]; then
+      echo "Executable 'brew' found at $BREW"
+    else
+      echo "Executable 'brew' not found"
+      exit
+    fi
+  ;;
+  *)
+    # no clue
+    echo "Unrecognized OS: No special sauce"
+    exit
+	;;
+esac
+
 #DIR=$HOME/Files
 DIR=$(pwd)
 
