@@ -84,35 +84,41 @@ function mypath_module() {
     local bd_fg_color="MyWhite"
     local bd_bg_color="MyTeal"
     local path_separator="  "
+    #local longpath_separator=" ⇶ "
+    local longpath_separator="  …"
+    #local longpath="..."
+    local longpath="…"
+    local homesym="~"
     local myhpwd="/"
     local basedir="/"
     local mypwd=$(pwd)
+    local maxpsize="25"
 
     case $mypwd in
     $HOME)
         myhpwd=""
-        basedir="~"
+        basedir="${homesym}"
         MATCH="home"
         ;;
     $HOME/*/*/*)
-        local myopwd=".../${mypwd#"${mypwd%/*/*}/"}"
+        local myopwd="${longpath}/${mypwd#"${mypwd%/*/*}/"}"
         myhpwd=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
-        basedir="~"
+        basedir="${homesym}"
         MATCH="home + *"
         ;;
     $HOME/*/*)
         local myopwd="${mypwd#"${mypwd%/*/*}/"}"
         myhpwd=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
-        basedir="~"
+        basedir="${homesym}"
         MATCH="home + 2"
         ;;
     $HOME/*)
         myhpwd="${mypwd##*/}"
-        basedir="~"
+        basedir="${homesym}"
         MATCH="home + 1"
         ;;
     /*/*/*)
-        local myopwd=".../${mypwd#"${mypwd%/*/*}/"}"
+        local myopwd="${longpath}/${mypwd#"${mypwd%/*/*}/"}"
         myhpwd=$(echo ${myopwd} | sed "s/\//${path_separator}/g")
         MATCH="three-deep"
         ;;
@@ -135,10 +141,16 @@ function mypath_module() {
         ;;
     esac
 
-    if [ "$basedir" = "~" ]; then
+    if [ "${basedir}" = "${homesym}" ]; then
         PS1+=$(section_end $bd_fg_color $bd_bg_color)
         PS1+=$(section_content $bd_fg_color $bd_bg_color " $basedir ")
         __last_color="$bd_bg_color"
+    fi
+
+    local hplen=${#myhpwd}
+    if [ "$hplen" -ge "$maxpsize" ]; then
+        myhpwd="${longpath}"
+        myhpwd+="${longpath_separator}"
     fi
 
     if [ -n "$myhpwd" ]; then
@@ -164,9 +176,10 @@ function gittrack_module() {
 }
 
 function gitstash_module() {
-    local bg_color="$1"    # Set the background color
-    local fg_color="$2"    # Set the foreground color
-    local stash_symbol="⚑" # Symbol for stashed files
+    local bg_color="$1" # Set the background color
+    local fg_color="$2" # Set the foreground color
+    #local stash_symbol="⚑" # Symbol for stashed files
+    local stash_symbol="≣"
     local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     if [ -n "$git_branch" ]; then
         local number_stashed=$(git stash list 2>/dev/null | wc -l | tr -d [:space:])
@@ -226,6 +239,7 @@ function gitstaged_module() {
 function gitmodified_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
+    #local modified_symbol="✎"
     local modified_symbol="✎"
     local git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     if [ -n "$git_branch" ]; then
@@ -239,11 +253,24 @@ function gitmodified_module() {
     fi
 }
 
+function mybackground_jobs_module() {
+    local bg_color="$1"
+    local fg_color="$2"
+    local bg_jobs_symbol="⚙"
+    local number_jobs=$(jobs -p | wc -l | tr -d [:space:])
+    if [ ! "$number_jobs" -eq 0 ]; then
+        PS1+="$(section_end $fg_color $bg_color)"
+        PS1+="$(section_content $fg_color $bg_color " ${bg_jobs_symbol} $number_jobs ")"
+        __last_color="$bg_color"
+    fi
+}
+
 function myssh_module() {
     if [[ "${SSH_CLIENT}" || "${SSH_TTY}" ]]; then
         local bg_color="$1"
         local fg_color="$2"
-        local ssh_symbol="☎"
+        local ssh_symbol="⇅"
+        #local ssh_symbol="☎"
         local ip_address="$(host $(hostname -s) | cut -f 4 -d ' ')"
         local content="${ssh_symbol}"
         if [ "$PL_SSH_SHOW_HOST" = true ]; then
@@ -270,7 +297,7 @@ declare -a PL_MODULES=(
     'mypath_module          MyPBColor   White'
     'virtual_env_module     MyBlue      Black'
     'read_only_module       MyDarkRed   MyWhite'
-    'background_jobs_module MyPurple    MyWhite'
+    'mybackground_jobs_module MyPurple    MyWhite'
     'git_module             MyLime      Black'
     'gitaheadbehind_module  MyDarkGrey  MyVLGrey'
     'gitstash_module        MyVDBlue    MyWhite'
@@ -312,18 +339,26 @@ PL_SYMBOLS[git_behind]="↓"
 PL_SYMBOLS[git_modified]="✎"
 PL_SYMBOLS[git_staged]="✔"
 PL_SYMBOLS[git_conflicts]="✼"
+#PL_SYMBOLS[git_submodule]="§"
 
-PL_SYMBOLS[ssh]=""
-PL_SYMBOLS[read_only]="⊘"
+#PL_SYMBOLS[ssh]=""
+#PL_SYMBOLS[read_only]="⊘"
+PL_SYMBOLS[read_only]="𐍇"
 PL_SYMBOLS[return_code]="⚑"
-PL_SYMBOLS[background_jobs]="⏎"
-PL_SYMBOLS[python]="π"
+PL_SYMBOLS[background_jobs]="⇅"
+#PL_SYMBOLS[python]="π"
+PL_SYMBOLS[python]="🅿"
+#PL_SYMBOLS[ruby]="🆁"
+#PL_SYMBOLS[java]="🅹"
+#PL_SYMBOLS[k8s]="☸"
 
+#PL_SYMBOLS[battery_charging]="⚡"
+#PL_SYMBOLS[battery_discharging]="▮"
 PL_SYMBOLS[battery_charging]="⚡"
 PL_SYMBOLS[battery_discharging]="▮"
 
 #
 # Other stuff
 #
-PS2=" ↪ "
+PS2=" ↳ "
 export PS2
