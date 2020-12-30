@@ -1,0 +1,10 @@
+#!/bin/sh
+
+FILE=$1
+
+if [ ! -f "${FILE}" ]; then
+    echo "Usage: ql <filename>"
+    exit
+else
+    qlmanage -x -p "$@" &>/dev/null &
+fi
