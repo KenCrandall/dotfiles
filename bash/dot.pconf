@@ -85,7 +85,8 @@ function mypath_module() {
     local bd_bg_color="MyTeal"
     local path_separator="  "
     #local longpath_separator=" ⇶ "
-    local longpath_separator="  …"
+    #local longpath_separator="  …"
+    local longpath_separator="  "
     #local longpath="..."
     local longpath="…"
     local homesym="~"
@@ -151,6 +152,8 @@ function mypath_module() {
     if [ "$hplen" -ge "$maxpsize" ]; then
         myhpwd="${longpath}"
         myhpwd+="${longpath_separator}"
+        mywd=$(basename $(pwd))
+        myhpwd+="${mywd}"
     fi
 
     if [ -n "$myhpwd" ]; then
