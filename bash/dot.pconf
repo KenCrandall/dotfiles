@@ -154,6 +154,12 @@ function mypath_module() {
         myhpwd+="${longpath_separator}"
         mywd=$(basename $(pwd))
         myhpwd+="${mywd}"
+        myhplen=${#myhpwd}
+        if [ "$myhplen" -ge "$maxpsize" ]; then
+            myhpwd="${longpath}"
+            myhpwd+="${longpath_separator}"
+            myhpwd+="${longpath}"
+        fi
     fi
 
     if [ -n "$myhpwd" ]; then
