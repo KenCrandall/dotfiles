@@ -18,6 +18,7 @@ alias manf='pinfo -m -f'
 #alias scp='rsync -v -z'
 alias scp='rsync --archive --partial --progress --rsh=ssh'
 alias mdcat='mdcat | less'
+alias tree='tree -C | less'
 
 #
 # OpenStack
