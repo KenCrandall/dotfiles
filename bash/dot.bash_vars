@@ -2,8 +2,18 @@
 #
 # Local vars
 #
+
+#
+# Editor
+#
 EDITOR=`which nano`
 export EDITOR
+
+#
+# less flags
+#
+LESS="-g -i -r"
+export LESS
 
 #
 # OpenStack screen dimensions
