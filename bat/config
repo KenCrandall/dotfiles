@@ -2,7 +2,8 @@
 #--theme="TwoDark"
 #--theme="OneHalfDark"
 #--theme="Dimmed Gitlab"
---theme="Tomorrow Night - Bright"
+#--theme="Tomorrow Night - Bright"
+--theme="Tomorrow Night"
 
 # Show line numbers, Git modifications and file header (but no grid)
 #--style="numbers,changes,header"
