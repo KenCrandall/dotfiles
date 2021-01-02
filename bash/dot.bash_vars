@@ -12,6 +12,8 @@ export EDITOR
 #
 # less flags
 #
+PAGER=$(which less)
+export PAGER
 LESS="-g -i -r"
 export LESS
 
