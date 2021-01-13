@@ -301,7 +301,7 @@ function myssh_module() {
 declare -a PL_MODULES=(
     # Module                Background  Foreground
     'user_module            MyDarkGrey  MyVLGrey'
-    'host_module            MyVDGrey    MyLightGrey'
+#    'host_module            MyVDGrey    MyLightGrey'
     'myssh_module           MyOrange    MyWhite'
     'mypath_module          MyPBColor   White'
     'virtual_env_module     MyBlue      Black'
