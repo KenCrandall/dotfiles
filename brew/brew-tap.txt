@@ -10,6 +10,7 @@ homebrew/cask-fonts
 homebrew/cask-versions
 homebrew/core
 homebrew/services
+melonamin/formulae
 orf/brew
 romkatv/powerlevel10k
 teamookla/speedtest

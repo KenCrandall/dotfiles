@@ -8,6 +8,8 @@ bash
 bash-completion
 bat
 bdw-gc
+boost
+bpytop
 brew-cask-completion
 c-ares
 cairo
@@ -47,6 +49,7 @@ ghostscript
 giflib
 git
 git-delta
+git-extras
 glances
 glib
 gmp
@@ -115,6 +118,7 @@ librsvg
 libsamplerate
 libsm
 libsndfile
+libsodium
 libsoxr
 libspng
 libssh
@@ -153,7 +157,6 @@ multimarkdown
 nano
 ncurses
 neofetch
-netlify-cli
 nettle
 nghttp2
 nmap
@@ -170,7 +173,10 @@ openslide
 openssl@1.1
 opus
 orc
+osx-cpu-temp
 p11-kit
+packer
+packer-completion
 pango
 pbzip2
 pcre
@@ -214,17 +220,21 @@ sdl_net
 sdl_sound
 shared-mime-info
 snappy
+source-highlight
 speedtest-cli
 speex
 sqlite
 srt
 stoken
 szip
+tcl-tk
 telnet
 terminal-notifier
 tesseract
+texi2html
 theora
 tmux
+tmux-mem-cpu-load
 trash
 tree
 ufraw
@@ -246,6 +256,9 @@ xvid
 xxhash
 xz
 yajl
+yasm
 youtube-dl
 zbar
+zeromq
+zimg
 zstd

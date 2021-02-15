@@ -9,6 +9,7 @@ alias ls='ls -F -G'
 alias say='say -r 175'
 alias vnc='/Applications/VNC\ Viewer.app/Contents/MacOS/vncviewer'
 alias ovftool='/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool/ovftool'
+alias updatedb='/usr/libexec/locate.updatedb'
 
 # cancel ZSH vs BASH warning
 BASH_SILENCE_DEPRECATION_WARNING=1
