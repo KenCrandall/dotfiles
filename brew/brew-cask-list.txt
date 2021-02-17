@@ -2,6 +2,7 @@ Brew Cask List
 --------------
 1password-cli
 balenaetcher
+barrier
 bartender
 betterzip
 bitbar

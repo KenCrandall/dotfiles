@@ -1,5 +1,6 @@
 tap "colindean/fonts-nonfree"
 tap "docmunch/pdftk"
+tap "esolitos/ipa"
 tap "graalvm/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -102,9 +103,11 @@ brew "watch"
 brew "wget"
 brew "youtube-dl"
 brew "zbar"
+brew "esolitos/ipa/sshpass"
 brew "orf/brew/gping"
 cask "1password-cli"
 cask "balenaetcher"
+cask "barrier"
 cask "bartender"
 cask "betterzip"
 cask "bitbar"
@@ -283,7 +286,6 @@ mas "PCalc", id: 403504866
 mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
 mas "Remote Desktop", id: 409907375
-mas "Remotix", id: 466261145
 mas "Screens", id: 1224268771
 mas "Serial", id: 877615577
 mas "Server", id: 883878097

@@ -2,6 +2,7 @@ Brew Tap
 --------
 colindean/fonts-nonfree
 docmunch/pdftk
+esolitos/ipa
 graalvm/tap
 homebrew/bundle
 homebrew/cask

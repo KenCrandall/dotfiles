@@ -1,5 +1,6 @@
 #!/bin/bash
 
+TIME=$(date "+%Y-%m-%d at %H:%M:%S")
 MYOS=$(uname -s)
 OS=$(echo "$MYOS" | tr '[:upper:]' '[:lower:]')
 BREW=$(which brew)
@@ -42,5 +43,10 @@ brew tap >>$DIR/brew-tap.txt
 echo "Generating bundle (Brewfile)..."
 HOST=$(hostname -s | tr '[:upper:]' '[:lower:]')
 brew bundle dump -f --file=Brewfile.${HOST}
+
+echo "Updating Git and pushing to upstream..."
+git add .
+git commit -m "homebrew updated at $TIME"
+git push
 
 echo "Done!"

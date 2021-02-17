@@ -54,6 +54,7 @@ glances
 glib
 gmp
 gnu-getopt
+gnu-sed
 gnu-tar
 gnutls
 go
@@ -225,6 +226,7 @@ speedtest-cli
 speex
 sqlite
 srt
+sshpass
 stoken
 szip
 tcl-tk
