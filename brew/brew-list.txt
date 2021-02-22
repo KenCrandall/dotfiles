@@ -1,6 +1,6 @@
 Brew List
 ---------
-ansible
+ansible@2.9
 ant
 aom
 autoconf
@@ -49,7 +49,7 @@ ghostscript
 giflib
 git
 git-delta
-git-extras
+git-utils
 glances
 glib
 gmp
@@ -147,6 +147,7 @@ libyaml
 little-cms2
 lua
 lxc
+lynx
 lz4
 lzo
 mas

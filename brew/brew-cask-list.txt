@@ -126,7 +126,6 @@ vagrant
 vagrant-manager
 vagrant-vmware-utility
 visual-studio-code
-vivaldi
 vlc
 vmware-fusion
 vnc-viewer
