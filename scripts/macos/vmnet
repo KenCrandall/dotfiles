@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ln -s "/Library/Preferences/VMware Fusion/networking" \
+  $HOME/vmware_networking
