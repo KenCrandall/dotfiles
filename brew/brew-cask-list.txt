@@ -73,7 +73,6 @@ font-source-serif-pro
 fork
 gdisk
 github
-google-chrome
 graalvm-ce-lts-java8
 growlnotify
 gzdoom

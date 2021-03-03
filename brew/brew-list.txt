@@ -3,6 +3,7 @@ Brew List
 ansible@2.9
 ant
 aom
+assimp
 autoconf
 bash
 bash-completion
@@ -19,6 +20,7 @@ ctop
 cunit
 darkhttpd
 dav1d
+dbus
 dcraw
 docbook
 docbook-xsl
@@ -28,6 +30,7 @@ docker-compose
 docker-machine
 docker-machine-driver-vmware
 dog
+double-conversion
 elinks
 faac
 fdk-aac
@@ -81,7 +84,6 @@ jansson
 jasper
 jemalloc
 jo
-joplin
 jpeg
 jq
 lame
@@ -114,6 +116,7 @@ libmpc
 libogg
 libomp
 libpng
+libproxy
 libpthread-stubs
 librsvg
 libsamplerate
@@ -154,6 +157,7 @@ mas
 mdcat
 mhash
 mozjpeg
+mpdecimal
 mpfr
 multimarkdown
 nano
@@ -163,6 +167,7 @@ nettle
 nghttp2
 nmap
 node
+noti
 nspr
 nss
 oniguruma
@@ -188,7 +193,6 @@ pip-completion
 pixman
 pixz
 pkg-config
-poppler
 popt
 portaudio
 powerline-go
@@ -199,7 +203,6 @@ pyenv-virtualenv
 python@3.8
 python@3.9
 qemu
-qt
 rack
 rav1e
 rbenv
@@ -246,7 +249,6 @@ unbound
 utf8proc
 vagrant-completion
 vde
-vips
 wakeonlan
 watch
 webp
