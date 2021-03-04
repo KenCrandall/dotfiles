@@ -66,6 +66,12 @@ PL_COLORS[MyPBColor]='\[\e[38;5;237m\]'
 PL_COLORS[On_MyPBColor]='\[\e[48;5;237m\]'
 
 #
+# OS Types
+#
+OS_TYPE_APPLE='􀣺'
+OS_TYPE_SERVER='􀪬'
+
+#
 # Modules
 #
 function host_module() {
