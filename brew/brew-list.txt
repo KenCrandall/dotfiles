@@ -92,7 +92,6 @@ leptonica
 libaacs
 libarchive
 libass
-libav
 libb2
 libbdplus
 libbluray
