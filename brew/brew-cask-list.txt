@@ -94,6 +94,7 @@ musicbrainz-picard
 nextcloud
 notable
 odrive
+onlyoffice
 openinterminal
 plex
 plex-media-player
