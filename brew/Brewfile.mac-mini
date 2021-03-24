@@ -28,8 +28,6 @@ brew "ctop"
 brew "darkhttpd"
 brew "docbook-xsl"
 brew "docbook2x"
-brew "docker", link: false
-brew "docker-compose", link: false
 brew "docker-machine"
 brew "docker-machine-driver-vmware"
 brew "dog"

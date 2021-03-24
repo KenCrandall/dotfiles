@@ -25,8 +25,6 @@ dcraw
 docbook
 docbook-xsl
 docbook2x
-docker
-docker-compose
 docker-machine
 docker-machine-driver-vmware
 dog
@@ -119,6 +117,7 @@ libproxy
 libpthread-stubs
 librsvg
 libsamplerate
+libslirp
 libsm
 libsndfile
 libsodium
