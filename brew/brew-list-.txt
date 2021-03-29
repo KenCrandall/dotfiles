@@ -151,6 +151,7 @@ lxc
 lynx
 lz4
 lzo
+m4
 mas
 mdcat
 mhash
@@ -176,6 +177,7 @@ openjdk
 openjpeg
 openslide
 openssl@1.1
+openstackclient
 opus
 orc
 osx-cpu-temp

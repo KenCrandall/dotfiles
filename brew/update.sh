@@ -25,20 +25,23 @@ esac
 #DIR=$HOME/Files
 DIR=$(pwd)
 
+BLIST=$DIR/brew-list-${HOST}.txt
 echo "Checking homebrew pours..."
-echo "Brew List" >$DIR/brew-list.txt
-echo "---------" >>$DIR/brew-list.txt
-brew list --formula >>$DIR/brew-list.txt
+echo "Brew List" >$BLIST
+echo "---------" >>$BLIST
+brew list --formula >>$BLIST
 
+BCASK=$DIR/brew-cask-list-${HOST}.txt
 echo "Checking homebrew casks..."
-echo "Brew Cask List" >$DIR/brew-cask-list.txt
-echo "--------------" >>$DIR/brew-cask-list.txt
-brew list --cask >>$DIR/brew-cask-list.txt
+echo "Brew Cask List" >$BCASK
+echo "--------------" >>$BCASK
+brew list --cask >>$BCASK
 
+BTAPS=$DIR/brew-tap-${HOST}.txt
 echo "Checking homebrew taps..."
-echo "Brew Tap" >$DIR/brew-tap.txt
-echo "--------" >>$DIR/brew-tap.txt
-brew tap >>$DIR/brew-tap.txt
+echo "Brew Tap" >$BTAPS
+echo "--------" >>$BTAPS
+brew tap >>$BTAPS
 
 echo "Generating bundle (Brewfile)..."
 HOST=$(hostname -s | tr '[:upper:]' '[:lower:]')

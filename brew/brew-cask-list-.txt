@@ -99,7 +99,6 @@ openinterminal
 plex
 plex-media-player
 powershell
-proxyman
 qlcolorcode
 qlvideo
 quicken
