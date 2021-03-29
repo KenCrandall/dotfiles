@@ -4,6 +4,8 @@ TIME=$(date "+%Y-%m-%d at %H:%M:%S")
 MYOS=$(uname -s)
 OS=$(echo "$MYOS" | tr '[:upper:]' '[:lower:]')
 BREW=$(which brew)
+DIR=$(pwd)
+HOST=$(hostname -s | tr '[:upper:]' '[:lower:]')
 
 case $OS in
   darwin | linux)
@@ -22,8 +24,6 @@ case $OS in
 	;;
 esac
 
-#DIR=$HOME/Files
-DIR=$(pwd)
 
 BLIST=$DIR/brew-list-${HOST}.txt
 echo "Checking homebrew pours..."
@@ -44,7 +44,6 @@ echo "--------" >>$BTAPS
 brew tap >>$BTAPS
 
 echo "Generating bundle (Brewfile)..."
-HOST=$(hostname -s | tr '[:upper:]' '[:lower:]')
 brew bundle dump -f --file=Brewfile.${HOST}
 
 echo "Updating Git and pushing to upstream..."
