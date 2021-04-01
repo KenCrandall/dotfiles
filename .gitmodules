@@ -1,9 +1,6 @@
 [submodule "nano/nano"]
 	path = nano/nano
 	url = https://github.com/scopatz/nanorc
-[submodule "prompt/pureline"]
-	path = prompt/pureline
-	url = https://github.com/flammie/pureline.git
 [submodule "powerline"]
 	path = powerline
 	url = https://github.com/justjanne/powerline-go.git
