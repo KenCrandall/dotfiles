@@ -4,12 +4,12 @@
 [submodule "powerline"]
 	path = powerline
 	url = https://github.com/justjanne/powerline-go.git
-[submodule "prompt/powerline"]
-	path = prompt/powerline
-	url = https://github.com/justjanne/powerline-go.git
 [submodule "tmux/tmux-powerline"]
 	path = tmux/tmux-powerline
 	url = https://github.com/erikw/tmux-powerline.git
-[submodule "prompt/--force"]
-	path = prompt/--force
+[submodule "prompt/pureline"]
+	path = prompt/pureline
 	url = https://github.com/chris-marsh/pureline.git
+[submodule "prompt/powerline"]
+	path = prompt/powerline
+	url = https://github.com/justjanne/powerline-go.git
