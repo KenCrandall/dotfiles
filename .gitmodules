@@ -1,15 +1,12 @@
 [submodule "nano/nano"]
-	path = nano/nano
-	url = https://github.com/scopatz/nanorc
-[submodule "powerline"]
-	path = powerline
-	url = https://github.com/justjanne/powerline-go.git
+  path = nano/nano
+  url = https://github.com/scopatz/nanorc
 [submodule "tmux/tmux-powerline"]
-	path = tmux/tmux-powerline
-	url = https://github.com/erikw/tmux-powerline.git
+  path = tmux/tmux-powerline
+  url = https://github.com/erikw/tmux-powerline.git
 [submodule "prompt/pureline"]
-	path = prompt/pureline
-	url = https://github.com/chris-marsh/pureline.git
+  path = prompt/pureline
+  url = https://github.com/chris-marsh/pureline.git
 [submodule "prompt/powerline"]
-	path = prompt/powerline
-	url = https://github.com/justjanne/powerline-go.git
+  path = prompt/powerline
+  url = https://github.com/justjanne/powerline-go.git
