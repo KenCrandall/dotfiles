@@ -11,11 +11,11 @@ function pwsafe-creds {
 
 function ipmi-creds {
   echo -n "IPMI Login: "
-  read -s IPMI_USR
-  export IPMI_USR=$IPMI_USR
+  read -s IPMI_USER
+  export IPMI_USER=$IPMI_USER
   echo ""
   echo -n "IPMI Password: "
-  read -s IPMI_PSW
-  export IPMI_PSW=$IPMI_PSW
+  read -s IPMI_PASS
+  export IPMI_PASS=$IPMI_PASS
   echo ""
 }
