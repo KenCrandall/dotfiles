@@ -32,6 +32,10 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+# Path
+PATH=/usr/local/sbin:$PATH
+export PATH
+
 # Source bash completion
 if [[ -f $HOME/.bash_completion ]] 
 then
@@ -51,6 +55,13 @@ if [[ -f $HOME/.bash_aliases ]]
 then
     echo ".bash_aliases" >> $LOGFILE
     . $HOME/.bash_aliases
+fi
+
+# Source local functions
+if [[ -f $HOME/.bash_functions ]] 
+then
+    echo ".bash_functions" >> $LOGFILE
+    . $HOME/.bash_functions
 fi
 
 # Source os secret sauce
