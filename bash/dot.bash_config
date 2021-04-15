@@ -1,13 +1,14 @@
 #!/usr/local/bin/bash
 #
-# .bash_profile
+# .bash_config
 #
 
-LOGFILE=$HOME/.bash.log
+# Set up logging
+LOGFILE=$HOME/.bash_log
 DATE=$(date)
-echo "" >> $LOGFILE
+echo "" > $LOGFILE
 echo $DATE >> $LOGFILE
-echo ".bashrc" >> $LOGFILE
+echo ".bash_config" >> $LOGFILE
 
 # Basic bash config
 
@@ -33,7 +34,7 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Path
-PATH=/usr/local/sbin:$PATH
+PATH=$HOME/bin:$PATH
 export PATH
 
 # Source bash completion
@@ -50,18 +51,18 @@ then
     . $HOME/.bash_vars
 fi
 
-# Source local aliases
-if [[ -f $HOME/.bash_aliases ]] 
-then
-    echo ".bash_aliases" >> $LOGFILE
-    . $HOME/.bash_aliases
-fi
-
 # Source local functions
 if [[ -f $HOME/.bash_functions ]] 
 then
     echo ".bash_functions" >> $LOGFILE
     . $HOME/.bash_functions
+fi
+
+# Source local aliases
+if [[ -f $HOME/.bash_aliases ]] 
+then
+    echo ".bash_aliases" >> $LOGFILE
+    . $HOME/.bash_aliases
 fi
 
 # Source os secret sauce

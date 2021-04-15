@@ -11,6 +11,9 @@ alias vnc='/Applications/VNC\ Viewer.app/Contents/MacOS/vncviewer'
 alias ovftool='/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool/ovftool'
 alias updatedb='/usr/libexec/locate.updatedb'
 
+# Alias to remove quarantine
+alias fix='sudo xattr -r -d com.apple.quarantine'
+
 # cancel ZSH vs BASH warning
 BASH_SILENCE_DEPRECATION_WARNING=1
 export BASH_SILENCE_DEPRECATION_WARNING
@@ -23,27 +26,18 @@ if [ -f $HOME/.rack/bash_autocomplete ]; then
 	source $HOME/.rack/bash_autocomplete
 fi
 
-# Java
-# rack client
-if [ -f $HOME/.bash_java ]; then
-        source $HOME/.bash_java
-fi
-
 # rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # go
-GOPATH=$HOME/go
-PATH=$GOPATH/bin:$PATH
-export GOPATH PATH
+#GOPATH=$HOME/go
+#PATH=$GOPATH/bin:$PATH
+#export GOPATH PATH
 
 # Ruby Gems
-PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
-export PATH
+#PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
+#export PATH
 
-# Remove quarantine
-alias fix='sudo xattr -r -d com.apple.quarantine'
-
-# Path
-PATH=$PATH:$HOME/bin
+# Include Homebrew in Path
+PATH=/usr/local/bin:$PATH
 export PATH
