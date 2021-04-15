@@ -1,15 +1,19 @@
-#[credential]
-#  helper = osxkeychain
+[credential]
+  helper = store --file ~/.git_credentials
 [includeIf "gitdir:~/Projects/"]
   path = .gitconfig_home
-[includeIf "gitdir:~/Rax/"]
+[includeIf "gitdir:~/Rackspace/Projects/"]
   path = .gitconfig_rax
 [init]
   defaultBranch = main
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-#[pull]
-#	ff = only
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+[pull]
+  ff = only
+[core]
+  pager = less -g -i -r
+[color]
+  ui = true
