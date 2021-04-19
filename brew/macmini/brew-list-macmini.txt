@@ -3,6 +3,8 @@ Brew List
 ansible@2.9
 ant
 aom
+apr
+apr-util
 assimp
 autoconf
 bash
@@ -12,6 +14,7 @@ bdw-gc
 boost
 bpytop
 brew-cask-completion
+brotli
 c-ares
 cairo
 ccache
@@ -130,6 +133,7 @@ libtiff
 libtool
 libunistring
 libusb
+libuv
 libvidstab
 libvirt
 libvorbis
@@ -232,6 +236,7 @@ sqlite
 srt
 sshpass
 stoken
+subversion
 szip
 tcl-tk
 telnet

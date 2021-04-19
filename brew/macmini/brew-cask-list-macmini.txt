@@ -1,6 +1,7 @@
 Brew Cask List
 --------------
 1password-cli
+amazon-chime
 balenaetcher
 bartender
 betterzip
@@ -12,17 +13,14 @@ daisydisk
 discord
 docker
 dockstation
-dosbox-x
 drawio
 epichrome
 epubquicklook
 firefox
 fluid
 font-cantarell
-font-cascadia
 font-cascadia-code-pl
 font-cascadia-mono-pl
-font-cascadia-pl
 font-courier-prime-code
 font-droid-sans-mono-for-powerline
 font-envy-code-r
@@ -32,11 +30,6 @@ font-fira-mono-for-powerline
 font-fira-sans
 font-fira-sans-condensed
 font-fira-sans-extra-condensed
-font-ibm-plex
-font-ibm-plex-mono
-font-ibm-plex-sans
-font-ibm-plex-sans-condensed
-font-ibm-plex-serif
 font-input
 font-jetbrains-mono
 font-lato

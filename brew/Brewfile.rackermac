@@ -1,197 +1,94 @@
-tap "graalvm/tap"
+tap "colindean/fonts-nonfree"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "homebrew/services"
-tap "hudochenkov/sshpass"
-tap "wallix/awless"
-brew "autoconf"
-brew "automake"
-brew "bandwhich"
-brew "bash-completion@2"
+brew "ansible@2.9", link: true
+brew "bash"
 brew "bat"
-brew "bmon"
-brew "brew-cask-completion"
-brew "gdbm"
-brew "gettext"
-brew "openssl@1.1"
-brew "pcre"
-brew "readline"
-brew "sqlite"
-brew "xz"
-brew "cmark"
-brew "darkhttpd"
-brew "docker", link: false
-brew "docker-completion"
-brew "libyaml"
-brew "docker-compose", link: false
-brew "docker-compose-completion"
-brew "docker-machine-completion"
 brew "docker-machine-driver-vmware"
-brew "gmp"
-brew "libevent"
-brew "pcre2"
-brew "fish"
-brew "gh"
-brew "git"
-brew "git-extras"
 brew "glances"
-brew "libtool"
-brew "libunistring"
-brew "pkg-config"
-brew "libidn2"
-brew "nettle"
-brew "go"
-brew "grep"
-brew "icu4c"
-brew "node"
-brew "grunt-cli"
-brew "ncurses"
 brew "htop"
-brew "icdiff"
-brew "oniguruma"
-brew "jq"
-brew "jsonlint"
-brew "libxml2"
-brew "libzip"
 brew "mas"
-brew "micro"
 brew "nano"
-brew "ncdu"
-brew "neofetch"
-brew "newt"
-brew "nmap"
-brew "stoken"
-brew "openconnect"
-brew "ossp-uuid"
-brew "picocom"
 brew "pinfo"
-brew "pyenv"
-brew "ruby-build"
-brew "rbenv"
-brew "rename"
 brew "rsync"
-brew "shellcheck"
-brew "speedtest-cli"
-brew "sphinx-doc"
-brew "sshuttle"
-brew "starship"
-brew "telnet"
-brew "tldr"
-brew "tmux"
+brew "stoken"
+brew "subversion"
 brew "trash"
-brew "tree"
-brew "vagrant-completion"
-brew "watch"
 brew "wget"
-brew "wireguard-tools"
-brew "wtf"
-brew "hudochenkov/sshpass/sshpass"
-brew "wallix/awless/awless"
-cask "adobe-acrobat-reader"
-cask "appgate-sdp-client"
-cask "balenaetcher"
-cask "bettertouchtool"
-cask "bitbar"
-cask "brave-browser"
-cask "carbon-copy-cloner"
-cask "epichrome"
+cask "acorn"
+cask "airbuddy"
+cask "bartender"
+cask "choosy"
+cask "chromium"
 cask "firefox"
-cask "font-anonymice-powerline"
-cask "font-cantarell"
-cask "font-cascadia"
 cask "font-cascadia-code"
 cask "font-cascadia-code-pl"
 cask "font-cascadia-mono"
 cask "font-cascadia-mono-pl"
-cask "font-consolas-for-powerline"
-cask "font-courier-prime"
-cask "font-courier-prime-code"
-cask "font-courier-prime-medium-and-semi-bold"
-cask "font-courier-prime-sans"
-cask "font-fira-code"
-cask "font-fira-mono-for-powerline"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono-nerd-font"
 cask "font-fira-sans"
-cask "font-fontawesome"
-cask "font-input"
-cask "font-jetbrains-mono"
-cask "font-jetbrains-mono-powerline"
-cask "font-liberation-mono-for-powerline"
-cask "font-liberation-sans"
-cask "font-noto-sans-symbols"
-cask "font-noto-sans-symbols2"
-cask "font-office-code-pro"
+cask "font-fira-sans-condensed"
+cask "font-fira-sans-extra-condensed"
+cask "font-iosevka"
+cask "font-lato"
+cask "font-merriweather"
+cask "font-microsoft-office"
+cask "font-noto-mono"
+cask "font-noto-mono-for-powerline"
+cask "font-noto-sans"
+cask "font-noto-serif"
+cask "font-open-iconic"
 cask "font-open-sans"
 cask "font-open-sans-condensed"
-cask "font-overpass"
 cask "font-oxygen"
 cask "font-oxygen-mono"
 cask "font-pt-mono"
 cask "font-pt-sans"
+cask "font-pt-sans-caption"
+cask "font-pt-sans-narrow"
 cask "font-pt-serif"
+cask "font-pt-serif-caption"
 cask "font-source-code-pro-for-powerline"
 cask "font-source-sans-pro"
 cask "font-source-serif-pro"
-cask "font-symbola"
-cask "fork"
-cask "google-cloud-sdk"
-cask "graalvm-ce-java8"
-cask "hazel"
 cask "iterm2"
 cask "joplin"
-cask "kitematic"
-cask "ksdiff"
-cask "little-snitch"
 cask "logitech-options"
-cask "manopen"
-cask "mattermost"
 cask "microsoft-auto-update"
 cask "microsoft-edge"
 cask "microsoft-teams"
-cask "minishift"
-cask "mos"
-cask "near-lock"
-cask "openconnect-gui"
 cask "openinterminal"
-cask "qlmarkdown"
+cask "qlcolorcode"
+cask "qlvideo"
 cask "remotix-agent"
-cask "sf-symbols"
-cask "shimo"
-cask "skyfonts"
 cask "soundsource"
-cask "superduper"
-cask "typora"
+cask "swiftbar"
+cask "syntax-highlight"
 cask "vagrant"
-cask "vagrant-manager"
-cask "visual-studio-code"
-cask "vlc"
+cask "vagrant-vmware-utility"
 cask "vmware-fusion"
-cask "xquartz"
+mas "1Blocker", id: 1365531024
 mas "1Password 7", id: 1333542190
-mas "Acorn", id: 1233861775
 mas "Agenda", id: 1287445660
 mas "Airmail", id: 918858936
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "Cardhop", id: 1290358394
-mas "Color Note", id: 1099028591
-mas "Countdowns", id: 926707738
-mas "DaisyDisk", id: 411643860
-mas "Day One", id: 1055511498
-mas "Deliveries", id: 290986013
+mas "Color Picker", id: 1238050457
+mas "ColorSlurp", id: 1287239339
+mas "ColorWell", id: 460176867
+mas "Deliveries", id: 924726344
+mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
-mas "ForkLift", id: 412448059
-mas "Friendly Streaming", id: 553245401
+mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
-mas "Growl", id: 467939042
 mas "Image2icon", id: 992115977
-mas "Kelir", id: 1145215534
-mas "Keynote", id: 409183694
-mas "Kindle", id: 405399194
-mas "LimeChat", id: 414030210
+mas "LanScan", id: 472226235
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
@@ -201,33 +98,26 @@ mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
 mas "Monosnap", id: 540348655
 mas "Network Radar", id: 507659816
-mas "Notability", id: 736189492
-mas "Numbers", id: 409203825
 mas "OmniGraffle", id: 1456314039
 mas "OneDrive", id: 823766827
-mas "Pages", id: 409201541
+mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PCalc", id: 403504866
+mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
-mas "Pocket", id: 568494494
 mas "PopClip", id: 445189367
-mas "ScreenFlow 7", id: 1223627207
-mas "Screens", id: 1224268771
-mas "Serial", id: 877615577
-mas "Shapes", id: 930093508
-mas "Simplefax", id: 1165017252
-mas "Simplenote", id: 692867256
-mas "Slack", id: 803453959
+mas "Remote Desktop", id: 409907375
+mas "Remotix", id: 466261145
 mas "Soulver", id: 413965349
 mas "Speedtest", id: 1153157709
 mas "StopTheMadness", id: 1376402589
-mas "Telegram", id: 747648890
+mas "Tabs Saver for Safari", id: 1440006971
 mas "Textastic", id: 572491815
 mas "The Clock", id: 488764545
 mas "The Unarchiver", id: 425424353
 mas "Tot", id: 1491071483
-mas "Trello", id: 1278508951
 mas "Tweetbot", id: 1384080005
 mas "Ultra Character Map", id: 520265986
 mas "WiFiman Desktop", id: 1482391803
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
+mas "Xee³", id: 639764244

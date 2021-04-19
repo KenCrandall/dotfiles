@@ -1,11 +1,9 @@
 Brew Tap
 --------
-graalvm/tap
+colindean/fonts-nonfree
+homebrew/bundle
 homebrew/cask
 homebrew/cask-drivers
 homebrew/cask-fonts
 homebrew/cask-versions
 homebrew/core
-homebrew/services
-hudochenkov/sshpass
-wallix/awless

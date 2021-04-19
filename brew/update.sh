@@ -4,8 +4,9 @@ TIME=$(date "+%Y-%m-%d at %H:%M:%S")
 MYOS=$(uname -s)
 OS=$(echo "$MYOS" | tr '[:upper:]' '[:lower:]')
 BREW=$(which brew)
-DIR=$(pwd)
+BASEDIR=$(pwd)
 HOST=$(hostname -s | tr '[:upper:]' '[:lower:]')
+DIR=$BASEDIR/$HOST
 
 case $OS in
   darwin | linux)
@@ -24,7 +25,7 @@ case $OS in
 	;;
 esac
 
-
+mkdir -p $DIR
 BLIST=$DIR/brew-list-${HOST}.txt
 echo "Checking homebrew pours..."
 echo "Brew List" >$BLIST
