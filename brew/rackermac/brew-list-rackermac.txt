@@ -17,6 +17,7 @@ libunistring
 libyaml
 lz4
 mas
+mosh
 mpdecimal
 nano
 ncurses
@@ -24,6 +25,7 @@ nettle
 openssl@1.1
 pinfo
 popt
+protobuf
 python@3.9
 readline
 rsync
