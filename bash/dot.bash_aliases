@@ -17,6 +17,7 @@ alias scp='rsync --archive --partial --progress --rsh=ssh'
 alias mdc='mdcat | less'
 alias tree='tree -C | less'
 alias lynx='lynx -cfg=$HOME/.lynxrc'
+alias jobs='jobs -l'
 
 #
 # OpenStack

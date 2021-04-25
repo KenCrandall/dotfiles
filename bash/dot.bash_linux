@@ -12,9 +12,8 @@ alias ls='ls --color'
 alias l='ls -1'
 alias la='ls -a'
 alias ll='ls -l'
-alias info='pinfo'
-alias man='pinfo man'
 alias perms='stat -c "%a %n"'
+alias updatedb='sudo updatedb'
 
 if [ -f /etc/os-release ]; then
   # freedesktop.org and systemd
@@ -63,6 +62,8 @@ case $MYOS in
 		# ubuntu
 		echo "  OS: ubuntu or elementary" >> $LOGFILE
 		alias apt='apt --yes'
+        alias rm='trash'
+        export MANPATH=$MANPATH:/usr/lib/jvm/default-java/man
 	;;
 	*)
 		# no clue
