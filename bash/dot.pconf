@@ -66,15 +66,9 @@ PL_COLORS[MyPBColor]='\[\e[38;5;237m\]'
 PL_COLORS[On_MyPBColor]='\[\e[48;5;237m\]'
 
 #
-# OS Types
-#
-OS_TYPE_APPLE='􀣺'
-OS_TYPE_SERVER='􀪬'
-
-#
 # Modules
 #
-function host_module() {
+function myhost_module() {
     local bg_color="$1" # Set the background color
     local fg_color="$2" # Set the foreground color
     local HOSTNAME=$(hostname -s | tr '[:upper:]' '[:lower:]')
@@ -306,9 +300,9 @@ function myssh_module() {
 #
 declare -a PL_MODULES=(
     # Module                Background  Foreground
-    'user_module            MyDarkGrey  MyVLGrey'
-#    'host_module            MyVDGrey    MyLightGrey'
     'myssh_module           MyOrange    MyWhite'
+#    'myhost_module            MyVDGrey    MyLightGrey'
+    'user_module            MyDarkGrey  MyVLGrey'
     'mypath_module          MyPBColor   White'
     'virtual_env_module     MyBlue      Black'
     'read_only_module       MyDarkRed   MyWhite'
@@ -328,7 +322,8 @@ PL_PATH_TRIM=2 # 0 Full path, 1, Current, 2+ trim level
 PL_TIME_SHOW_SECONDS=true
 PL_USER_SHOW_HOST=false
 PL_USER_USE_IP=false
-PL_SSH_SHOW_HOST=false
+#PL_SSH_SHOW_HOST=false
+PL_SSH_SHOW_HOST=true
 PL_SSH_USE_IP=false
 PL_GIT_DIRTY_FG=MyWhite
 PL_GIT_DIRTY_BG=MyMagenta
