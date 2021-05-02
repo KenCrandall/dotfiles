@@ -1,6 +1,7 @@
 Brew Cask List
 --------------
 1password-cli
+acorn
 bartender
 choosy
 eloston-chromium
@@ -76,6 +77,7 @@ microsoft-edge
 microsoft-teams
 openinterminal
 remotix-agent
+sf-symbols
 swiftbar
 typora
 visual-studio-code
