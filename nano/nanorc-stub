@@ -1,0 +1,64 @@
+##
+## My personal .nanorc definitions
+##
+
+## Smooth scrolling (single line)
+set smooth
+
+## Use libmagic when there's no shebang
+#set magic
+
+## No Mouse support
+#set mouse
+unset mouse
+
+## Autoindent
+set autoindent
+
+## Spaces, not tabs
+set tabsize 4
+set tabstospaces
+
+## Show cursor location
+set constantshow
+
+## Don't wrap
+set nowrap
+unset breaklonglines
+
+## Remove trailing whitespace on lines
+set trimblanks
+
+## Treat punctuation as a part of a word
+set wordbounds
+
+## Make CTRL->Right and CTRL->DELETE stop and word end
+set afterends
+
+## Constantly display the cursor position in the status bar
+set constantshow
+
+
+##
+## Colors!
+##
+## Valid names for the foreground and background colors are:
+##   red, green, blue, magenta, yellow, cyan, white, and black
+##
+## Each of these eight names may be prefixed with the word 'light' 
+##    to get a brighter version of that color.
+##
+## On terminal emulators that can do at least 256 colors,
+##   other valid (but unprefixable) color names are: 
+##   pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, and normal
+##
+##
+set errorcolor bold,brightwhite,red
+#set functioncolor bold,brightwhite,blue
+set functioncolor white,black
+#set keycolor bold,yellow,blue
+set keycolor bold,white,black
+set selectedcolor lightwhite,lightblack
+set statuscolor white,black
+#set titlecolor bold,yellow,blue
+set titlecolor white,black
