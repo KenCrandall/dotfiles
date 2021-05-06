@@ -12,7 +12,7 @@ STAMP=$(date)
 NANORC=$HOME/.nanorc
 
 # Directory with syntax highlighting definition files
-WORKDIR=$WORK/nano
+WORKDIR=$WORK/nanorc
 
 # Target directory for syntax highlighting definitions
 FILEDIR=$HOME/.nano

@@ -3,7 +3,8 @@
 ##
 
 ## Smooth scrolling (single line)
-set smooth
+# NO LONGER NEEDED (NOW DEFAULT)
+#set smooth
 
 ## Use libmagic when there's no shebang
 #set magic
