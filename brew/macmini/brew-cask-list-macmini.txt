@@ -9,6 +9,7 @@ brave-browser
 calibre
 carbon-copy-cloner
 choosy
+coderunner
 daisydisk
 discord
 docker
