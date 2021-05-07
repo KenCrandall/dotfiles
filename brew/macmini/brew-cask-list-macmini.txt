@@ -14,6 +14,7 @@ discord
 docker
 dockstation
 drawio
+eloston-chromium
 epichrome
 epubquicklook
 firefox
@@ -89,9 +90,6 @@ notable
 odrive
 onlyoffice
 openinterminal
-plex
-plex-media-player
-powershell
 qlcolorcode
 qlvideo
 quicken
@@ -108,6 +106,7 @@ ssh-tunnel-manager
 steam
 swiftbar
 tcl
+the-unarchiver
 tigervnc-viewer
 tower
 typora

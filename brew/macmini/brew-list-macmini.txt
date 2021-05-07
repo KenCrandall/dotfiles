@@ -17,6 +17,7 @@ brew-cask-completion
 brotli
 c-ares
 cairo
+carthage
 ccache
 cfitsio
 ctop
@@ -39,6 +40,7 @@ ffmpeg
 fftw
 figlet
 flac
+fltk
 fontconfig
 fonttools
 freetype
@@ -86,6 +88,7 @@ jasper
 jemalloc
 jo
 jpeg
+jpeg-turbo
 jq
 lame
 launchctl-completion
@@ -159,6 +162,7 @@ m4
 mas
 mdcat
 mhash
+mosh
 mozjpeg
 mpdecimal
 mpfr
@@ -200,6 +204,7 @@ pkg-config
 popt
 portaudio
 powerline-go
+protobuf
 pstree
 pyenv
 pyenv-ccache
@@ -207,6 +212,7 @@ pyenv-virtualenv
 python@3.8
 python@3.9
 qemu
+qt@5
 rack
 rav1e
 rbenv
@@ -244,6 +250,7 @@ terminal-notifier
 tesseract
 texi2html
 theora
+tiger-vnc
 tmux
 tmux-mem-cpu-load
 trash
@@ -266,6 +273,7 @@ xvid
 xxhash
 xz
 yajl
+yarn
 yasm
 youtube-dl
 zbar
