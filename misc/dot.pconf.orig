@@ -314,7 +314,7 @@ declare -a PL_MODULES=(
     'gitmodified_module     MyOrange    MyWhite'
     'gittrack_module        MyVDRed     MyWhite'
     'return_code_module     MyDarkRed   MyWhite'
-    'prompt_module          MyPBColor   MyWhite'
+    'prompt_module          MyBGColor   MyWhite'
 )
 
 # Module Options
