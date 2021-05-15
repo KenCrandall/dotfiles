@@ -79,6 +79,7 @@ hwloc
 icu4c
 ilmbase
 imagemagick
+imath
 iperf3
 ipmitool
 ipmiutil
@@ -227,7 +228,6 @@ rtmpdump
 rubberband
 ruby-build
 rust
-rxvt-unicode
 screenresolution
 sdl
 sdl2

@@ -1,7 +1,6 @@
 Brew Cask List
 --------------
 1password-cli
-amazon-chime
 balenaetcher
 bartender
 betterzip
@@ -15,6 +14,7 @@ discord
 docker
 dockstation
 drawio
+electerm
 eloston-chromium
 epichrome
 epubquicklook
@@ -91,6 +91,7 @@ notable
 odrive
 onlyoffice
 openinterminal
+podcastmenu
 qlcolorcode
 qlvideo
 quicken
