@@ -3,18 +3,14 @@ Brew Cask List
 1password-cli
 balenaetcher
 bartender
-betterzip
 brave-browser
+cakebrew
 calibre
 carbon-copy-cloner
 choosy
-coderunner
 daisydisk
 discord
 docker
-dockstation
-drawio
-electerm
 eloston-chromium
 epichrome
 epubquicklook
@@ -67,8 +63,6 @@ fork
 gdisk
 github
 graalvm-ce-lts-java8
-growlnotify
-gzdoom
 hazel
 install-disk-creator
 ios-saver
@@ -87,9 +81,7 @@ microsoft-edge
 microsoft-teams
 musicbrainz-picard
 nextcloud
-notable
 odrive
-onlyoffice
 openinterminal
 podcastmenu
 qlcolorcode
@@ -99,6 +91,7 @@ remotix-agent
 rocket
 royal-tsx
 screens-connect
+script-debugger
 sdformatter
 sf-symbols
 shimo
@@ -112,7 +105,6 @@ the-unarchiver
 tigervnc-viewer
 tower
 typora
-unetbootin
 vagrant
 vagrant-manager
 vagrant-vmware-utility
@@ -123,5 +115,4 @@ vnc-viewer
 whichspace
 wireshark
 xquartz
-yammer
 zoom
