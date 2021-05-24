@@ -11,6 +11,7 @@ choosy
 daisydisk
 discord
 docker
+drawio
 eloston-chromium
 epichrome
 epubquicklook
@@ -90,6 +91,7 @@ quicken
 remotix-agent
 rocket
 royal-tsx
+rsyncosx
 screens-connect
 script-debugger
 sdformatter

@@ -14,7 +14,6 @@ tap "orf/brew"
 tap "romkatv/powerlevel10k"
 tap "teamookla/speedtest"
 brew "openssl@1.1"
-brew "ansible@2.9", link: true
 brew "autoconf"
 brew "bash"
 brew "bash-completion"
@@ -98,6 +97,7 @@ cask "choosy"
 cask "daisydisk"
 cask "discord"
 cask "docker"
+cask "drawio"
 cask "eloston-chromium"
 cask "epichrome"
 cask "epubquicklook"
@@ -177,6 +177,7 @@ cask "quicken"
 cask "remotix-agent"
 cask "rocket"
 cask "royal-tsx"
+cask "rsyncosx"
 cask "screens-connect"
 cask "script-debugger"
 cask "sdformatter"
@@ -246,7 +247,6 @@ mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
 mas "Relax Melodies", id: 467103113
 mas "Remote Desktop", id: 409907375
-mas "RsyncGUI", id: 1449707783
 mas "Screens", id: 1224268771
 mas "Serial", id: 877615577
 mas "Server", id: 883878097

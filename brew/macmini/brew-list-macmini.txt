@@ -1,6 +1,5 @@
 Brew List
 ---------
-ansible@2.9
 aom
 apr
 apr-util
@@ -22,6 +21,7 @@ docker-machine-driver-vmware
 dog
 flac
 fltk
+fontconfig
 freetype
 gcc
 gdbm
@@ -54,6 +54,7 @@ iperf3
 ipmitool
 ipmiutil
 isl
+jbig2dec
 jemalloc
 jpeg
 jpeg-turbo
@@ -70,6 +71,7 @@ libgcrypt
 libgpg-error
 libheif
 libice
+libidn
 libidn2
 libiscsi
 liblqr
