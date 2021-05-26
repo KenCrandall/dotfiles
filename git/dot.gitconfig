@@ -13,5 +13,6 @@
   ff = only
 [core]
   pager = less -g -i -r
+	excludesfile = /Users/ken/.gitignore_global
 [color]
   ui = true
