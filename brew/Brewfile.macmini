@@ -13,6 +13,7 @@ tap "melonamin/formulae"
 tap "orf/brew"
 tap "romkatv/powerlevel10k"
 tap "teamookla/speedtest"
+tap "theseal/blank-screensaver"
 brew "openssl@1.1"
 brew "autoconf"
 brew "bash"
@@ -89,6 +90,7 @@ brew "esolitos/ipa/sshpass"
 cask "1password-cli"
 cask "balenaetcher"
 cask "bartender"
+cask "blank-screensaver"
 cask "brave-browser"
 cask "cakebrew"
 cask "calibre"
@@ -100,7 +102,6 @@ cask "docker"
 cask "drawio"
 cask "eloston-chromium"
 cask "epichrome"
-cask "epubquicklook"
 cask "firefox"
 cask "fluid"
 cask "font-cantarell"
@@ -144,23 +145,19 @@ cask "font-roboto-slab"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
 cask "font-source-sans-pro"
-cask "font-source-serif"
 cask "font-source-serif-pro"
 cask "fork"
 cask "gdisk"
 cask "github"
 cask "graalvm-ce-lts-java8"
 cask "hazel"
-cask "install-disk-creator"
 cask "ios-saver"
 cask "iterm2"
 cask "joplin"
 cask "kaleidoscope"
-cask "liteicon"
 cask "logitech-options"
 cask "logitech-unifying"
 cask "mactex"
-cask "manopen"
 cask "markdown-service-tools"
 cask "mattermost"
 cask "microsoft-auto-update"
@@ -168,7 +165,6 @@ cask "microsoft-edge"
 cask "microsoft-teams"
 cask "musicbrainz-picard"
 cask "nextcloud"
-cask "odrive"
 cask "openinterminal"
 cask "podcastmenu"
 cask "qlcolorcode"
@@ -182,10 +178,8 @@ cask "screens-connect"
 cask "script-debugger"
 cask "sdformatter"
 cask "sf-symbols"
-cask "shimo"
 cask "sigil"
 cask "soundsource"
-cask "ssh-tunnel-manager"
 cask "steam"
 cask "swiftbar"
 cask "tcl"
@@ -214,19 +208,14 @@ mas "Cardhop", id: 1290358394
 mas "ColorWell", id: 460176867
 mas "Day One", id: 1055511498
 mas "Deliveries", id: 290986013
-mas "Diagrams", id: 1276248849
-mas "Drafts", id: 1435957248
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
 mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
-mas "Growl", id: 467939042
 mas "iA Writer", id: 775737590
 mas "Image2icon", id: 992115977
-mas "Keynote", id: 409183694
 mas "LanScan", id: 472226235
-mas "MetaDoctor Pro", id: 992000603
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
@@ -236,35 +225,29 @@ mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
 mas "Monosnap", id: 540348655
 mas "Network Radar", id: 507659816
-mas "Numbers", id: 409203825
 mas "OmniGraffle", id: 1456314039
 mas "OneDrive", id: 823766827
-mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PCalc", id: 403504866
 mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
-mas "Relax Melodies", id: 467103113
 mas "Remote Desktop", id: 409907375
+mas "Remotix", id: 466261145
 mas "Screens", id: 1224268771
 mas "Serial", id: 877615577
 mas "Server", id: 883878097
 mas "Slack", id: 803453959
 mas "Soulver", id: 413965349
 mas "Speedtest", id: 1153157709
-mas "StopTheMadness", id: 1376402589
-mas "Tabs Saver for Safari", id: 1440006971
 mas "Textastic", id: 572491815
-mas "The Clock", id: 488764545
 mas "Todoist", id: 585829637
 mas "Tot", id: 1491071483
 mas "Tweetbot", id: 1384080005
 mas "Twitterrific", id: 1289378661
-mas "uBlock", id: 1385985095
 mas "Ultra Character Map", id: 520265986
+mas "UTM", id: 1538878817
 mas "vCard Editor", id: 855935660
-mas "VMware Remote Console", id: 1230249825
 mas "WiFiman Desktop", id: 1482391803
 mas "Xcode", id: 497799835
 mas "Xee³", id: 639764244

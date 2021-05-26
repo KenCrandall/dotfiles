@@ -15,3 +15,4 @@ melonamin/formulae
 orf/brew
 romkatv/powerlevel10k
 teamookla/speedtest
+theseal/blank-screensaver
