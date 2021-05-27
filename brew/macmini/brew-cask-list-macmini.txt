@@ -1,6 +1,8 @@
 Brew Cask List
 --------------
 1password-cli
+acorn
+airbuddy
 balenaetcher
 bartender
 blank-screensaver
@@ -29,6 +31,7 @@ font-fira-mono-for-powerline
 font-fira-sans
 font-fira-sans-condensed
 font-fira-sans-extra-condensed
+font-hack
 font-input
 font-jetbrains-mono
 font-lato
@@ -61,7 +64,6 @@ font-source-sans-pro
 font-source-serif-pro
 fork
 gdisk
-github
 graalvm-ce-lts-java8
 hazel
 ios-saver
@@ -100,6 +102,7 @@ the-unarchiver
 tigervnc-viewer
 tower
 typora
+unite
 vagrant
 vagrant-manager
 vagrant-vmware-utility

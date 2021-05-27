@@ -16,6 +16,8 @@ cunit
 darkhttpd
 docbook
 docbook-xsl
+docker-completion
+docker-compose-completion
 docker-machine
 docker-machine-driver-vmware
 dog
@@ -93,6 +95,7 @@ nettle
 nghttp2
 nmap
 oniguruma
+open-completion
 openexr
 openjpeg
 openssl@1.1
@@ -138,6 +141,7 @@ terminal-notifier
 tiger-vnc
 tmux
 tmux-mem-cpu-load
+tmuxinator-completion
 trash
 tree
 unar
