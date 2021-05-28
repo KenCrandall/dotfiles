@@ -81,6 +81,7 @@ microsoft-teams
 musicbrainz-picard
 nextcloud
 openinterminal
+optimus-player
 podcastmenu
 qlcolorcode
 qlvideo
@@ -89,6 +90,7 @@ remotix-agent
 rocket
 royal-tsx
 rsyncosx
+sbarex-qlmarkdown
 screens-connect
 script-debugger
 sdformatter
@@ -97,6 +99,7 @@ sigil
 soundsource
 steam
 swiftbar
+syntax-highlight
 tcl
 the-unarchiver
 tigervnc-viewer
