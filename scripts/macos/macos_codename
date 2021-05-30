@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+awk '/SOFTWARE LICENSE AGREEMENT FOR macOS/' \
+  '/System/Library/CoreServices/Setup Assistant.app/Contents/Resources/en.lproj/OSXSoftwareLicense.rtf' | \
+  awk -F 'macOS ' '{print $NF}' | \
+  awk '{print substr($0, 0, length($0)-1)}'
