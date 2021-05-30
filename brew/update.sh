@@ -49,7 +49,7 @@ brew bundle dump -f --file=Brewfile.${HOST}
 
 echo "Updating Git and pushing to upstream..."
 git add .
-git commit -m "homebrew updated at $TIME"
+git commit -m "homebrew updated at $TIME for $HOST"
 git push
 
 echo "Done!"
