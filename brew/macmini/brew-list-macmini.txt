@@ -5,7 +5,7 @@ apr
 apr-util
 autoconf
 bash
-bash-completion
+bash-completion@2
 bat
 bdw-gc
 boost
@@ -16,8 +16,6 @@ cunit
 darkhttpd
 docbook
 docbook-xsl
-docker-completion
-docker-compose-completion
 docker-machine
 docker-machine-driver-vmware
 dog

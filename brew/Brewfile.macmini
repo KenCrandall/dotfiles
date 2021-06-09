@@ -17,13 +17,11 @@ tap "theseal/blank-screensaver"
 brew "openssl@1.1"
 brew "autoconf"
 brew "bash"
-brew "bash-completion"
+brew "bash-completion@2"
 brew "bat"
 brew "brew-cask-completion"
 brew "darkhttpd"
 brew "docbook-xsl"
-brew "docker-completion"
-brew "docker-compose-completion"
 brew "docker-machine"
 brew "docker-machine-driver-vmware"
 brew "dog"
@@ -180,7 +178,6 @@ cask "quicken"
 cask "remotix-agent"
 cask "rocket"
 cask "royal-tsx"
-cask "rsyncosx"
 cask "sbarex-qlmarkdown"
 cask "screens-connect"
 cask "script-debugger"
@@ -204,7 +201,6 @@ cask "visual-studio-code"
 cask "vlc"
 cask "vmware-fusion"
 cask "vnc-viewer"
-cask "whichspace"
 cask "wireshark"
 cask "xquartz"
 cask "zoom"
@@ -247,6 +243,7 @@ mas "Remotix", id: 466261145
 mas "Screens", id: 1224268771
 mas "Serial", id: 877615577
 mas "Server", id: 883878097
+mas "Shareful", id: 1522267256
 mas "Slack", id: 803453959
 mas "Soulver", id: 413965349
 mas "Speedtest", id: 1153157709

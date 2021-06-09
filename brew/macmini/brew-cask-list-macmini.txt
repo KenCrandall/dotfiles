@@ -89,7 +89,6 @@ quicken
 remotix-agent
 rocket
 royal-tsx
-rsyncosx
 sbarex-qlmarkdown
 screens-connect
 script-debugger
@@ -113,7 +112,6 @@ visual-studio-code
 vlc
 vmware-fusion
 vnc-viewer
-whichspace
 wireshark
 xquartz
 zoom
