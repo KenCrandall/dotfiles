@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Local vars
+#
+EDITOR=`which nano`
+export EDITOR
+
+#
+# OpenStack screen dimensions
+#
+CLIFF_FIT_WIDTH=1
+export CLIFF_FIT_WIDTH
+
+#
+# Path
+#
+PATH=$PATH:$HOME/bin
+export PATH

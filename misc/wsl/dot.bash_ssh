@@ -1,0 +1,26 @@
+#!/bin/bash
+
+SSH_ENV=$HOME/.ssh_env
+
+function start_agent {
+  #echo -n "Initialising new SSH agent..."
+  /usr/bin/ssh-agent | sed 's/^echo/#echo/' > ${SSH_ENV}
+  #echo "Succeeded!"
+  chmod 600 ${SSH_ENV}
+  source ${SSH_ENV} > /dev/null
+  /usr/bin/ssh-add -q $HOME/.ssh/id_rsa_rackspace
+}
+
+# Source SSH settings, if applicable
+
+if [ -f "${SSH_ENV}" ];
+then
+  #echo "Using existing SSH agent..."
+  source ${SSH_ENV} > /dev/null
+  #ps ${SSH_AGENT_PID} doesn't work under cywgin
+  ps -efp ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+    start_agent;
+  }
+else
+  start_agent;
+fi

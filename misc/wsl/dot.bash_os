@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Figure out what OS we're running on and source the proper config
+#
+
+MYOS=$(uname -s)
+OS=$(echo "$MYOS" | tr '[:upper:]' '[:lower:]')
+
+case $OS in
+	darwin)
+		# macos
+		if [ -f ~/.bash_macos ]; then
+			. ~/.bash_macos
+		fi
+	;;
+	linux)
+		# linux
+		if [ -f ~/.bash_linux ]; then
+			. ~/.bash_linux
+		fi
+	;;
+	*)
+		# no clue
+		echo "Unrecognized OS: No special sauce"
+	;;
+esac

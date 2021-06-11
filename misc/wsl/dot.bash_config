@@ -1,0 +1,81 @@
+#!/usr/local/bin/bash
+#
+# .bash_profile
+#
+
+LOGFILE=$HOME/.bash.log
+DATE=$(date)
+echo "" >> $LOGFILE
+echo $DATE >> $LOGFILE
+echo ".bashrc" >> $LOGFILE
+
+# Basic bash config
+
+# Don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
+
+# For setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+
+# Check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# Source bash completion
+if [[ -f $HOME/.bash_completion ]] 
+then
+    echo ".bash_completion" >> $LOGFILE
+    . $HOME/.bash_completion
+fi
+
+# Source local vars
+if [[ -f $HOME/.bash_vars ]] 
+then
+    echo ".bash_vars" >> $LOGFILE
+    . $HOME/.bash_vars
+fi
+
+# Source local aliases
+if [[ -f $HOME/.bash_aliases ]] 
+then
+    echo ".bash_aliases" >> $LOGFILE
+    . $HOME/.bash_aliases
+fi
+
+# Source os secret sauce
+if [[ -f $HOME/.bash_os ]] 
+then
+    echo ".bash_os" >> $LOGFILE
+    . $HOME/.bash_os
+fi
+
+# Source functions
+if [[ -f $HOME/.bash_funcions ]] 
+then
+    echo ".bash_functions" >> $LOGFILE
+    . $HOME/.bash_functions
+fi
+
+# Check for ssh config
+if [[ -f $HOME/.bash_ssh ]] 
+then
+    echo ".bash_ssh" >> $LOGFILE
+    . $HOME/.bash_ssh
+fi
+
+# Go home
+WD=$(pwd)
+if [ "${WD}" != "${HOME}" ]; then
+    cd $HOME
+fi
