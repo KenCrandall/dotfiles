@@ -14,6 +14,8 @@ tap "orf/brew"
 tap "romkatv/powerlevel10k"
 tap "teamookla/speedtest"
 tap "theseal/blank-screensaver"
+brew "amtterm"
+brew "ant"
 brew "openssl@1.1"
 brew "autoconf"
 brew "bash"
@@ -159,6 +161,7 @@ cask "ios-saver"
 cask "iterm2"
 cask "joplin"
 cask "kaleidoscope"
+cask "kitty"
 cask "logitech-options"
 cask "logitech-unifying"
 cask "mactex"
@@ -204,6 +207,7 @@ cask "vnc-viewer"
 cask "wireshark"
 cask "xquartz"
 cask "zoom"
+cask "zulu8"
 mas "1Password 7", id: 1333542190
 mas "Agenda", id: 1287445660
 mas "Airmail", id: 918858936
@@ -219,6 +223,9 @@ mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
 mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
+mas "Home Assistant", id: 1099568401
+mas "HomeCam", id: 1292995895
+mas "HomePass", id: 1330266650
 mas "iA Writer", id: 775737590
 mas "Image2icon", id: 992115977
 mas "LanScan", id: 472226235

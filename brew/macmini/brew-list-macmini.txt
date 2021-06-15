@@ -1,5 +1,7 @@
 Brew List
 ---------
+amtterm
+ant
 aom
 apr
 apr-util
@@ -95,6 +97,7 @@ nmap
 oniguruma
 open-completion
 openexr
+openjdk
 openjpeg
 openssl@1.1
 openstackclient

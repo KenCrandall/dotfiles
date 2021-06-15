@@ -70,6 +70,7 @@ ios-saver
 iterm2
 joplin
 kaleidoscope
+kitty
 logitech-options
 logitech-unifying
 mactex
@@ -115,3 +116,4 @@ vnc-viewer
 wireshark
 xquartz
 zoom
+zulu8
