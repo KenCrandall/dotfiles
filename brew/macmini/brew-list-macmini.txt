@@ -21,6 +21,8 @@ docbook-xsl
 docker-machine
 docker-machine-driver-vmware
 dog
+dust
+exa
 fltk
 fontconfig
 freetype
@@ -76,6 +78,7 @@ libtool
 libunistring
 libusb
 libvirt
+libzip
 little-cms2
 lynx
 lz4
@@ -137,6 +140,7 @@ sqlite
 sshpass
 stoken
 subversion
+tealdeer
 telnet
 terminal-notifier
 tiger-vnc
@@ -159,4 +163,5 @@ xxhash
 xz
 yajl
 youtube-dl
+yq
 zstd
