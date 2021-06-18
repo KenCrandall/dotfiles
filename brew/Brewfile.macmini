@@ -213,107 +213,58 @@ cask "xquartz"
 cask "zoom"
 cask "zulu8"
 mas "1Password 7", id: 1333542190
-mas "1Password 7", id: 1333542190
-mas "Agenda", id: 1287445660
 mas "Agenda", id: 1287445660
 mas "Airmail", id: 918858936
 mas "AirRadar", id: 414758651
-mas "AirRadar", id: 414758651
 mas "Amphetamine", id: 937984704
-mas "Amphetamine", id: 937984704
-mas "Apple Configurator 2", id: 1037126344
-mas "BetterSnapTool", id: 417375580
 mas "BetterSnapTool", id: 417375580
 mas "Cardhop", id: 1290358394
-mas "Cardhop", id: 1290358394
-mas "ColorWell", id: 460176867
 mas "ColorWell", id: 460176867
 mas "Day One", id: 1055511498
 mas "Deliveries", id: 290986013
-mas "Deliveries", id: 290986013
-mas "Diagrams", id: 1276248849
-mas "Drafts", id: 1435957248
-mas "Expressions", id: 913158085
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
-mas "Fantastical", id: 975937182
-mas "ForkLift", id: 412448059
 mas "Friendly Streaming", id: 553245401
 mas "GoodLinks", id: 1474335294
-mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
-mas "Graphic", id: 404705039
-mas "Growl", id: 467939042
 mas "Home Assistant", id: 1099568401
 mas "HomeCam", id: 1292995895
 mas "HomePass", id: 1330266650
 mas "iA Writer", id: 775737590
 mas "Image2icon", id: 992115977
-mas "Image2icon", id: 992115977
-mas "LanScan", id: 472226235
 mas "LanScan", id: 472226235
 mas "Microsoft Excel", id: 462058435
-mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
-mas "Microsoft OneNote", id: 784801555
-mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "Microsoft To Do", id: 1274495053
 mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
-mas "Microsoft Word", id: 462054704
-mas "Monosnap", id: 540348655
 mas "Monosnap", id: 540348655
 mas "Network Radar", id: 507659816
 mas "OmniGraffle", id: 1456314039
-mas "OmniGraffle", id: 1456314039
-mas "OneDrive", id: 823766827
 mas "OneDrive", id: 823766827
 mas "Paprika Recipe Manager 3", id: 1303222628
-mas "Paprika Recipe Manager 3", id: 1303222628
-mas "PCalc", id: 403504866
 mas "PCalc", id: 403504866
 mas "Pi-hole Remote", id: 1515445551
-mas "Pi-hole Remote", id: 1515445551
-mas "Pixelmator Pro", id: 1289583905
 mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
-mas "PopClip", id: 445189367
-mas "Remote Desktop", id: 409907375
 mas "Remote Desktop", id: 409907375
 mas "Remotix", id: 466261145
-mas "RsyncGUI", id: 1449707783
-mas "Screens", id: 1224268771
 mas "Screens", id: 1224268771
 mas "Serial", id: 877615577
-mas "Serial", id: 877615577
-mas "Server", id: 883878097
 mas "Server", id: 883878097
 mas "Shareful", id: 1522267256
 mas "Slack", id: 803453959
 mas "Soulver", id: 413965349
-mas "Soulver", id: 413965349
-mas "Speedtest", id: 1153157709
 mas "Speedtest", id: 1153157709
 mas "Textastic", id: 572491815
-mas "Textastic", id: 572491815
-mas "Todoist", id: 585829637
 mas "Todoist", id: 585829637
 mas "Tot", id: 1491071483
 mas "Tweetbot", id: 1384080005
 mas "Twitterrific", id: 1289378661
-mas "Twitterrific", id: 1289378661
-mas "Ultra Character Map", id: 520265986
 mas "Ultra Character Map", id: 520265986
 mas "UTM", id: 1538878817
 mas "vCard Editor", id: 855935660
-mas "vCard Editor", id: 855935660
-mas "VMware Remote Console", id: 1230249825
-mas "WiFiman Desktop", id: 1482391803
 mas "Xcode", id: 497799835
-mas "Xcode", id: 497799835
-mas "Xee³", id: 639764244
 mas "Xee³", id: 639764244
