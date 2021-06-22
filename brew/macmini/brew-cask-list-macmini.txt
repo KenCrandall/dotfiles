@@ -63,7 +63,6 @@ font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
 fork
-gdisk
 graalvm-ce-lts-java8
 hazel
 ios-saver
