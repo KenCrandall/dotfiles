@@ -28,6 +28,7 @@ htop
 jemalloc
 jpeg
 jpeg-turbo
+jq
 launchctl-completion
 libev
 libevent
@@ -48,6 +49,8 @@ nano
 ncurses
 nettle
 nghttp2
+nmap
+oniguruma
 open-completion
 openldap
 openssl@1.1
@@ -65,6 +68,7 @@ python@3.9
 readline
 rsync
 rtmpdump
+six
 sqlite
 stoken
 subversion

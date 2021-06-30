@@ -1,3 +1,4 @@
+tap "colindean/fonts-nonfree"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -18,10 +19,12 @@ brew "gh"
 brew "git"
 brew "glances"
 brew "htop"
+brew "jq"
 brew "launchctl-completion"
 brew "mas"
 brew "mosh"
 brew "nano"
+brew "nmap"
 brew "open-completion"
 brew "packer-completion"
 brew "pandoc"
@@ -40,7 +43,7 @@ cask "acorn"
 cask "bartender"
 cask "choosy"
 cask "eloston-chromium"
-cask "firefox-esr"
+cask "firefox"
 cask "font-architects-daughter"
 cask "font-caladea"
 cask "font-cantarell"
@@ -77,12 +80,15 @@ cask "font-martel"
 cask "font-martel-sans"
 cask "font-merriweather"
 cask "font-merriweather-sans"
+cask "font-microsoft-office"
 cask "font-montserrat"
 cask "font-office-code-pro"
 cask "font-open-sans"
 cask "font-open-sans-condensed"
 cask "font-overpass"
 cask "font-overpass-nerd-font"
+cask "font-oxygen"
+cask "font-oxygen-mono"
 cask "font-playball"
 cask "font-playfair-display"
 cask "font-pt-mono"
@@ -111,9 +117,14 @@ cask "microsoft-auto-update"
 cask "microsoft-edge"
 cask "microsoft-teams"
 cask "openinterminal"
+cask "optimus-player"
+cask "qlvideo"
 cask "remotix-agent"
+cask "rocket"
 cask "sf-symbols"
+cask "soundsource"
 cask "swiftbar"
+cask "syntax-highlight"
 cask "typora"
 cask "visual-studio-code"
 cask "vmware-fusion"
@@ -131,7 +142,7 @@ mas "Cardhop", id: 1290358394
 mas "ColorSlurp", id: 1287239339
 mas "ColorWell", id: 460176867
 mas "DaisyDisk", id: 411643860
-mas "Deliveries", id: 924726344
+mas "Deliveries", id: 290986013
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
@@ -150,7 +161,6 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
 mas "Monosnap", id: 540348655
-mas "Napkin", id: 581789185
 mas "Network Radar", id: 507659816
 mas "OmniGraffle", id: 1456314039
 mas "OneDrive", id: 823766827
@@ -161,10 +171,8 @@ mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
 mas "Remote Desktop", id: 409907375
 mas "Remotix", id: 466261145
-mas "RsyncGUI", id: 1449707783
 mas "Screens", id: 1224268771
 mas "Serial", id: 877615577
-mas "Shapes", id: 930093508
 mas "Slack", id: 803453959
 mas "Soulver", id: 413965349
 mas "Speedtest", id: 1153157709
@@ -172,16 +180,14 @@ mas "StopTheMadness", id: 1376402589
 mas "Tabs Saver for Safari", id: 1440006971
 mas "Tasks", id: 1502903102
 mas "Textastic", id: 572491815
-mas "The Archive Browser", id: 510232205
 mas "The Clock", id: 488764545
 mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
 mas "Tot", id: 1491071483
-mas "Transmit", id: 403388562
 mas "Tweetbot", id: 1384080005
 mas "TweetDeck", id: 485812721
 mas "Twitterrific", id: 1289378661
 mas "UTM", id: 1538878817
-mas "WiFiman Desktop", id: 1482391803
 mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
 mas "Xee³", id: 639764244

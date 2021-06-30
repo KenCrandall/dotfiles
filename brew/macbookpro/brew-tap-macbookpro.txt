@@ -1,5 +1,6 @@
 Brew Tap
 --------
+colindean/fonts-nonfree
 homebrew/bundle
 homebrew/cask
 homebrew/cask-drivers
