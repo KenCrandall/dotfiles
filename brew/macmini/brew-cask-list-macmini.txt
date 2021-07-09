@@ -38,6 +38,7 @@ font-lato
 font-liberation-mono-for-powerline
 font-merriweather
 font-merriweather-sans
+font-microsoft-office
 font-noto-color-emoji
 font-noto-emoji
 font-noto-mono-for-powerline
