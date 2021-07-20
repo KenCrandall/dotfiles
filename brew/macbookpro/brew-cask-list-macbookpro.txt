@@ -90,5 +90,4 @@ syntax-highlight
 typora
 visual-studio-code
 vmware-fusion
-xbar
 zoom
