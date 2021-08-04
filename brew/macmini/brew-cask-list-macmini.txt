@@ -5,6 +5,7 @@ acorn
 airbuddy
 balenaetcher
 bartender
+bettertouchtool
 blank-screensaver
 brave-browser
 cakebrew
@@ -66,11 +67,13 @@ font-source-serif-pro
 fork
 graalvm-ce-lts-java8
 hazel
+imazing
 ios-saver
 iterm2
 joplin
 kaleidoscope
-kitty
+keyboardcleantool
+logitech-firmwareupdatetool
 logitech-options
 logitech-unifying
 mactex
@@ -80,7 +83,6 @@ microsoft-auto-update
 microsoft-edge
 microsoft-teams
 musicbrainz-picard
-nextcloud
 openinterminal
 optimus-player
 podcastmenu
@@ -99,6 +101,7 @@ sigil
 soundsource
 steam
 swiftbar
+syncthing
 syntax-highlight
 tcl
 the-unarchiver
