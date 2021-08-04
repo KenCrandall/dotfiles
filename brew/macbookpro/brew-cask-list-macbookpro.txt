@@ -3,6 +3,7 @@ Brew Cask List
 1password-cli
 acorn
 bartender
+bettertouchtool
 choosy
 eloston-chromium
 firefox
