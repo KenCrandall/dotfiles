@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#
+# tsize - Display terminal window size
+#
+
+echo "Width = $(tput cols) Height = $(tput lines)"
