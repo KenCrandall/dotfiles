@@ -1,0 +1,19 @@
+username = KenCrandall
+api-key = 9118361536164a319895027fdbd4b71e
+region = DFW
+
+[training]
+username = ken.crandall-cloud-training-1
+api-key = 561739652a7e4b218f9b52e2da215161
+region = DFW
+
+[salab]
+username = kencrandall-osa
+api-key = d20e0bff1a4f497297a613a2c020ab75
+region = DFW
+
+[fms]
+username = FixMyStack
+api-key = ed9875b746924868bcfea8b9acb9d86a
+region = IAD
+
