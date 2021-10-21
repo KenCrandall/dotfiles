@@ -5,10 +5,8 @@ acorn
 airbuddy
 balenaetcher
 bartender
-bettertouchtool
 blank-screensaver
 brave-browser
-cakebrew
 calibre
 carbon-copy-cloner
 choosy
@@ -34,12 +32,14 @@ font-fira-sans-condensed
 font-fira-sans-extra-condensed
 font-hack
 font-input
+font-inter
 font-jetbrains-mono
 font-lato
 font-liberation-mono-for-powerline
 font-merriweather
 font-merriweather-sans
 font-microsoft-office
+font-new-york
 font-noto-color-emoji
 font-noto-emoji
 font-noto-mono-for-powerline
@@ -60,11 +60,17 @@ font-roboto
 font-roboto-mono
 font-roboto-mono-for-powerline
 font-roboto-slab
+font-sf-compact
+font-sf-mono
+font-sf-mono-for-powerline
+font-sf-pro
 font-source-code-pro
 font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
 fork
+google-chrome
+gpg-suite-no-mail
 graalvm-ce-lts-java8
 hazel
 imazing
@@ -89,6 +95,7 @@ podcastmenu
 qlcolorcode
 qlvideo
 quicken
+raindropio
 remotix-agent
 rocket
 royal-tsx
@@ -101,6 +108,7 @@ sigil
 soundsource
 steam
 swiftbar
+syncalicious
 syncthing
 syntax-highlight
 tcl
@@ -113,6 +121,7 @@ vagrant
 vagrant-manager
 vagrant-vmware-utility
 visual-studio-code
+vivaldi
 vlc
 vmware-fusion
 vnc-viewer

@@ -17,11 +17,15 @@ tap "theseal/blank-screensaver"
 brew "amtterm"
 brew "ant"
 brew "openssl@1.1"
+brew "archey"
 brew "autoconf"
 brew "bash"
 brew "bash-completion@2"
 brew "bat"
 brew "brew-cask-completion"
+brew "gettext"
+brew "glib"
+brew "pkg-config"
 brew "darkhttpd"
 brew "docbook-xsl"
 brew "docker-machine"
@@ -29,19 +33,22 @@ brew "docker-machine-driver-vmware"
 brew "dog"
 brew "dust"
 brew "exa"
-brew "gettext"
+brew "expect", link: false
+brew "ffmpeg"
+brew "fzf"
 brew "gh"
 brew "git"
 brew "git-delta"
 brew "git-utils"
 brew "glances"
-brew "glib"
 brew "gnu-tar"
-brew "pkg-config"
 brew "go"
+brew "htmldoc"
 brew "htop"
+brew "hugo"
 brew "imagemagick"
 brew "iperf3"
+brew "ipinfo-cli"
 brew "ipmitool"
 brew "ipmiutil"
 brew "jq"
@@ -58,6 +65,7 @@ brew "nano"
 brew "nasm"
 brew "neofetch"
 brew "nmap"
+brew "oath-toolkit"
 brew "open-completion"
 brew "openstackclient"
 brew "packer"
@@ -65,11 +73,13 @@ brew "packer-completion"
 brew "pinfo"
 brew "pip-completion"
 brew "pstree"
+brew "pwgen"
 brew "pyenv"
 brew "pyenv-ccache"
 brew "pyenv-virtualenv"
 brew "qemu"
 brew "rack"
+brew "rainbarf"
 brew "rbenv"
 brew "rbenv-binstubs"
 brew "rclone"
@@ -93,7 +103,7 @@ brew "unar"
 brew "vagrant-completion"
 brew "watch"
 brew "wget"
-brew "youtube-dl"
+brew "youtube-dlc"
 brew "yq"
 brew "esolitos/ipa/sshpass"
 cask "1password-cli"
@@ -101,10 +111,8 @@ cask "acorn"
 cask "airbuddy"
 cask "balenaetcher"
 cask "bartender"
-cask "bettertouchtool"
 cask "blank-screensaver"
 cask "brave-browser"
-cask "cakebrew"
 cask "calibre"
 cask "carbon-copy-cloner"
 cask "choosy"
@@ -130,12 +138,14 @@ cask "font-fira-sans-condensed"
 cask "font-fira-sans-extra-condensed"
 cask "font-hack"
 cask "font-input"
+cask "font-inter"
 cask "font-jetbrains-mono"
 cask "font-lato"
 cask "font-liberation-mono-for-powerline"
 cask "font-merriweather"
 cask "font-merriweather-sans"
 cask "font-microsoft-office"
+cask "font-new-york"
 cask "font-noto-color-emoji"
 cask "font-noto-emoji"
 cask "font-noto-mono-for-powerline"
@@ -156,11 +166,17 @@ cask "font-roboto"
 cask "font-roboto-mono"
 cask "font-roboto-mono-for-powerline"
 cask "font-roboto-slab"
+cask "font-sf-compact"
+cask "font-sf-mono"
+cask "font-sf-mono-for-powerline"
+cask "font-sf-pro"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
 cask "font-source-sans-pro"
 cask "font-source-serif-pro"
 cask "fork"
+cask "google-chrome"
+cask "gpg-suite-no-mail"
 cask "graalvm-ce-lts-java8"
 cask "hazel"
 cask "imazing"
@@ -185,6 +201,7 @@ cask "podcastmenu"
 cask "qlcolorcode"
 cask "qlvideo"
 cask "quicken"
+cask "raindropio"
 cask "remotix-agent"
 cask "rocket"
 cask "royal-tsx"
@@ -197,6 +214,7 @@ cask "sigil"
 cask "soundsource"
 cask "steam"
 cask "swiftbar"
+cask "syncalicious"
 cask "syncthing"
 cask "syntax-highlight"
 cask "tcl"
@@ -209,6 +227,7 @@ cask "vagrant"
 cask "vagrant-manager"
 cask "vagrant-vmware-utility"
 cask "visual-studio-code"
+cask "vivaldi"
 cask "vlc"
 cask "vmware-fusion"
 cask "vnc-viewer"
@@ -254,23 +273,32 @@ mas "PCalc", id: 403504866
 mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
+mas "RAW Power", id: 1157116444
 mas "Remote Desktop", id: 409907375
 mas "Remotix", id: 466261145
+mas "Save to Raindrop.io", id: 1549370672
 mas "Screens", id: 1224268771
 mas "Serial", id: 877615577
 mas "Server", id: 883878097
 mas "Shareful", id: 1522267256
 mas "Slack", id: 803453959
-mas "Soulver", id: 413965349
+mas "Soulver 2", id: 413965349
+mas "Soulver 3", id: 1508732804
 mas "Speedtest", id: 1153157709
+mas "StopTheMadness", id: 1376402589
+mas "StopTheMadness", id: 1376402589
 mas "Tabs Saver for Safari", id: 1440006971
+mas "Tagr", id: 1450308734
+mas "Telegram", id: 747648890
 mas "Textastic", id: 572491815
 mas "Todoist", id: 585829637
 mas "Tot", id: 1491071483
+mas "Transmit", id: 1436522307
 mas "Tweetbot", id: 1384080005
 mas "Twitterrific", id: 1289378661
 mas "Ultra Character Map", id: 520265986
 mas "UTM", id: 1538878817
 mas "vCard Editor", id: 855935660
+mas "WiFiman Desktop", id: 1482391803
 mas "Xcode", id: 497799835
 mas "Xee³", id: 639764244
