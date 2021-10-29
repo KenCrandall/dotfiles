@@ -3,6 +3,7 @@ Brew Cask List
 1password-cli
 acorn
 airbuddy
+audacity
 balenaetcher
 bartender
 blank-screensaver
@@ -89,6 +90,7 @@ microsoft-auto-update
 microsoft-edge
 microsoft-teams
 musicbrainz-picard
+obsidian
 openinterminal
 optimus-player
 podcastmenu
@@ -107,6 +109,7 @@ sf-symbols
 sigil
 soundsource
 steam
+superduper
 swiftbar
 syncalicious
 syncthing
