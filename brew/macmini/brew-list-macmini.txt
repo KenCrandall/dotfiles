@@ -1,5 +1,6 @@
 Brew List
 ---------
+alpine
 amtterm
 ant
 aom
@@ -18,6 +19,8 @@ c-ares
 ca-certificates
 cairo
 ccache
+cjson
+cmocka
 cunit
 darkhttpd
 dav1d
@@ -25,6 +28,7 @@ docbook
 docbook-xsl
 docker-machine
 docker-machine-driver-vmware
+docutils
 dog
 dust
 exa
@@ -97,6 +101,7 @@ libogg
 libomp
 libpng
 libpthread-stubs
+librist
 libsamplerate
 libslirp
 libsndfile
@@ -104,6 +109,8 @@ libsodium
 libsoxr
 libssh
 libssh2
+libsvg
+libsvg-cairo
 libtasn1
 libtiff
 libtool
@@ -131,6 +138,7 @@ lzo
 m4
 make
 mas
+mbedtls
 mdcat
 mosh
 mpdecimal
@@ -158,6 +166,8 @@ pcre
 pcre2
 pinfo
 pip-completion
+pip-tools
+pipenv
 pixman
 pkg-config
 popt
@@ -175,6 +185,7 @@ rainbarf
 rav1e
 rbenv
 rbenv-binstubs
+rbenv-bundler
 rclone
 readline
 reattach-to-user-namespace
@@ -195,6 +206,7 @@ srt
 sshpass
 stoken
 subversion
+svg2png
 tcl-tk
 tealdeer
 telnet

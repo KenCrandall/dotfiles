@@ -14,7 +14,6 @@ choosy
 daisydisk
 discord
 docker
-drawio
 eloston-chromium
 epichrome
 firefox
@@ -37,6 +36,7 @@ font-inter
 font-jetbrains-mono
 font-lato
 font-liberation-mono-for-powerline
+font-libre-franklin
 font-merriweather
 font-merriweather-sans
 font-microsoft-office
@@ -69,6 +69,8 @@ font-source-code-pro
 font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
+font-sue-ellen-francisco
+fontbase
 fork
 google-chrome
 gpg-suite-no-mail
@@ -91,7 +93,8 @@ microsoft-edge
 microsoft-teams
 musicbrainz-picard
 obsidian
-openinterminal
+openineditor-lite
+openinterminal-lite
 optimus-player
 podcastmenu
 qlcolorcode
