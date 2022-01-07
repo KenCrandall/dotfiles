@@ -11,3 +11,8 @@ killall Finder
 #
 defaults write com.apple.Dock showhidden -bool YES
 killall Dock
+
+#
+# Make Preview show PDFs in Single Page mode by default
+#
+defaults write com.apple.Preview kPVPDFDefaultPageViewModeOption 1
