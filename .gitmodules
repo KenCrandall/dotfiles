@@ -10,3 +10,6 @@
 [submodule "nano/nanorc"]
     path = nano/nanorc
     url = https://github.com/scopatz/nanorc.git
+[submodule "liquidprompt"]
+	path = liquidprompt
+	url = https://github.com/nojhan/liquidprompt.git
