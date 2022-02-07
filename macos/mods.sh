@@ -16,3 +16,9 @@ killall Dock
 # Make Preview show PDFs in Single Page mode by default
 #
 defaults write com.apple.Preview kPVPDFDefaultPageViewModeOption 1
+
+#
+# Remove "Other Users" from login prompt
+#
+sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool FALSE
+
