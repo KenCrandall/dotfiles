@@ -1,0 +1,6 @@
+@hourly ( $HOME/.cron/bin/run-parts $HOME/.cron/cron.hourly )
+@daily ( $HOME/.cron/bin/run-parts $HOME/.cron/cron.daily )
+@weekly ( $HOME/.cron/bin/run-parts $HOME/.cron/cron.weekly )
+@monthly ( $HOME/.cron/bin/run-parts $HOME/.cron/cron.monthly )
+@yearly ( $HOME/.cron/bin/run-parts $HOME/.cron/cron.yearly )
+@reboot ( $HOME/.cron/bin/run-parts $HOME/.cron/cron.reboot )
