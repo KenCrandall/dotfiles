@@ -12,12 +12,17 @@ alias mv='mv -i'
 alias pp='prettyping'
 alias info='pinfo'
 alias man='pinfo -m'
-alias manf='pinfo -m -f'
+alias manf='pinfo -f -m'
 alias scp='rsync --archive --partial --progress --rsh=ssh'
 alias mdc='mdcat | less'
 alias tree='tree -C | less'
 alias lynx='lynx -cfg=$HOME/.lynxrc'
 alias jobs='jobs -l'
+alias pwgen='pwgen -Bcny 12 1'
+alias yta='youtube-dlc -i --extract-audio --audio-format m4a --audio-quality 0'
+alias yta2='youtube-dlc -i --extract-audio --audio-format mp3 --audio-quality 0'
+alias ytv='youtube-dlc --merge-output-format mp4'
+alias tldr='tldr -p'
 
 #
 # OpenStack
