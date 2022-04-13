@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# .bashrc goodies for macos
+#
+
+# macOS-specific aliases
+alias rm='trash'
+alias ls='ls -F -G'
+alias say='say -r 175'
+alias vnc='/Applications/VNC\ Viewer.app/Contents/MacOS/vncviewer'
+alias ovftool='/Applications/VMware\ Fusion.app/Contents/Library/VMware\ OVF\ Tool/ovftool'
+alias updatedb='/usr/libexec/locate.updatedb'
+alias fix='sudo xattr -r -d com.apple.quarantine' # Alias to remove quarantine
+
+# Cancel ZSH vs BASH warning
+BASH_SILENCE_DEPRECATION_WARNING=1
+export BASH_SILENCE_DEPRECATION_WARNING
+
+# iTerm Shell integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Include Homebrew in Path
+PATH=/usr/local/bin:$PATH
+export PATH
+
+# Source bash autocompletion
+if type brew &>/dev/null; then
+    HOMEBREW_PREFIX="$(brew --prefix)"
+    if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+        source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+    else
+        for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+            [[ -r "$COMPLETION" ]] && source "$COMPLETION"
+        done
+    fi
+fi

@@ -1,0 +1,17 @@
+#
+# .bash_java
+#
+
+#
+# GraalVM on macOS
+#
+
+JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-lts-java8-20.3.1/Contents/Home
+export JAVA_HOME
+
+#
+# PATH is covered by homebrew
+#
+#PATH=$PATH:/Library/Java/JavaVirtualMachines/graalvm-ce-lts-java8-20.3.1/Contents/Home/bin:"$PATH"
+#export PATH
+

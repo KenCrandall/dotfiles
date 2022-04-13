@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#
+# bash completion
+#
+
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    source /usr/share/bash-completion/bash_completion
+fi
+
+# OpenStack client
+if [ -f $HOME/.bash_completion_openstack ]; then
+    source $HOME/.bash_completion_openstack
+fi
+
+# Rackspace cloud client
+if [ -f $HOME/.rack/bash_autocomplete ]; then
+    source $HOME/.rack/bash_autocomplete
+fi
