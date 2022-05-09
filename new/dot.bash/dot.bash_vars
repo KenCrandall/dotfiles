@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+# .bash_vars
+#
+
+#
+# Editor
+#
+EDITOR=$(which nano)
+export EDITOR
+
+#
+# less flags
+#
+PAGER=$(which less)
+export PAGER
+LESS="-g -i -r"
+export LESS
+
+#
+# OpenStack screen dimensions
+#
+CLIFF_FIT_WIDTH=1
+export CLIFF_FIT_WIDTH

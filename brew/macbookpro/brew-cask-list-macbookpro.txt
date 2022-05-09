@@ -2,6 +2,7 @@ Brew Cask List
 --------------
 1password-cli
 acorn
+adguard
 airbuddy
 atom
 bartender
@@ -12,6 +13,7 @@ daisydisk
 discord
 eloston-chromium
 firefox
+fluid
 font-architects-daughter
 font-caladea
 font-cantarell
@@ -59,6 +61,7 @@ font-oxygen
 font-oxygen-mono
 font-playball
 font-playfair-display
+font-playfair-display-sc
 font-pt-mono
 font-pt-sans
 font-pt-sans-caption
@@ -86,14 +89,18 @@ iterm2
 joplin
 keyboardcleantool
 logitech-options
+mactex-no-gui
 mattermost
 microsoft-auto-update
 microsoft-edge
 microsoft-teams
 obsidian
-openinterminal
+open-in-code
+openineditor-lite
+openinterminal-lite
 optimus-player
 plex
+podcastmenu
 qlvideo
 raindropio
 remotix-agent
@@ -101,10 +108,12 @@ rocket
 sf-symbols
 soundsource
 swiftbar
+syncthing
 syntax-highlight
 tuntap
 typora
 visual-studio-code
 vlc
 vmware-fusion
+wezterm
 zoom
