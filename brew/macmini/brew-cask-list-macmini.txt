@@ -11,6 +11,7 @@ brave-browser
 calibre
 carbon-copy-cloner
 choosy
+coteditor
 daisydisk
 discord
 docker
@@ -30,6 +31,9 @@ font-fira-mono-for-powerline
 font-fira-sans
 font-fira-sans-condensed
 font-fira-sans-extra-condensed
+font-gentium-basic
+font-gentium-book-basic
+font-gentium-plus
 font-hack
 font-input
 font-inter
@@ -70,10 +74,11 @@ font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
 font-sue-ellen-francisco
+font-titillium
+font-titillium-web
 fontbase
 fork
 google-chrome
-gpg-suite-no-mail
 graalvm-ce-lts-java8
 hazel
 imazing
@@ -82,6 +87,7 @@ iterm2
 joplin
 kaleidoscope
 keyboardcleantool
+launchbar
 logitech-firmwareupdatetool
 logitech-options
 logitech-unifying
@@ -97,6 +103,8 @@ openineditor-lite
 openinterminal-lite
 optimus-player
 podcastmenu
+postbox
+postman
 qlcolorcode
 qlvideo
 quicken
