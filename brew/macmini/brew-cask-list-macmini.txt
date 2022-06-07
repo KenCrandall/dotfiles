@@ -94,6 +94,7 @@ logitech-unifying
 mactex
 markdown-service-tools
 mattermost
+meld
 microsoft-auto-update
 microsoft-edge
 microsoft-teams

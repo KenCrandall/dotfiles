@@ -216,6 +216,7 @@ screenresolution
 sdl2
 shared-mime-info
 six
+sleepwatcher
 snappy
 source-highlight
 speedtest-cli
