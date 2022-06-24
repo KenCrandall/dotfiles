@@ -244,6 +244,7 @@ unbound
 utf8proc
 vagrant-completion
 vde
+wakeonlan
 watch
 webp
 wget

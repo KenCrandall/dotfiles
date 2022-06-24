@@ -121,6 +121,7 @@ brew "trash"
 brew "tree"
 brew "unar"
 brew "vagrant-completion"
+brew "wakeonlan"
 brew "watch"
 brew "wget"
 brew "yamllint"
@@ -203,7 +204,6 @@ cask "font-source-serif-pro"
 cask "font-sue-ellen-francisco"
 cask "font-titillium"
 cask "font-titillium-web"
-cask "fontbase"
 cask "fork"
 cask "google-chrome"
 cask "graalvm-ce-lts-java8"
@@ -238,6 +238,7 @@ cask "qlvideo"
 cask "quicken"
 cask "raindropio"
 cask "remotix-agent"
+cask "retrobatch"
 cask "rocket"
 cask "royal-tsx"
 cask "sbarex-qlmarkdown"
@@ -305,6 +306,7 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
 mas "Monosnap", id: 540348655
+mas "Moom", id: 419330170
 mas "Network Radar", id: 507659816
 mas "Numbers", id: 409203825
 mas "OmniGraffle", id: 1456314039

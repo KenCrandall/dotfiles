@@ -76,7 +76,6 @@ font-source-serif-pro
 font-sue-ellen-francisco
 font-titillium
 font-titillium-web
-fontbase
 fork
 google-chrome
 graalvm-ce-lts-java8
@@ -111,6 +110,7 @@ qlvideo
 quicken
 raindropio
 remotix-agent
+retrobatch
 rocket
 royal-tsx
 sbarex-qlmarkdown
