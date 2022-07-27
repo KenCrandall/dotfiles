@@ -17,6 +17,7 @@ discord
 docker
 eloston-chromium
 epichrome
+fedora-media-writer
 firefox
 fluid
 font-cantarell
