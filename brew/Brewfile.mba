@@ -1,0 +1,94 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+brew "bash"
+brew "bash-completion@2"
+brew "brew-cask-completion"
+brew "darkhttpd"
+brew "exa"
+brew "gh"
+brew "git"
+brew "htop"
+brew "hugo"
+brew "launchctl-completion"
+brew "libvirt"
+brew "mas"
+brew "nano"
+brew "neofetch"
+brew "open-completion"
+brew "pinfo"
+brew "pwgen"
+brew "qemu"
+brew "subversion"
+brew "tmux"
+brew "trash"
+cask "1password"
+cask "1password-cli"
+cask "acorn"
+cask "bartender"
+cask "choosy"
+cask "font-cascadia-code"
+cask "font-cascadia-code-pl"
+cask "font-cascadia-mono"
+cask "font-cascadia-mono-pl"
+cask "font-fira-code"
+cask "font-fira-mono"
+cask "font-fira-mono-for-powerline"
+cask "font-fira-sans"
+cask "font-sf-compact"
+cask "font-sf-mono-for-powerline"
+cask "font-sf-pro"
+cask "google-chrome"
+cask "iterm2"
+cask "joplin"
+cask "logi-options-plus"
+cask "microsoft-edge"
+cask "microsoft-teams"
+cask "openineditor-lite"
+cask "openinterminal-lite"
+cask "raindropio"
+cask "rocket"
+cask "screens-connect"
+cask "unite"
+cask "visual-studio-code"
+cask "zoom"
+mas "Amphetamine", id: 937984704
+mas "Cardhop", id: 1290358394
+mas "ColorWell", id: 460176867
+mas "Deliveries", id: 290986013
+mas "Fantastical", id: 975937182
+mas "Friendly Streaming", id: 553245401
+mas "GarageBand", id: 682658836
+mas "GoodLinks", id: 1474335294
+mas "Graphic", id: 404705039
+mas "Image2icon", id: 992115977
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft To Do", id: 1274495053
+mas "Microsoft Word", id: 462054704
+mas "Monosnap", id: 540348655
+mas "Numbers", id: 409203825
+mas "OmniGraffle", id: 1456314039
+mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
+mas "Paprika Recipe Manager 3", id: 1303222628
+mas "PCalc", id: 403504866
+mas "Pi-hole Remote", id: 1515445551
+mas "Pixelmator Pro", id: 1289583905
+mas "PopClip", id: 445189367
+mas "Screens", id: 1224268771
+mas "Slack", id: 803453959
+mas "Speedtest", id: 1153157709
+mas "Textastic", id: 572491815
+mas "The Unarchiver", id: 425424353
+mas "Tot", id: 1491071483
+mas "Transmit", id: 1436522307
+mas "Tweetbot", id: 1384080005
+mas "UTM", id: 1538878817
+mas "Xee³", id: 639764244
