@@ -2,11 +2,11 @@ Brew List
 ---------
 alpine
 amtterm
-ant
 aom
 apr
 apr-util
 archey
+argp-standalone
 autoconf
 bash
 bash-completion@2
@@ -19,6 +19,7 @@ brotli
 btop
 c-ares
 ca-certificates
+cabextract
 cairo
 ccache
 cfssl
@@ -28,7 +29,6 @@ cunit
 darkhttpd
 dateutils
 dav1d
-ditaa
 docbook
 docbook-xsl
 docker-completion
@@ -45,6 +45,7 @@ ffmpeg
 flac
 fltk
 fontconfig
+freeipmi
 freetype
 frei0r
 fribidi
@@ -60,6 +61,7 @@ git-delta
 git-utils
 glances
 glib
+glow
 gmp
 gnu-getopt
 gnu-sed
@@ -70,7 +72,9 @@ gobject-introspection
 graphite2
 grep
 guile
+gum
 harfbuzz
+highway
 hiredis
 htmldoc
 htmlq
@@ -86,7 +90,6 @@ ipinfo-cli
 ipmitool
 ipmiutil
 isl
-isync
 jasper
 jbig2dec
 jemalloc
@@ -113,6 +116,7 @@ libheif
 libidn
 libidn2
 libiscsi
+liblinear
 liblqr
 libmpc
 libnghttp2
@@ -153,6 +157,7 @@ libyaml
 libzip
 liquidprompt
 little-cms2
+lua@5.3
 lynx
 lz4
 lzo
@@ -166,6 +171,7 @@ mdv
 mosh
 mpdecimal
 mpfr
+mpg123
 multimarkdown
 nano
 nasm
@@ -181,9 +187,9 @@ oniguruma
 open-completion
 opencore-amr
 openexr
-openjdk
 openjpeg
 openssl@1.1
+openssl@3
 openstackclient
 opus
 p11-kit
@@ -198,15 +204,19 @@ pipenv
 pixman
 pkg-config
 popt
+progress
 protobuf
 pstree
+pv
 pwgen
 pyenv
 pyenv-ccache
 pyenv-virtualenv
 python@3.10
+python@3.11
 python@3.8
 python@3.9
+pyyaml
 qemu
 rack
 rainbarf
@@ -218,6 +228,7 @@ rclone
 readline
 reattach-to-user-namespace
 rename
+ripgrep
 rsync
 rubberband
 ruby-build

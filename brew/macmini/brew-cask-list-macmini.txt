@@ -1,5 +1,6 @@
 Brew Cask List
 --------------
+1password
 1password-cli
 acorn
 airbuddy
@@ -7,6 +8,7 @@ audacity
 balenaetcher
 bartender
 blank-screensaver
+bookmacster
 brave-browser
 calibre
 carbon-copy-cloner
@@ -26,16 +28,24 @@ font-cascadia-mono-pl
 font-courier-prime-code
 font-droid-sans-mono-for-powerline
 font-envy-code-r
+font-fantasque-sans-mono
 font-fira-code
 font-fira-mono
 font-fira-mono-for-powerline
 font-fira-sans
 font-fira-sans-condensed
 font-fira-sans-extra-condensed
+font-firago
 font-gentium-basic
 font-gentium-book-basic
 font-gentium-plus
 font-hack
+font-ibm-plex
+font-ibm-plex-mono
+font-ibm-plex-sans
+font-ibm-plex-sans-condensed
+font-ibm-plex-serif
+font-inconsolata
 font-input
 font-inter
 font-jetbrains-mono
@@ -62,6 +72,10 @@ font-playfair-display
 font-pt-mono
 font-pt-sans
 font-pt-serif
+font-red-hat-display
+font-red-hat-mono
+font-red-hat-text
+font-redhat
 font-roboto
 font-roboto-mono
 font-roboto-mono-for-powerline
@@ -74,12 +88,14 @@ font-source-code-pro
 font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
+font-spline-sans
+font-spline-sans-mono
 font-sue-ellen-francisco
 font-titillium
 font-titillium-web
+font-victor-mono
 fork
 google-chrome
-graalvm-ce-lts-java8
 hazel
 imazing
 ios-saver
@@ -102,6 +118,7 @@ musicbrainz-picard
 obsidian
 openineditor-lite
 openinterminal-lite
+openwebstart
 optimus-player
 podcastmenu
 postbox
@@ -131,6 +148,7 @@ tcl
 the-unarchiver
 tigervnc-viewer
 tower
+turbovnc-viewer
 typora
 unite
 vagrant
@@ -144,4 +162,4 @@ vnc-viewer
 wireshark
 xquartz
 zoom
-zulu8
+zulu11
