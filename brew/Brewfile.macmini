@@ -300,7 +300,11 @@ cask "wireshark"
 cask "xquartz"
 cask "zoom"
 cask "zulu11"
+mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
 mas "Agenda", id: 1287445660
 mas "Airmail", id: 918858936
 mas "AirRadar", id: 414758651
@@ -326,6 +330,7 @@ mas "Image2icon", id: 992115977
 mas "Keynote", id: 409183694
 mas "LanScan", id: 472226235
 mas "LG Screen Manager", id: 1142051783
+mas "Mastonaut", id: 1450757574
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
@@ -350,6 +355,7 @@ mas "Remote Desktop", id: 409907375
 mas "Remote Wake Up", id: 860874272
 mas "Save to Raindrop.io", id: 1549370672
 mas "Screens", id: 1224268771
+mas "Sequel Ace", id: 1518036000
 mas "Serial", id: 877615577
 mas "Server", id: 883878097
 mas "Shareful", id: 1522267256
@@ -358,7 +364,6 @@ mas "Slack", id: 803453959
 mas "Soulver 2", id: 413965349
 mas "Soulver 3", id: 1508732804
 mas "Speedtest", id: 1153157709
-mas "StopTheMadness", id: 1376402589
 mas "StopTheMadness", id: 1376402589
 mas "Tabs Saver for Safari", id: 1440006971
 mas "Tagr", id: 1450308734
