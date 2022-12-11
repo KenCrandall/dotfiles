@@ -16,6 +16,7 @@ font-fira-sans
 font-sf-compact
 font-sf-mono-for-powerline
 font-sf-pro
+gdisk
 google-chrome
 iterm2
 joplin
@@ -26,7 +27,11 @@ openineditor-lite
 openinterminal-lite
 raindropio
 rocket
+royal-tsx
 screens-connect
+tigervnc-viewer
+turbovnc-viewer
 unite
 visual-studio-code
+vnc-viewer
 zoom

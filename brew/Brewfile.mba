@@ -12,18 +12,25 @@ brew "gh"
 brew "git"
 brew "htop"
 brew "hugo"
+brew "openssl@3"
+brew "ipmitool"
+brew "jq"
 brew "launchctl-completion"
+brew "libressl"
 brew "libvirt"
+brew "mandown"
 brew "mas"
 brew "nano"
 brew "neofetch"
 brew "open-completion"
 brew "pinfo"
 brew "pwgen"
+brew "python@3.10"
 brew "qemu"
 brew "subversion"
 brew "tmux"
 brew "trash"
+brew "wget"
 cask "1password"
 cask "1password-cli"
 cask "acorn"
@@ -40,6 +47,7 @@ cask "font-fira-sans"
 cask "font-sf-compact"
 cask "font-sf-mono-for-powerline"
 cask "font-sf-pro"
+cask "gdisk"
 cask "google-chrome"
 cask "iterm2"
 cask "joplin"
@@ -50,22 +58,31 @@ cask "openineditor-lite"
 cask "openinterminal-lite"
 cask "raindropio"
 cask "rocket"
+cask "royal-tsx"
 cask "screens-connect"
+cask "tigervnc-viewer"
+cask "turbovnc-viewer"
 cask "unite"
 cask "visual-studio-code"
+cask "vnc-viewer"
 cask "zoom"
+mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Cardhop", id: 1290358394
 mas "ColorWell", id: 460176867
+mas "DaisyDisk", id: 411643860
+mas "Day One", id: 1055511498
 mas "Deliveries", id: 290986013
 mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
 mas "GarageBand", id: 682658836
 mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
+mas "Hyperspace Desktop", id: 1454139710
 mas "Image2icon", id: 992115977
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "Mastonaut", id: 1450757574
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
@@ -82,11 +99,13 @@ mas "PCalc", id: 403504866
 mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
+mas "Save to Raindrop.io", id: 1549370672
 mas "Screens", id: 1224268771
 mas "Slack", id: 803453959
 mas "Speedtest", id: 1153157709
 mas "Textastic", id: 572491815
 mas "The Unarchiver", id: 425424353
+mas "Thessa", id: 942305623
 mas "Tot", id: 1491071483
 mas "Transmit", id: 1436522307
 mas "Tweetbot", id: 1384080005
