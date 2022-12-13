@@ -14,10 +14,9 @@ tap "orf/brew"
 tap "romkatv/powerlevel10k"
 tap "teamookla/speedtest"
 tap "theseal/blank-screensaver"
-brew "openssl@1.1"
 brew "alpine"
 brew "amtterm"
-brew "archey"
+brew "openssl@1.1"
 brew "autoconf"
 brew "bash"
 brew "bash-completion@2"
@@ -25,15 +24,14 @@ brew "bat"
 brew "brew-cask-completion"
 brew "btop"
 brew "cabextract"
-brew "gettext"
 brew "glib"
 brew "pkg-config"
 brew "cfssl"
+brew "coreutils"
 brew "darkhttpd"
 brew "dateutils"
 brew "docbook-xsl"
 brew "docker-completion", link: false
-brew "docker-compose-completion", link: false
 brew "docker-machine"
 brew "docker-machine-driver-vmware"
 brew "docutils", link: false
@@ -72,9 +70,9 @@ brew "launchctl-completion"
 brew "less"
 brew "libaacs"
 brew "libvirt", restart_service: true
-brew "liquidprompt"
 brew "lynx"
 brew "make"
+brew "man-db"
 brew "mandown"
 brew "mas"
 brew "mdcat"
@@ -150,13 +148,11 @@ cask "brave-browser"
 cask "calibre"
 cask "carbon-copy-cloner"
 cask "choosy"
-cask "coteditor"
 cask "daisydisk"
 cask "discord"
 cask "docker"
 cask "eloston-chromium"
 cask "epichrome"
-cask "fedora-media-writer"
 cask "firefox"
 cask "fluid"
 cask "font-cantarell"
@@ -200,7 +196,6 @@ cask "font-noto-sans"
 cask "font-noto-serif"
 cask "font-office-code-pro"
 cask "font-open-sans"
-cask "font-open-sans-condensed"
 cask "font-oswald"
 cask "font-overpass"
 cask "font-oxygen"
@@ -231,16 +226,12 @@ cask "font-sue-ellen-francisco"
 cask "font-titillium"
 cask "font-titillium-web"
 cask "font-victor-mono"
-cask "fork"
 cask "google-chrome"
 cask "hazel"
-cask "imazing"
-cask "ios-saver"
 cask "iterm2"
 cask "joplin"
 cask "kaleidoscope"
 cask "keyboardcleantool"
-cask "launchbar"
 cask "logitech-firmwareupdatetool"
 cask "logitech-options"
 cask "logitech-unifying"
@@ -251,7 +242,6 @@ cask "meld"
 cask "microsoft-auto-update"
 cask "microsoft-edge"
 cask "microsoft-teams"
-cask "musicbrainz-picard"
 cask "obsidian"
 cask "openineditor-lite"
 cask "openinterminal-lite"
@@ -264,13 +254,10 @@ cask "qlcolorcode"
 cask "qlvideo"
 cask "quicken"
 cask "raindropio"
-cask "remotix-agent"
 cask "retrobatch"
 cask "rocket"
 cask "royal-tsx"
-cask "sbarex-qlmarkdown"
 cask "screens-connect"
-cask "script-debugger"
 cask "sdformatter"
 cask "sf-symbols"
 cask "sigil"
@@ -278,13 +265,10 @@ cask "soundsource"
 cask "steam"
 cask "superduper"
 cask "swiftbar"
-cask "syncalicious"
 cask "syncthing"
 cask "syntax-highlight"
-cask "tcl"
 cask "the-unarchiver"
 cask "tigervnc-viewer"
-cask "tower"
 cask "turbovnc-viewer"
 cask "typora"
 cask "unite"
@@ -294,14 +278,12 @@ cask "vagrant-vmware-utility"
 cask "visual-studio-code"
 cask "vivaldi"
 cask "vlc"
-cask "vmware-fusion"
 cask "vnc-viewer"
 cask "wireshark"
 cask "xquartz"
 cask "zoom"
 cask "zulu11"
 mas "1Password for Safari", id: 1569813296
-mas "AdGuard for Safari", id: 1440147259
 mas "Affinity Designer 2", id: 1616831348
 mas "Affinity Photo 2", id: 1616822987
 mas "Affinity Publisher 2", id: 1606941598
@@ -313,13 +295,13 @@ mas "BetterSnapTool", id: 417375580
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Cardhop", id: 1290358394
 mas "Color Picker", id: 1545870783
+mas "ColorSlurp", id: 1287239339
 mas "ColorWell", id: 460176867
 mas "Day One", id: 1055511498
-mas "Deliveries", id: 290986013
+mas "Deliveries", id: 924726344
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
-mas "GarageBand", id: 682658836
 mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
 mas "Home Assistant", id: 1099568401
@@ -327,7 +309,6 @@ mas "HomeCam", id: 1292995895
 mas "HomePass", id: 1330266650
 mas "iA Writer", id: 775737590
 mas "Image2icon", id: 992115977
-mas "Keynote", id: 409183694
 mas "LanScan", id: 472226235
 mas "LG Screen Manager", id: 1142051783
 mas "Mastonaut", id: 1450757574
@@ -358,6 +339,7 @@ mas "Screens", id: 1224268771
 mas "Sequel Ace", id: 1518036000
 mas "Serial", id: 877615577
 mas "Server", id: 883878097
+mas "SessionRestore", id: 1463334954
 mas "Shareful", id: 1522267256
 mas "Simplefax", id: 1165017252
 mas "Slack", id: 803453959
@@ -367,13 +349,11 @@ mas "Speedtest", id: 1153157709
 mas "StopTheMadness", id: 1376402589
 mas "Tabs Saver for Safari", id: 1440006971
 mas "Tagr", id: 1450308734
-mas "Telegram", id: 747648890
 mas "Textastic", id: 572491815
 mas "Todoist", id: 585829637
 mas "Tot", id: 1491071483
 mas "Transmit", id: 1436522307
 mas "Tweetbot", id: 1384080005
-mas "Twitterrific", id: 1289378661
 mas "Ultra Character Map", id: 520265986
 mas "UTM", id: 1538878817
 mas "vCard Editor", id: 855935660

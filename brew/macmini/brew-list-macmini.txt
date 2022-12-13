@@ -5,26 +5,26 @@ amtterm
 aom
 apr
 apr-util
-archey
 argp-standalone
 autoconf
+automake
 bash
 bash-completion@2
 bat
 bdw-gc
-berkeley-db
 boost
 brew-cask-completion
 brotli
 btop
-c-ares
 ca-certificates
 cabextract
 cairo
+capstone
 ccache
 cfssl
 cjson
 cmocka
+coreutils
 cunit
 darkhttpd
 dateutils
@@ -32,7 +32,6 @@ dav1d
 docbook
 docbook-xsl
 docker-completion
-docker-compose-completion
 docker-machine
 docker-machine-driver-vmware
 docutils
@@ -58,7 +57,6 @@ ghostscript
 giflib
 git
 git-delta
-git-utils
 glances
 glib
 glow
@@ -68,9 +66,9 @@ gnu-sed
 gnu-tar
 gnutls
 go
-gobject-introspection
 graphite2
 grep
+groff
 guile
 gum
 harfbuzz
@@ -92,8 +90,6 @@ ipmiutil
 isl
 jasper
 jbig2dec
-jemalloc
-jpeg
 jpeg-turbo
 jpeg-xl
 jq
@@ -107,9 +103,7 @@ libass
 libb2
 libbluray
 libde265
-libev
 libevent
-libffi
 libgcrypt
 libgpg-error
 libheif
@@ -122,6 +116,7 @@ libmpc
 libnghttp2
 libogg
 libomp
+libpipeline
 libpng
 libpthread-stubs
 libraw
@@ -138,6 +133,7 @@ libsvg-cairo
 libtasn1
 libtiff
 libtool
+libunibreak
 libunistring
 libusb
 libvidstab
@@ -154,8 +150,6 @@ libxml2
 libxmlsec1
 libxrender
 libyaml
-libzip
-liquidprompt
 little-cms2
 lua@5.3
 lynx
@@ -163,6 +157,7 @@ lz4
 lzo
 m4
 make
+man-db
 mandown
 mas
 mbedtls
@@ -178,8 +173,8 @@ nasm
 ncftp
 ncurses
 neofetch
+netpbm
 nettle
-nghttp2
 nmap
 oath-toolkit
 offlineimap
@@ -207,6 +202,7 @@ popt
 progress
 protobuf
 pstree
+psutils
 pv
 pwgen
 pyenv
@@ -215,7 +211,6 @@ pyenv-virtualenv
 python@3.10
 python@3.11
 python@3.8
-python@3.9
 pyyaml
 qemu
 rack
@@ -252,6 +247,7 @@ tealdeer
 telnet
 terminal-notifier
 tesseract
+texinfo
 theora
 tiger-vnc
 tmux
@@ -259,6 +255,7 @@ tmux-mem-cpu-load
 tmuxinator-completion
 trash
 tree
+uchardet
 unar
 unbound
 utf8proc
