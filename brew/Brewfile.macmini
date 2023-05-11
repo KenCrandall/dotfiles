@@ -14,12 +14,16 @@ tap "orf/brew"
 tap "romkatv/powerlevel10k"
 tap "teamookla/speedtest"
 tap "theseal/blank-screensaver"
+tap "tidbyt/tidbyt"
+brew "openssl@3"
 brew "alpine"
 brew "amtterm"
+brew "xz"
 brew "openssl@1.1"
+brew "arping"
 brew "autoconf"
 brew "bash"
-brew "bash-completion@2"
+brew "bash-completion"
 brew "bat"
 brew "brew-cask-completion"
 brew "btop"
@@ -31,32 +35,34 @@ brew "coreutils"
 brew "darkhttpd"
 brew "dateutils"
 brew "docbook-xsl"
-brew "docker-completion", link: false
 brew "docker-machine"
 brew "docker-machine-driver-vmware"
-brew "docutils", link: false
 brew "dog"
 brew "duf"
+brew "dune"
 brew "dust"
 brew "exa"
-brew "expect", link: false
 brew "harfbuzz"
 brew "ffmpeg"
+brew "firefoxpwa"
 brew "libgpg-error"
 brew "freeipmi"
 brew "fzf"
 brew "gh"
 brew "git"
 brew "git-delta"
-brew "glances"
 brew "glow"
 brew "gnu-tar"
 brew "go"
+brew "gptfdisk"
+brew "graphviz"
 brew "grep"
+brew "readline"
 brew "gum"
 brew "htmldoc"
 brew "htmlq"
 brew "htop"
+brew "httrack"
 brew "hugo"
 brew "ifstat"
 brew "imagemagick"
@@ -76,23 +82,28 @@ brew "man-db"
 brew "mandown"
 brew "mas"
 brew "mdcat"
-brew "mdv"
 brew "mosh"
+brew "most"
 brew "nano"
 brew "nasm"
+brew "node"
+brew "nativefier"
 brew "ncftp"
 brew "neofetch"
 brew "nmap"
 brew "oath-toolkit"
-brew "offlineimap"
+brew "ocaml"
+brew "ocamlbuild"
 brew "open-completion"
-brew "openstackclient"
 brew "packer"
 brew "packer-completion"
+brew "pandoc"
+brew "sqlite"
+brew "php"
+brew "pigz"
 brew "pinfo"
 brew "pip-completion"
-brew "pip-tools"
-brew "pipenv"
+brew "pipx"
 brew "progress"
 brew "pstree"
 brew "pv"
@@ -100,6 +111,8 @@ brew "pwgen"
 brew "pyenv"
 brew "pyenv-ccache"
 brew "pyenv-virtualenv"
+brew "python@3.10"
+brew "python@3.9"
 brew "qemu"
 brew "rack"
 brew "rainbarf"
@@ -113,7 +126,6 @@ brew "ripgrep"
 brew "rsync"
 brew "sleepwatcher"
 brew "source-highlight"
-brew "speedtest-cli"
 brew "stoken"
 brew "subversion"
 brew "svg2png"
@@ -127,14 +139,17 @@ brew "tmuxinator-completion"
 brew "trash"
 brew "tree"
 brew "unar"
-brew "vagrant-completion"
 brew "wakeonlan"
 brew "watch"
 brew "wget"
-brew "yamllint"
+brew "youtube-dl"
 brew "youtube-dlc"
 brew "yq"
+brew "yt-dlp"
+brew "zlib"
 brew "esolitos/ipa/sshpass"
+brew "teamookla/speedtest/speedtest"
+brew "tidbyt/tidbyt/pixlet"
 cask "1password"
 cask "1password-cli"
 cask "acorn"
@@ -143,7 +158,6 @@ cask "audacity"
 cask "balenaetcher"
 cask "bartender"
 cask "blank-screensaver"
-cask "bookmacster"
 cask "brave-browser"
 cask "calibre"
 cask "carbon-copy-cloner"
@@ -158,13 +172,16 @@ cask "fluid"
 cask "font-cantarell"
 cask "font-cascadia-code-pl"
 cask "font-cascadia-mono-pl"
+cask "font-comic-neue"
 cask "font-courier-prime-code"
 cask "font-droid-sans-mono-for-powerline"
 cask "font-envy-code-r"
 cask "font-fantasque-sans-mono"
 cask "font-fira-code"
+cask "font-fira-code-nerd-font"
 cask "font-fira-mono"
 cask "font-fira-mono-for-powerline"
+cask "font-fira-mono-nerd-font"
 cask "font-fira-sans"
 cask "font-fira-sans-condensed"
 cask "font-fira-sans-extra-condensed"
@@ -185,6 +202,8 @@ cask "font-jetbrains-mono"
 cask "font-lato"
 cask "font-liberation-mono-for-powerline"
 cask "font-libre-franklin"
+cask "font-martel"
+cask "font-martel-sans"
 cask "font-merriweather"
 cask "font-merriweather-sans"
 cask "font-microsoft-office"
@@ -216,6 +235,11 @@ cask "font-sf-compact"
 cask "font-sf-mono"
 cask "font-sf-mono-for-powerline"
 cask "font-sf-pro"
+cask "font-sofia"
+cask "font-sofia-sans"
+cask "font-sofia-sans-condensed"
+cask "font-sofia-sans-extra-condensed"
+cask "font-sofia-sans-semi-condensed"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
 cask "font-source-sans-pro"
@@ -226,31 +250,34 @@ cask "font-sue-ellen-francisco"
 cask "font-titillium"
 cask "font-titillium-web"
 cask "font-victor-mono"
+cask "font-xkcd-script"
 cask "google-chrome"
 cask "hazel"
 cask "iterm2"
 cask "joplin"
 cask "kaleidoscope"
 cask "keyboardcleantool"
-cask "logitech-firmwareupdatetool"
-cask "logitech-options"
-cask "logitech-unifying"
+cask "logi-options-plus"
 cask "mactex"
 cask "markdown-service-tools"
 cask "mattermost"
-cask "meld"
 cask "microsoft-auto-update"
 cask "microsoft-edge"
 cask "microsoft-teams"
+cask "netnewswire"
+cask "nova"
 cask "obsidian"
+cask "ocenaudio"
 cask "openineditor-lite"
 cask "openinterminal-lite"
 cask "openwebstart"
 cask "optimus-player"
+cask "pashua"
 cask "podcastmenu"
 cask "postbox"
 cask "postman"
 cask "qlcolorcode"
+cask "qlmarkdown"
 cask "qlvideo"
 cask "quicken"
 cask "raindropio"
@@ -272,13 +299,11 @@ cask "tigervnc-viewer"
 cask "turbovnc-viewer"
 cask "typora"
 cask "unite"
-cask "vagrant"
-cask "vagrant-manager"
-cask "vagrant-vmware-utility"
 cask "visual-studio-code"
-cask "vivaldi"
 cask "vlc"
+cask "vmware-fusion"
 cask "vnc-viewer"
+cask "whatsapp"
 cask "wireshark"
 cask "xquartz"
 cask "zoom"
@@ -294,24 +319,22 @@ mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Cardhop", id: 1290358394
-mas "Color Picker", id: 1545870783
 mas "ColorSlurp", id: 1287239339
 mas "ColorWell", id: 460176867
 mas "Day One", id: 1055511498
-mas "Deliveries", id: 924726344
+mas "Deliveries", id: 290986013
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
+mas "GarageBand", id: 682658836
 mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
 mas "Home Assistant", id: 1099568401
 mas "HomeCam", id: 1292995895
 mas "HomePass", id: 1330266650
-mas "iA Writer", id: 775737590
 mas "Image2icon", id: 992115977
 mas "LanScan", id: 472226235
 mas "LG Screen Manager", id: 1142051783
-mas "Mastonaut", id: 1450757574
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
@@ -322,10 +345,8 @@ mas "Microsoft Word", id: 462054704
 mas "Monosnap", id: 540348655
 mas "Moom", id: 419330170
 mas "Network Radar", id: 507659816
-mas "Numbers", id: 409203825
 mas "OmniGraffle", id: 1456314039
 mas "OneDrive", id: 823766827
-mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PCalc", id: 403504866
 mas "Pi-hole Remote", id: 1515445551
@@ -338,7 +359,6 @@ mas "Save to Raindrop.io", id: 1549370672
 mas "Screens", id: 1224268771
 mas "Sequel Ace", id: 1518036000
 mas "Serial", id: 877615577
-mas "Server", id: 883878097
 mas "SessionRestore", id: 1463334954
 mas "Shareful", id: 1522267256
 mas "Simplefax", id: 1165017252
@@ -349,14 +369,13 @@ mas "Speedtest", id: 1153157709
 mas "StopTheMadness", id: 1376402589
 mas "Tabs Saver for Safari", id: 1440006971
 mas "Tagr", id: 1450308734
+mas "TestFlight", id: 899247664
 mas "Textastic", id: 572491815
 mas "Todoist", id: 585829637
 mas "Tot", id: 1491071483
 mas "Transmit", id: 1436522307
-mas "Tweetbot", id: 1384080005
 mas "Ultra Character Map", id: 520265986
 mas "UTM", id: 1538878817
 mas "vCard Editor", id: 855935660
 mas "WiFiman Desktop", id: 1482391803
 mas "Xcode", id: 497799835
-mas "Xee³", id: 639764244

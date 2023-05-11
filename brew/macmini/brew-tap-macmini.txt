@@ -16,3 +16,4 @@ orf/brew
 romkatv/powerlevel10k
 teamookla/speedtest
 theseal/blank-screensaver
+tidbyt/tidbyt
