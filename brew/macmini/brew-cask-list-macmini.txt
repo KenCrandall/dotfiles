@@ -122,6 +122,7 @@ openineditor-lite
 openinterminal-lite
 openwebstart
 optimus-player
+orbstack
 pashua
 podcastmenu
 postbox

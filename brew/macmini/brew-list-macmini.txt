@@ -37,8 +37,6 @@ dateutils
 dav1d
 docbook
 docbook-xsl
-docker-machine
-docker-machine-driver-vmware
 dog
 duf
 dune
@@ -78,6 +76,8 @@ graphite2
 graphviz
 grep
 groff
+grunt-cli
+grunt-completion
 gts
 guile
 gum
