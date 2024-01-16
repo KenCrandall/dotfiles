@@ -1,6 +1,4 @@
 Brew Tap
 --------
 colindean/fonts-nonfree
-homebrew/cask
 homebrew/cask-fonts
-homebrew/core
