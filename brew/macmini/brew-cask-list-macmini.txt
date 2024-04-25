@@ -13,7 +13,6 @@ calibre
 carbon-copy-cloner
 choosy
 daisydisk
-discord
 docker
 eloston-chromium
 epichrome
@@ -47,6 +46,7 @@ font-ibm-plex-sans-condensed
 font-ibm-plex-serif
 font-inconsolata
 font-input
+font-intel-one-mono
 font-inter
 font-jetbrains-mono
 font-lato
@@ -104,7 +104,6 @@ font-xkcd-script
 google-chrome
 hazel
 iterm2
-joplin
 kaleidoscope
 keyboardcleantool
 logi-options-plus
@@ -117,14 +116,14 @@ microsoft-teams
 netnewswire
 nova
 obsidian
-ocenaudio
 openineditor-lite
 openinterminal-lite
 openwebstart
 optimus-player
 orbstack
-pashua
+pastebot
 podcastmenu
+popclip
 postbox
 postman
 qlcolorcode
@@ -146,6 +145,7 @@ swiftbar
 syncthing
 syntax-highlight
 the-unarchiver
+thunderbird
 tigervnc-viewer
 turbovnc-viewer
 typora

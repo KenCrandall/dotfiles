@@ -3,11 +3,9 @@ tap "docmunch/pdftk"
 tap "esolitos/ipa"
 tap "graalvm/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "melonamin/formulae"
 tap "orf/brew"
@@ -17,48 +15,56 @@ tap "theseal/blank-screensaver"
 tap "tidbyt/tidbyt"
 brew "openssl@3"
 brew "alpine"
-brew "amtterm"
 brew "xz"
-brew "openssl@1.1"
 brew "arping"
+brew "aspell"
 brew "autoconf"
 brew "bash"
 brew "bash-completion"
 brew "bat"
+brew "boxes"
 brew "brew-cask-completion"
 brew "btop"
 brew "cabextract"
+brew "readline"
+brew "sqlite"
 brew "glib"
-brew "pkg-config"
 brew "cfssl"
 brew "coreutils"
 brew "darkhttpd"
 brew "dateutils"
 brew "docbook-xsl"
+brew "docutils", link: false
 brew "dog"
 brew "duf"
 brew "dune"
 brew "dust"
-brew "exa"
+brew "eza"
 brew "harfbuzz"
 brew "ffmpeg"
-brew "firefoxpwa"
-brew "libgpg-error"
-brew "freeipmi"
+brew "figlet"
+brew "font-util"
 brew "fzf"
 brew "gh"
 brew "git"
 brew "git-delta"
+brew "glances"
 brew "glow"
 brew "gnu-tar"
+brew "libgpg-error"
 brew "go"
+brew "gotop"
 brew "gptfdisk"
+brew "netpbm"
 brew "graphviz"
 brew "grep"
+brew "python@3.11"
 brew "node"
+brew "openssl@1.1"
 brew "grunt-cli"
 brew "grunt-completion"
-brew "readline"
+brew "gtop"
+brew "pkg-config"
 brew "gum"
 brew "htmldoc"
 brew "htmlq"
@@ -67,11 +73,8 @@ brew "httrack"
 brew "hugo"
 brew "ifstat"
 brew "imagemagick"
-brew "imapsync"
 brew "iperf3"
 brew "ipinfo-cli"
-brew "ipmitool"
-brew "ipmiutil"
 brew "jq"
 brew "launchctl-completion"
 brew "less"
@@ -98,12 +101,12 @@ brew "open-completion"
 brew "packer"
 brew "packer-completion"
 brew "pandoc"
-brew "sqlite"
 brew "php"
 brew "pigz"
 brew "pinfo"
 brew "pip-completion"
 brew "pipx"
+brew "poppler"
 brew "progress"
 brew "pstree"
 brew "pv"
@@ -111,7 +114,6 @@ brew "pwgen"
 brew "pyenv"
 brew "pyenv-ccache"
 brew "pyenv-virtualenv"
-brew "python@3.10"
 brew "python@3.9"
 brew "qemu"
 brew "rack"
@@ -136,6 +138,8 @@ brew "tiger-vnc"
 brew "tmux"
 brew "tmux-mem-cpu-load"
 brew "tmuxinator-completion"
+brew "toilet"
+brew "toot"
 brew "trash"
 brew "tree"
 brew "unar"
@@ -143,7 +147,6 @@ brew "wakeonlan"
 brew "watch"
 brew "wget"
 brew "youtube-dl"
-brew "youtube-dlc"
 brew "yq"
 brew "yt-dlp"
 brew "zlib"
@@ -163,7 +166,6 @@ cask "calibre"
 cask "carbon-copy-cloner"
 cask "choosy"
 cask "daisydisk"
-cask "discord"
 cask "docker"
 cask "eloston-chromium"
 cask "epichrome"
@@ -197,6 +199,7 @@ cask "font-ibm-plex-sans-condensed"
 cask "font-ibm-plex-serif"
 cask "font-inconsolata"
 cask "font-input"
+cask "font-intel-one-mono"
 cask "font-inter"
 cask "font-jetbrains-mono"
 cask "font-lato"
@@ -254,7 +257,6 @@ cask "font-xkcd-script"
 cask "google-chrome"
 cask "hazel"
 cask "iterm2"
-cask "joplin"
 cask "kaleidoscope"
 cask "keyboardcleantool"
 cask "logi-options-plus"
@@ -267,14 +269,14 @@ cask "microsoft-teams"
 cask "netnewswire"
 cask "nova"
 cask "obsidian"
-cask "ocenaudio"
 cask "openineditor-lite"
 cask "openinterminal-lite"
 cask "openwebstart"
 cask "optimus-player"
 cask "orbstack"
-cask "pashua"
+cask "pastebot"
 cask "podcastmenu"
+cask "popclip"
 cask "postbox"
 cask "postman"
 cask "qlcolorcode"
@@ -296,6 +298,7 @@ cask "swiftbar"
 cask "syncthing"
 cask "syntax-highlight"
 cask "the-unarchiver"
+cask "thunderbird"
 cask "tigervnc-viewer"
 cask "turbovnc-viewer"
 cask "typora"
@@ -320,13 +323,10 @@ mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Cardhop", id: 1290358394
-mas "ColorSlurp", id: 1287239339
 mas "ColorWell", id: 460176867
 mas "Day One", id: 1055511498
-mas "Deliveries", id: 290986013
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
-mas "Friendly Streaming", id: 553245401
 mas "GarageBand", id: 682658836
 mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
@@ -334,6 +334,7 @@ mas "Home Assistant", id: 1099568401
 mas "HomeCam", id: 1292995895
 mas "HomePass", id: 1330266650
 mas "Image2icon", id: 992115977
+mas "Ivory", id: 6444602274
 mas "LanScan", id: 472226235
 mas "LG Screen Manager", id: 1142051783
 mas "Microsoft Excel", id: 462058435
@@ -343,7 +344,7 @@ mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
-mas "Monosnap", id: 540348655
+mas "Mona", id: 1659154653
 mas "Moom", id: 419330170
 mas "Network Radar", id: 507659816
 mas "OmniGraffle", id: 1456314039
@@ -352,10 +353,9 @@ mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PCalc", id: 403504866
 mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
-mas "PopClip", id: 445189367
+mas "Prompt", id: 1594420480
 mas "RAW Power", id: 1157116444
 mas "Remote Desktop", id: 409907375
-mas "Remote Wake Up", id: 860874272
 mas "Save to Raindrop.io", id: 1549370672
 mas "Screens", id: 1224268771
 mas "Sequel Ace", id: 1518036000
@@ -364,7 +364,6 @@ mas "SessionRestore", id: 1463334954
 mas "Shareful", id: 1522267256
 mas "Simplefax", id: 1165017252
 mas "Slack", id: 803453959
-mas "Soulver 2", id: 413965349
 mas "Soulver 3", id: 1508732804
 mas "Speedtest", id: 1153157709
 mas "StopTheMadness", id: 1376402589
@@ -372,11 +371,99 @@ mas "Tabs Saver for Safari", id: 1440006971
 mas "Tagr", id: 1450308734
 mas "TestFlight", id: 899247664
 mas "Textastic", id: 572491815
-mas "Todoist", id: 585829637
 mas "Tot", id: 1491071483
 mas "Transmit", id: 1436522307
 mas "Ultra Character Map", id: 520265986
 mas "UTM", id: 1538878817
 mas "vCard Editor", id: 855935660
 mas "WiFiman Desktop", id: 1482391803
+mas "WorldWideWeb", id: 1621370168
 mas "Xcode", id: 497799835
+vscode "1password.op-vscode"
+vscode "766b.go-outliner"
+vscode "akmittal.hugofy"
+vscode "alanwalk.markdown-navigation"
+vscode "alefragnani.project-manager"
+vscode "anseki.vscode-color"
+vscode "bierner.github-markdown-preview"
+vscode "bierner.markdown-checkbox"
+vscode "bierner.markdown-emoji"
+vscode "bierner.markdown-mermaid"
+vscode "bierner.markdown-preview-github-styles"
+vscode "bierner.markdown-yaml-preamble"
+vscode "budparr.language-hugo-vscode"
+vscode "coolbear.systemd-unit-file"
+vscode "dae.vscode-mac-color-picker"
+vscode "daghostman.vs-treeview"
+vscode "davidanson.vscode-markdownlint"
+vscode "donjayamanne.githistory"
+vscode "donjayamanne.python-environment-manager"
+vscode "donjayamanne.python-extension-pack"
+vscode "dotiful.dotfiles-syntax-highlighting"
+vscode "drcika.apc-extension"
+vscode "eamodio.gitlens"
+vscode "ecmel.vscode-html-css"
+vscode "eliostruyf.vscode-front-matter"
+vscode "elken.mux"
+vscode "everspace.rightclick-git"
+vscode "formulahendry.docker-explorer"
+vscode "foxundermoon.shell-format"
+vscode "github.remotehub"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "hangxingliu.vscode-systemd-support"
+vscode "houkanshan.vscode-markdown-footnote"
+vscode "idleberg.icon-fonts"
+vscode "james-yu.latex-workshop"
+vscode "jebbs.markdown-extended"
+vscode "jerrygoyal.shortcut-menu-bar"
+vscode "joaomoreno.github-sharp-theme"
+vscode "jtlowe.vscode-icon-theme"
+vscode "keenethics.keen-neutral-icon-theme"
+vscode "kevinrose.vsc-python-indent"
+vscode "kipjr.vscode-language-ipxe"
+vscode "knisterpeter.vscode-github"
+vscode "lamartire.git-indicators"
+vscode "letmaik.git-tree-compare"
+vscode "liximomo.remotefs"
+vscode "magicstack.magicpython"
+vscode "malmaud.tmux"
+vscode "mattyjones.vscode-rpmspec"
+vscode "mhutchie.git-graph"
+vscode "michelemelluso.gitignore"
+vscode "mohd-akram.vscode-html-format"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-repositories"
+vscode "ms-vscode.remote-server"
+vscode "onlyutkarsh.git-config-user-profiles"
+vscode "p1c2u.docker-compose"
+vscode "prince781.vala"
+vscode "redhat.ansible"
+vscode "redhat.vscode-yaml"
+vscode "rifi2k.format-html-in-php"
+vscode "rusnasonov.vscode-hugo"
+vscode "searking.preview-vscode"
+vscode "stateful.runme"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "tamasfe.even-better-toml"
+vscode "thenikso.github-plus-theme"
+vscode "thomaskarachristos.terminal-statusbar"
+vscode "tht13.rst-vscode"
+vscode "tomoki1207.selectline-statusbar"
+vscode "tyriar.vscode-terminal-here"
+vscode "vincaslt.highlight-matching-tag"
+vscode "vsls-contrib.gistfs"
+vscode "wholroyd.jinja"
+vscode "yzhang.markdown-all-in-one"
+vscode "zfzackfrost.commentbars"
+vscode "zignd.html-css-class-completion"
