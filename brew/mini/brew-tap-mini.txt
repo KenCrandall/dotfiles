@@ -1,0 +1,15 @@
+Brew Tap
+--------
+colindean/fonts-nonfree
+docmunch/pdftk
+esolitos/ipa
+graalvm/tap
+homebrew/bundle
+homebrew/cask-fonts
+homebrew/services
+melonamin/formulae
+orf/brew
+romkatv/powerlevel10k
+teamookla/speedtest
+theseal/blank-screensaver
+tidbyt/tidbyt
