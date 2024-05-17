@@ -19,14 +19,11 @@ font-cascadia-code-pl
 font-cascadia-mono-pl
 font-comic-neue
 font-courier-prime-code
-font-droid-sans-mono-for-powerline
-font-envy-code-r
 font-fantasque-sans-mono
 font-fira-code
 font-fira-code-nerd-font
 font-fira-mono
 font-fira-mono-for-powerline
-font-fira-mono-nerd-font
 font-fira-sans
 font-fira-sans-condensed
 font-fira-sans-extra-condensed
@@ -34,7 +31,6 @@ font-firago
 font-gentium-basic
 font-gentium-book-basic
 font-gentium-plus
-font-hack
 font-ibm-plex
 font-ibm-plex-mono
 font-ibm-plex-sans
@@ -95,6 +91,7 @@ font-titillium
 font-titillium-web
 font-victor-mono
 font-xkcd-script
+github
 google-chrome
 hazel
 iterm2
@@ -128,6 +125,7 @@ raindropio
 retrobatch
 rocket
 royal-tsx
+screens-connect
 sdformatter
 sf-symbols
 sigil

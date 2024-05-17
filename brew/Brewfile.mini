@@ -169,14 +169,11 @@ cask "font-cascadia-code-pl"
 cask "font-cascadia-mono-pl"
 cask "font-comic-neue"
 cask "font-courier-prime-code"
-cask "font-droid-sans-mono-for-powerline"
-cask "font-envy-code-r"
 cask "font-fantasque-sans-mono"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono"
 cask "font-fira-mono-for-powerline"
-cask "font-fira-mono-nerd-font"
 cask "font-fira-sans"
 cask "font-fira-sans-condensed"
 cask "font-fira-sans-extra-condensed"
@@ -184,7 +181,6 @@ cask "font-firago"
 cask "font-gentium-basic"
 cask "font-gentium-book-basic"
 cask "font-gentium-plus"
-cask "font-hack"
 cask "font-ibm-plex"
 cask "font-ibm-plex-mono"
 cask "font-ibm-plex-sans"
@@ -245,6 +241,7 @@ cask "font-titillium"
 cask "font-titillium-web"
 cask "font-victor-mono"
 cask "font-xkcd-script"
+cask "github"
 cask "google-chrome"
 cask "hazel"
 cask "iterm2"
@@ -278,6 +275,7 @@ cask "raindropio"
 cask "retrobatch"
 cask "rocket"
 cask "royal-tsx"
+cask "screens-connect"
 cask "sdformatter"
 cask "sf-symbols"
 cask "sigil"
@@ -302,7 +300,6 @@ mas "1Password for Safari", id: 1569813296
 mas "Affinity Designer 2", id: 1616831348
 mas "Affinity Photo 2", id: 1616822987
 mas "Affinity Publisher 2", id: 1606941598
-mas "Airmail", id: 918858936
 mas "AirRadar", id: 414758651
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
@@ -313,7 +310,6 @@ mas "Day One", id: 1055511498
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
-mas "GarageBand", id: 682658836
 mas "GoodLinks", id: 1474335294
 mas "Graphic", id: 404705039
 mas "Home Assistant", id: 1099568401
@@ -332,9 +328,7 @@ mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
-mas "Mona", id: 1659154653
 mas "Monosnap", id: 540348655
-mas "Moom", id: 419330170
 mas "Network Radar", id: 507659816
 mas "Numbers", id: 409203825
 mas "OmniGraffle", id: 1456314039
@@ -379,11 +373,9 @@ vscode "akmittal.hugofy"
 vscode "alanwalk.markdown-navigation"
 vscode "alefragnani.project-manager"
 vscode "anseki.vscode-color"
-vscode "batisteo.vscode-django"
 vscode "bierner.github-markdown-preview"
 vscode "bierner.markdown-checkbox"
 vscode "bierner.markdown-emoji"
-vscode "bierner.markdown-footnotes"
 vscode "bierner.markdown-mermaid"
 vscode "bierner.markdown-preview-github-styles"
 vscode "bierner.markdown-yaml-preamble"
@@ -430,7 +422,6 @@ vscode "michelemelluso.gitignore"
 vscode "mohd-akram.vscode-html-format"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
-vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -439,11 +430,9 @@ vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode-remote.remote-wsl"
 vscode "ms-vscode-remote.vscode-remote-extensionpack"
-vscode "ms-vscode.azure-repos"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-repositories"
 vscode "ms-vscode.remote-server"
-vscode "njpwerner.autodocstring"
 vscode "onlyutkarsh.git-config-user-profiles"
 vscode "p1c2u.docker-compose"
 vscode "prince781.vala"
@@ -461,8 +450,6 @@ vscode "tht13.rst-vscode"
 vscode "tomoki1207.selectline-statusbar"
 vscode "tyriar.vscode-terminal-here"
 vscode "vincaslt.highlight-matching-tag"
-vscode "visualstudioexptteam.intellicode-api-usage-examples"
-vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vsls-contrib.gistfs"
 vscode "wholroyd.jinja"
 vscode "yzhang.markdown-all-in-one"
