@@ -5,9 +5,7 @@ docmunch/pdftk
 esolitos/ipa
 graalvm/tap
 homebrew/bundle
-homebrew/cask-drivers
 homebrew/cask-fonts
-homebrew/cask-versions
 homebrew/services
 melonamin/formulae
 orf/brew

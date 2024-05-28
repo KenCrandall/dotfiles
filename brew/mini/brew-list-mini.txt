@@ -6,16 +6,13 @@ aom
 apr
 apr-util
 argon2
-argp-standalone
 aribb24
 arping
 aspell
 autoconf
-automake
 bash
 bash-completion
 bat
-bdw-gc
 boost
 boxes
 brew-cask-completion
@@ -30,7 +27,6 @@ ccache
 certifi
 cfssl
 cjson
-cmocka
 coreutils
 cunit
 curl
@@ -71,7 +67,6 @@ glances
 glib
 glow
 gmp
-gnu-getopt
 gnu-sed
 gnu-tar
 gnupg
@@ -88,7 +83,6 @@ grunt-cli
 grunt-completion
 gtop
 gts
-guile
 gum
 harfbuzz
 highway
@@ -102,7 +96,6 @@ hwloc
 icu4c
 ifstat
 imagemagick
-imap-uw
 imath
 imlib2
 iperf3
@@ -151,7 +144,6 @@ libpaper
 libpipeline
 libpng
 libpq
-libpthread-stubs
 libraqm
 libraw
 librist
@@ -189,7 +181,6 @@ libyaml
 libzip
 little-cms2
 lua
-lua@5.3
 lynx
 lz4
 lzo
@@ -239,7 +230,6 @@ packer
 packer-completion
 pandoc
 pango
-pcre
 pcre2
 php
 pigz
@@ -263,18 +253,11 @@ pwgen
 pyenv
 pyenv-ccache
 pyenv-virtualenv
-python-argcomplete
-python-brotli
-python-certifi
-python-mutagen
 python-packaging
-python-setuptools
 python@3.11
 python@3.12
 python@3.9
-pyyaml
 qemu
-rack
 rainbarf
 rav1e
 rbenv
@@ -293,7 +276,6 @@ s-lang
 screenresolution
 sdl2
 shared-mime-info
-six
 sleepwatcher
 snappy
 source-highlight
@@ -312,7 +294,6 @@ tealdeer
 telnet
 terminal-notifier
 tesseract
-texinfo
 theora
 tidy-html5
 tiger-vnc
@@ -335,7 +316,6 @@ webp
 wget
 x264
 x265
-xmlto
 xorgproto
 xvid
 xxhash
