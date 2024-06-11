@@ -13,6 +13,7 @@ autoconf
 bash
 bash-completion
 bat
+blake3
 boost
 boxes
 brew-cask-completion
@@ -46,6 +47,7 @@ ffmpeg
 figlet
 flac
 fltk
+fmt
 font-util
 fontconfig
 freetds
@@ -92,7 +94,6 @@ htmlq
 htop
 httrack
 hugo
-hwloc
 icu4c
 ifstat
 imagemagick
@@ -106,7 +107,6 @@ jbig2dec
 jpeg-turbo
 jpeg-xl
 jq
-jsoncpp
 krb5
 lame
 launchctl-completion
@@ -210,20 +210,17 @@ node
 npth
 nspr
 nss
-numpy
 oath-toolkit
 ocaml
 ocamlbuild
 oniguruma
 open-completion
-openblas
 opencore-amr
 openexr
 openjpeg
 openldap
 openssl@1.1
 openssl@3
-openvino
 opus
 p11-kit
 packer
@@ -247,13 +244,11 @@ progress
 protobuf
 pstree
 psutils
-pugixml
 pv
 pwgen
 pyenv
 pyenv-ccache
 pyenv-virtualenv
-python-packaging
 python@3.11
 python@3.12
 python@3.9
@@ -288,7 +283,6 @@ stoken
 subversion
 svg2png
 svt-av1
-tbb
 tcl-tk
 tealdeer
 telnet

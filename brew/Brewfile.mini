@@ -245,7 +245,6 @@ cask "github"
 cask "google-chrome"
 cask "hazel"
 cask "iterm2"
-cask "kaleidoscope"
 cask "keyboardcleantool"
 cask "logi-options-plus"
 cask "mactex"
@@ -254,7 +253,6 @@ cask "mattermost"
 cask "microsoft-auto-update"
 cask "microsoft-edge"
 cask "microsoft-teams"
-cask "netnewswire"
 cask "nova"
 cask "obsidian"
 cask "openineditor-lite"
@@ -306,7 +304,6 @@ mas "BetterSnapTool", id: 417375580
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Cardhop", id: 1290358394
 mas "ColorWell", id: 460176867
-mas "Day One", id: 1055511498
 mas "Expressions", id: 913158085
 mas "Fantastical", id: 975937182
 mas "Friendly Streaming", id: 553245401
@@ -351,7 +348,7 @@ mas "Simplefax", id: 1165017252
 mas "Slack", id: 803453959
 mas "Soulver 3", id: 1508732804
 mas "Speedtest", id: 1153157709
-mas "StopTheMadness", id: 1376402589
+mas "StopTheMadness Pro", id: 6471380298
 mas "Tabs Saver for Safari", id: 1440006971
 mas "Tagr", id: 1450308734
 mas "TestFlight", id: 899247664

@@ -95,7 +95,6 @@ github
 google-chrome
 hazel
 iterm2
-kaleidoscope
 keyboardcleantool
 logi-options-plus
 mactex
@@ -104,7 +103,6 @@ mattermost
 microsoft-auto-update
 microsoft-edge
 microsoft-teams
-netnewswire
 nova
 obsidian
 openineditor-lite
