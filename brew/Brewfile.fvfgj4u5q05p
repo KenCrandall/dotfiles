@@ -1,8 +1,6 @@
 tap "colindean/fonts-nonfree"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
-brew "bat"
-brew "bat-extras"
 brew "darkhttpd"
 brew "eza"
 brew "glances"
@@ -17,7 +15,6 @@ brew "pandoc"
 brew "pango"
 brew "pinfo"
 brew "python@3.9"
-brew "qemu"
 brew "sf-pwgen"
 brew "trash"
 cask "1password"
@@ -83,7 +80,6 @@ cask "visual-studio-code"
 cask "vmware-fusion"
 cask "wkhtmltopdf"
 mas "1Password for Safari", id: 1569813296
-mas "AdGuard for Safari", id: 1440147259
 mas "Affinity Designer 2", id: 1616831348
 mas "Affinity Photo 2", id: 1616822987
 mas "Affinity Publisher 2", id: 1606941598
@@ -91,9 +87,7 @@ mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "Cardhop", id: 1290358394
 mas "ColorWell", id: 460176867
-mas "DaisyDisk", id: 411643860
 mas "Fantastical", id: 975937182
-mas "Friendly Streaming", id: 553245401
 mas "GoodLinks", id: 1474335294
 mas "Image2icon", id: 992115977
 mas "Ivory", id: 6444602274
@@ -101,26 +95,17 @@ mas "Microsoft OneNote", id: 784801555
 mas "Microsoft To Do", id: 1274495053
 mas "Monosnap", id: 540348655
 mas "OmniGraffle", id: 1456314039
-mas "Omnivore", id: 1564031042
 mas "OneDrive", id: 823766827
 mas "Paprika Recipe Manager 3", id: 1303222628
-mas "PCalc", id: 403504866
 mas "Pixelmator Pro", id: 1289583905
 mas "Prompt", id: 1594420480
-mas "Remote Desktop", id: 409907375
-mas "Save to Raindrop.io", id: 1549370672
-mas "SessionRestore", id: 1463334954
 mas "Slack", id: 803453959
 mas "Soulver 3", id: 1508732804
 mas "Speedtest", id: 1153157709
-mas "StopTheMadness", id: 1376402589
-mas "Tabs Saver for Safari", id: 1440006971
 mas "Textastic", id: 572491815
 mas "Tot", id: 1491071483
 mas "Transmit", id: 1436522307
 mas "UTM", id: 1538878817
-mas "WireGuard", id: 1451685025
-mas "‎WhatsApp", id: 310633997
 vscode "alanwalk.markdown-navigation"
 vscode "alefragnani.project-manager"
 vscode "artymaury.template-finder"
