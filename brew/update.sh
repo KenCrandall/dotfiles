@@ -28,21 +28,21 @@ esac
 mkdir -p "${DIR}"
 BLIST="${DIR}/brew-list-${HOST}.txt"
 echo "Checking homebrew pours..."
-echo "Brew List" >$BLIST
-echo "---------" >>$BLIST
-brew list --formula >>$BLIST
+echo "Brew List" >"${BLIST}"
+echo "---------" >>"${BLIST}"
+brew list --formula >>"${BLIST}"
 
 BCASK="${DIR}/brew-cask-list-${HOST}.txt"
 echo "Checking homebrew casks..."
-echo "Brew Cask List" >$BCASK
-echo "--------------" >>$BCASK
-brew list --cask >>$BCASK
+echo "Brew Cask List" >"${BCASK}"
+echo "--------------" >>"${BCASK}"
+brew list --cask >>"${BCASK}"
 
 BTAPS="${DIR}/brew-tap-${HOST}.txt"
 echo "Checking homebrew taps..."
-echo "Brew Tap" >$BTAPS
-echo "--------" >>$BTAPS
-brew tap >>$BTAPS
+echo "Brew Tap" >"${BTAPS}"
+echo "--------" >>"${BTAPS}"
+brew tap >>"${BTAPS}"
 
 echo "Generating bundle (Brewfile)..."
 brew bundle dump -f --file=Brewfile.${HOST}
